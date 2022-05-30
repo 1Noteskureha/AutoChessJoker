@@ -1,0 +1,299 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.0f1 (c7b5465681fb) revision 13088070'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19043.1706; Version 2009; 64bit' Language: 'ja' Physical Memory: 16318 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.0f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/saiky/Documents/AutoChessJoker/AutoChessJoker
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+54603
+Successfully changed project path to: D:/saiky/Documents/AutoChessJoker/AutoChessJoker
+D:/saiky/Documents/AutoChessJoker/AutoChessJoker
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 32.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.0f1 (c7b5465681fb)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/saiky/Documents/AutoChessJoker/AutoChessJoker/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 6GB (ID=0x1c03)
+    Vendor:   
+    VRAM:     6052 MB
+    Driver:   27.21.14.5671
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56024
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002094 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 31.52 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.145 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000848 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 33.30 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.835 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1817 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.0 MB.
+System memory in use after: 89.0 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2259.
+Total: 1.639400 ms (FindLiveObjects: 0.158200 ms CreateObjectMapping: 0.060200 ms MarkObjects: 1.318600 ms  DeleteObjects: 0.101700 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/2D Pixel RPG Monster Pack
+  artifactKey: Guid(4e7b20941d939ad4ebe6976e82c1f106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack using Guid(4e7b20941d939ad4ebe6976e82c1f106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f2867576a37aaf6f4dc30ad86a4469b') in 0.006124 seconds
+  Import took 0.008483 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/bg.png
+  artifactKey: Guid(5bb19db0a4016449caea716e96c9555e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/bg.png using Guid(5bb19db0a4016449caea716e96c9555e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cf826407df96407ebee9666f32cbe12') in 0.126258 seconds
+  Import took 0.128467 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.138661 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons
+  artifactKey: Guid(840633ead2267457581a342e389cb286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons using Guid(840633ead2267457581a342e389cb286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f81edb88c77ceef3c498b669b9d2da52') in 0.004579 seconds
+  Import took 0.007129 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000634 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons
+  artifactKey: Guid(840633ead2267457581a342e389cb286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons using Guid(840633ead2267457581a342e389cb286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f81edb88c77ceef3c498b669b9d2da52') in 0.001560 seconds
+  Import took 0.004316 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.216305 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size
+  artifactKey: Guid(31270c4f6c69c43f392c382c71888b85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size using Guid(31270c4f6c69c43f392c382c71888b85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79b7dc0863c8faf7049be91c0008ce8c') in 0.004439 seconds
+  Import took 0.006961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000966 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size
+  artifactKey: Guid(31270c4f6c69c43f392c382c71888b85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size using Guid(31270c4f6c69c43f392c382c71888b85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79b7dc0863c8faf7049be91c0008ce8c') in 0.001634 seconds
+  Import took 0.004151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.348042 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow
+  artifactKey: Guid(fff29af8007bf415ca545991ed7eba8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow using Guid(fff29af8007bf415ca545991ed7eba8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bd6f7ab927fa6d01b9f4fd70847f7ee') in 0.004722 seconds
+  Import took 0.008093 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000707 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow
+  artifactKey: Guid(fff29af8007bf415ca545991ed7eba8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow using Guid(fff29af8007bf415ca545991ed7eba8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bd6f7ab927fa6d01b9f4fd70847f7ee') in 0.001870 seconds
+  Import took 0.004274 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.086702 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead
+  artifactKey: Guid(87b97b2750000466e9074dd8ed17c781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead using Guid(87b97b2750000466e9074dd8ed17c781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '263084203f173d206f55c9f8b07e96b9') in 0.004820 seconds
+  Import took 0.007639 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000909 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead
+  artifactKey: Guid(87b97b2750000466e9074dd8ed17c781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead using Guid(87b97b2750000466e9074dd8ed17c781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '263084203f173d206f55c9f8b07e96b9') in 0.001504 seconds
+  Import took 0.003735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.402810 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_101.png
+  artifactKey: Guid(75b73ed42062340c1a13fdf450695eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_101.png using Guid(75b73ed42062340c1a13fdf450695eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61cd1a4919c810dba055c1a8cb9f3297') in 0.009131 seconds
+  Import took 0.011634 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_110.png
+  artifactKey: Guid(2b982abc92fdc44f4a1d071be8e4e3f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_110.png using Guid(2b982abc92fdc44f4a1d071be8e4e3f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cef746dc2fa1b626bf14a5da584ebe72') in 0.009055 seconds
+  Import took 0.011415 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_107.png
+  artifactKey: Guid(74ee93ef735444ff19f6c259e9841675) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_107.png using Guid(74ee93ef735444ff19f6c259e9841675) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '904871b1cb36867e89558dc04016977f') in 0.011880 seconds
+  Import took 0.014498 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_109.png
+  artifactKey: Guid(9ce0cbae8a6f9499ca2c66a199d3b234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_109.png using Guid(9ce0cbae8a6f9499ca2c66a199d3b234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6701760c6d802eaf214f51ab2ee839d1') in 0.009663 seconds
+  Import took 0.012673 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_103.png
+  artifactKey: Guid(642035d1ad6054d4c81d469682e27df3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_103.png using Guid(642035d1ad6054d4c81d469682e27df3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fd1c902e4be130a70c8fc4805cfaf5c') in 0.009512 seconds
+  Import took 0.012377 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_102.png
+  artifactKey: Guid(ed393b8ee245341a7b661e7c9ffa0e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_102.png using Guid(ed393b8ee245341a7b661e7c9ffa0e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fea283fa6d30bdd07601d3856a44e74') in 0.011245 seconds
+  Import took 0.013770 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_104.png
+  artifactKey: Guid(0aa09f06c69024e5a9c50f1f11a807c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_104.png using Guid(0aa09f06c69024e5a9c50f1f11a807c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8d6d3d150e45d8990f3d9ad8e9ba1bc') in 0.009456 seconds
+  Import took 0.011988 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_108.png
+  artifactKey: Guid(b9f61868ffc5f4c1393b70dc7d1ba3cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_108.png using Guid(b9f61868ffc5f4c1393b70dc7d1ba3cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85eef2615f3c3a20a8d39c0235877a9d') in 0.008854 seconds
+  Import took 0.011179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_105.png
+  artifactKey: Guid(d66b1b50975144cc48c093d58375112f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_105.png using Guid(d66b1b50975144cc48c093d58375112f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49a2f382273e479144b4422e4fa260f7') in 0.008202 seconds
+  Import took 0.010615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_112.png
+  artifactKey: Guid(36ccc5a0788794f68b0957fa584e45a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_112.png using Guid(36ccc5a0788794f68b0957fa584e45a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35523c71314f7fc969caf21d06a02e8f') in 0.009262 seconds
+  Import took 0.011831 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_111.png
+  artifactKey: Guid(e4c5dfff34e304bf89a99c8cda7c8692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_111.png using Guid(e4c5dfff34e304bf89a99c8cda7c8692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bafcc47c7f3cfed2f0b7471d4bbb5386') in 0.011573 seconds
+  Import took 0.013809 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_106.png
+  artifactKey: Guid(a4be9ad3c7b764e4298bd0d18ca01521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_106.png using Guid(a4be9ad3c7b764e4298bd0d18ca01521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1244496c837a52dccb780ffd31b46f08') in 0.009069 seconds
+  Import took 0.011727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1035.979197 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Scenes
+  artifactKey: Guid(c3afb712f7b5944c08d9460c5845231a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Scenes using Guid(c3afb712f7b5944c08d9460c5845231a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e72f87c30c576a2d4572f5c2fa08d0d') in 0.005598 seconds
+  Import took 0.008999 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.059652 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Scenes/PreviewScene.unity
+  artifactKey: Guid(889656c6222bb407d85d3cb7bf812eb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Scenes/PreviewScene.unity using Guid(889656c6222bb407d85d3cb7bf812eb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37485b523a037fa8c1eebc9501077507') in 0.004995 seconds
+  Import took 0.007672 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000480 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Scenes/PreviewScene.unity
+  artifactKey: Guid(889656c6222bb407d85d3cb7bf812eb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Scenes/PreviewScene.unity using Guid(889656c6222bb407d85d3cb7bf812eb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37485b523a037fa8c1eebc9501077507') in 0.001702 seconds
+  Import took 0.004036 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 484.083422 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(3bdaf3277722cfb4ba0e74c28275cf80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(3bdaf3277722cfb4ba0e74c28275cf80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd84043e1642d845cf1f90cf5bd6b524a') in 0.001646 seconds
+  Import took 0.004966 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.289788 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4277dab6a28e8e1d23739f05f438b540') in 0.004936 seconds
+  Import took 0.007651 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000557 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4277dab6a28e8e1d23739f05f438b540') in 0.001723 seconds
+  Import took 0.004032 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
