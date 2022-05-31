@@ -15,11 +15,11 @@ D:/saiky/Documents/AutoChessJoker/AutoChessJoker
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54603
+53037
 Successfully changed project path to: D:/saiky/Documents/AutoChessJoker/AutoChessJoker
 D:/saiky/Documents/AutoChessJoker/AutoChessJoker
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 32.33 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 36.64 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.0f1 (c7b5465681fb)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
@@ -35,265 +35,1279 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56024
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56256
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002094 seconds.
+Registered in 0.002013 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 31.52 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 36.48 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.145 seconds
+- Completed reload, in  1.112 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000848 seconds.
+Registered in 0.000892 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 33.30 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 36.86 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.835 seconds
+- Completed reload, in  0.798 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1817 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 89.0 MB.
-System memory in use after: 89.0 MB.
+System memory in use before: 89.1 MB.
+System memory in use after: 89.1 MB.
 
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2259.
-Total: 1.639400 ms (FindLiveObjects: 0.158200 ms CreateObjectMapping: 0.060200 ms MarkObjects: 1.318600 ms  DeleteObjects: 0.101700 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/2D Pixel RPG Monster Pack
-  artifactKey: Guid(4e7b20941d939ad4ebe6976e82c1f106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel RPG Monster Pack using Guid(4e7b20941d939ad4ebe6976e82c1f106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f2867576a37aaf6f4dc30ad86a4469b') in 0.006124 seconds
-  Import took 0.008483 seconds .
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2260.
+Total: 3.085100 ms (FindLiveObjects: 0.258900 ms CreateObjectMapping: 0.126100 ms MarkObjects: 2.523300 ms  DeleteObjects: 0.175400 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000206 seconds.
-  path: Assets/2D Pixel RPG Monster Pack/bg.png
-  artifactKey: Guid(5bb19db0a4016449caea716e96c9555e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel RPG Monster Pack/bg.png using Guid(5bb19db0a4016449caea716e96c9555e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cf826407df96407ebee9666f32cbe12') in 0.126258 seconds
-  Import took 0.128467 seconds .
+  path: Assets/Scenes/TitleScene.unity
+  artifactKey: Guid(50e12abcf5885a340bd811e74345669e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/TitleScene.unity using Guid(50e12abcf5885a340bd811e74345669e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79e8ce084f432dbaf1f73beb496daf51') in 0.012909 seconds
+  Import took 0.015198 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.138661 seconds.
-  path: Assets/2D Pixel RPG Monster Pack/Icons
-  artifactKey: Guid(840633ead2267457581a342e389cb286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel RPG Monster Pack/Icons using Guid(840633ead2267457581a342e389cb286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f81edb88c77ceef3c498b669b9d2da52') in 0.004579 seconds
-  Import took 0.007129 seconds .
+  Time since last request: 10.253315 seconds.
+  path: Assets/Scenes/MainScene.unity
+  artifactKey: Guid(d3a2c6f7f060b2443b5c89624cefddf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainScene.unity using Guid(d3a2c6f7f060b2443b5c89624cefddf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cda4f4b984a375abf839a03cf087c79') in 0.005332 seconds
+  Import took 0.007618 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000634 seconds.
-  path: Assets/2D Pixel RPG Monster Pack/Icons
-  artifactKey: Guid(840633ead2267457581a342e389cb286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel RPG Monster Pack/Icons using Guid(840633ead2267457581a342e389cb286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f81edb88c77ceef3c498b669b9d2da52') in 0.001560 seconds
-  Import took 0.004316 seconds .
+  Time since last request: 683.366880 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42baae205c97e3337697759514652acd') in 0.005291 seconds
+  Import took 0.008157 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.216305 seconds.
-  path: Assets/2D Pixel RPG Monster Pack/Icons/default size
-  artifactKey: Guid(31270c4f6c69c43f392c382c71888b85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size using Guid(31270c4f6c69c43f392c382c71888b85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79b7dc0863c8faf7049be91c0008ce8c') in 0.004439 seconds
-  Import took 0.006961 seconds .
+  Time since last request: 11.392317 seconds.
+  path: Assets/Kureha's
+  artifactKey: Guid(6f47223e68a05ab49b5522d522049755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's using Guid(6f47223e68a05ab49b5522d522049755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42fb5d61a00a76bfc83d3a86e9e5b9c6') in 0.004917 seconds
+  Import took 0.007307 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000966 seconds.
-  path: Assets/2D Pixel RPG Monster Pack/Icons/default size
-  artifactKey: Guid(31270c4f6c69c43f392c382c71888b85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size using Guid(31270c4f6c69c43f392c382c71888b85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79b7dc0863c8faf7049be91c0008ce8c') in 0.001634 seconds
-  Import took 0.004151 seconds .
+  Time since last request: 16.158328 seconds.
+  path: Assets/Kureha's/Scripts
+  artifactKey: Guid(d101946256c91f14591dfb3605237ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts using Guid(d101946256c91f14591dfb3605237ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '945e0b301f356bf9cff9ad9a4ffce4a2') in 0.004840 seconds
+  Import took 0.007122 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.348042 seconds.
-  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow
-  artifactKey: Guid(fff29af8007bf415ca545991ed7eba8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow using Guid(fff29af8007bf415ca545991ed7eba8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bd6f7ab927fa6d01b9f4fd70847f7ee') in 0.004722 seconds
-  Import took 0.008093 seconds .
+  Time since last request: 815.870373 seconds.
+  path: Assets/Kureha's/Prefab
+  artifactKey: Guid(0d843fbd3b95cf54591b57592a25fb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab using Guid(0d843fbd3b95cf54591b57592a25fb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '472d38e4577ea05bf152b4d075891a38') in 0.005339 seconds
+  Import took 0.008043 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000707 seconds.
-  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow
-  artifactKey: Guid(fff29af8007bf415ca545991ed7eba8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow using Guid(fff29af8007bf415ca545991ed7eba8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bd6f7ab927fa6d01b9f4fd70847f7ee') in 0.001870 seconds
-  Import took 0.004274 seconds .
+  Time since last request: 103.469605 seconds.
+  path: Assets/Kureha's/Prefab/ButtonSetting.prefab
+  artifactKey: Guid(59e503ef14210d841b8c31768963d827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/ButtonSetting.prefab using Guid(59e503ef14210d841b8c31768963d827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3039f91bb61666f8ccbf7f8cfb8adec0') in 0.101956 seconds
+  Import took 0.104430 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.086702 seconds.
-  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead
-  artifactKey: Guid(87b97b2750000466e9074dd8ed17c781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead using Guid(87b97b2750000466e9074dd8ed17c781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '263084203f173d206f55c9f8b07e96b9') in 0.004820 seconds
-  Import took 0.007639 seconds .
+  Time since last request: 225.509067 seconds.
+  path: Assets/Kureha's/Prefab/ButtonSetting.prefab
+  artifactKey: Guid(59e503ef14210d841b8c31768963d827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/ButtonSetting.prefab using Guid(59e503ef14210d841b8c31768963d827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb1fbf9a3be54cbfd903aac4d3b36e9e') in 0.026151 seconds
+  Import took 0.028967 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000909 seconds.
-  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead
-  artifactKey: Guid(87b97b2750000466e9074dd8ed17c781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead using Guid(87b97b2750000466e9074dd8ed17c781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '263084203f173d206f55c9f8b07e96b9') in 0.001504 seconds
-  Import took 0.003735 seconds .
+  Time since last request: 146.580929 seconds.
+  path: Assets/Kureha's/Applied
+  artifactKey: Guid(c3ce0538a94706d4f816e7712cf5a4d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Applied using Guid(c3ce0538a94706d4f816e7712cf5a4d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e0700f3ad5800052f58e9b6d2493bfe') in 0.006131 seconds
+  Import took 0.008698 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.402810 seconds.
-  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_101.png
-  artifactKey: Guid(75b73ed42062340c1a13fdf450695eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_101.png using Guid(75b73ed42062340c1a13fdf450695eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61cd1a4919c810dba055c1a8cb9f3297') in 0.009131 seconds
-  Import took 0.011634 seconds .
+  Time since last request: 17.256869 seconds.
+  path: Assets/Kureha's/Applied/Font
+  artifactKey: Guid(7660898b2ec7aeb4dac930de28c6e0d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Applied/Font using Guid(7660898b2ec7aeb4dac930de28c6e0d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d06712b44188f7d962c87497b7d5618') in 0.006338 seconds
+  Import took 0.009108 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_110.png
-  artifactKey: Guid(2b982abc92fdc44f4a1d071be8e4e3f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_110.png using Guid(2b982abc92fdc44f4a1d071be8e4e3f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cef746dc2fa1b626bf14a5da584ebe72') in 0.009055 seconds
-  Import took 0.011415 seconds .
+  Time since last request: 6.208045 seconds.
+  path: Assets/Kureha's/Applied/Font/NotoSansJP-Medium.otf
+  artifactKey: Guid(5f21fc7b09f0e3d4e941595d43ec7b42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Applied/Font/NotoSansJP-Medium.otf using Guid(5f21fc7b09f0e3d4e941595d43ec7b42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6041fd941ae376c1abc15432c7a6497') in 0.079889 seconds
+  Import took 0.082504 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000344 seconds.
-  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_107.png
-  artifactKey: Guid(74ee93ef735444ff19f6c259e9841675) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_107.png using Guid(74ee93ef735444ff19f6c259e9841675) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '904871b1cb36867e89558dc04016977f') in 0.011880 seconds
-  Import took 0.014498 seconds .
+  Time since last request: 295.430900 seconds.
+  path: Assets/Kureha's/Applied/Font/NotoSansJP-Medium SDF.asset
+  artifactKey: Guid(6e42c831760593645816884a134e79b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Applied/Font/NotoSansJP-Medium SDF.asset using Guid(6e42c831760593645816884a134e79b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15dd87306556b998844669eff38592fb') in 0.558115 seconds
+  Import took 0.562665 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000142 seconds.
-  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_109.png
-  artifactKey: Guid(9ce0cbae8a6f9499ca2c66a199d3b234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_109.png using Guid(9ce0cbae8a6f9499ca2c66a199d3b234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6701760c6d802eaf214f51ab2ee839d1') in 0.009663 seconds
-  Import took 0.012673 seconds .
+  Time since last request: 10.864914 seconds.
+  path: Assets/Kureha's/Applied/Font/NotoSansJP-Medium.otf
+  artifactKey: Guid(5f21fc7b09f0e3d4e941595d43ec7b42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Applied/Font/NotoSansJP-Medium.otf using Guid(5f21fc7b09f0e3d4e941595d43ec7b42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa95a65f4699ce448f9df33263b3d646') in 0.009125 seconds
+  Import took 0.012282 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000268 seconds.
-  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_103.png
-  artifactKey: Guid(642035d1ad6054d4c81d469682e27df3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_103.png using Guid(642035d1ad6054d4c81d469682e27df3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fd1c902e4be130a70c8fc4805cfaf5c') in 0.009512 seconds
-  Import took 0.012377 seconds .
+  Time since last request: 0.003742 seconds.
+  path: Assets/Kureha's/Applied/Font/NotoSansJP-Medium.otf
+  artifactKey: Guid(5f21fc7b09f0e3d4e941595d43ec7b42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Applied/Font/NotoSansJP-Medium.otf using Guid(5f21fc7b09f0e3d4e941595d43ec7b42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa95a65f4699ce448f9df33263b3d646') in 0.007938 seconds
+  Import took 0.011292 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000273 seconds.
-  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_102.png
-  artifactKey: Guid(ed393b8ee245341a7b661e7c9ffa0e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_102.png using Guid(ed393b8ee245341a7b661e7c9ffa0e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fea283fa6d30bdd07601d3856a44e74') in 0.011245 seconds
-  Import took 0.013770 seconds .
+  Time since last request: 110.236306 seconds.
+  path: Assets/Kureha's/Applied/Font/NotoSansJP-Medium SDF.asset
+  artifactKey: Guid(6e42c831760593645816884a134e79b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Applied/Font/NotoSansJP-Medium SDF.asset using Guid(6e42c831760593645816884a134e79b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5da9c33607bff002cc4c67c6ecfe1e4') in 0.700939 seconds
+  Import took 0.705025 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000281 seconds.
-  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_104.png
-  artifactKey: Guid(0aa09f06c69024e5a9c50f1f11a807c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_104.png using Guid(0aa09f06c69024e5a9c50f1f11a807c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8d6d3d150e45d8990f3d9ad8e9ba1bc') in 0.009456 seconds
-  Import took 0.011988 seconds .
+  Time since last request: 2874.443477 seconds.
+  path: Assets/Kureha's/Prefab/ButtonSetting.prefab
+  artifactKey: Guid(59e503ef14210d841b8c31768963d827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/ButtonSetting.prefab using Guid(59e503ef14210d841b8c31768963d827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e1af358c74b5a8bd92f99e7d4df5ad4') in 0.508462 seconds
+  Import took 0.516181 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000226 seconds.
-  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_108.png
-  artifactKey: Guid(b9f61868ffc5f4c1393b70dc7d1ba3cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_108.png using Guid(b9f61868ffc5f4c1393b70dc7d1ba3cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85eef2615f3c3a20a8d39c0235877a9d') in 0.008854 seconds
-  Import took 0.011179 seconds .
+  Time since last request: 0.002429 seconds.
+  path: Assets/Kureha's/Prefab/ButtonSetting.prefab
+  artifactKey: Guid(59e503ef14210d841b8c31768963d827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/ButtonSetting.prefab using Guid(59e503ef14210d841b8c31768963d827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e1af358c74b5a8bd92f99e7d4df5ad4') in 0.466898 seconds
+  Import took 0.471118 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_105.png
-  artifactKey: Guid(d66b1b50975144cc48c093d58375112f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_105.png using Guid(d66b1b50975144cc48c093d58375112f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49a2f382273e479144b4422e4fa260f7') in 0.008202 seconds
-  Import took 0.010615 seconds .
+  Time since last request: 16.162871 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f1793f18f9592b04322b5cd8b28188d') in 0.006554 seconds
+  Import took 0.009229 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000216 seconds.
-  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_112.png
-  artifactKey: Guid(36ccc5a0788794f68b0957fa584e45a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_112.png using Guid(36ccc5a0788794f68b0957fa584e45a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35523c71314f7fc969caf21d06a02e8f') in 0.009262 seconds
-  Import took 0.011831 seconds .
+  Time since last request: 0.009485 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f1793f18f9592b04322b5cd8b28188d') in 0.004630 seconds
+  Import took 0.008086 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000156 seconds.
-  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_111.png
-  artifactKey: Guid(e4c5dfff34e304bf89a99c8cda7c8692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_111.png using Guid(e4c5dfff34e304bf89a99c8cda7c8692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bafcc47c7f3cfed2f0b7471d4bbb5386') in 0.011573 seconds
-  Import took 0.013809 seconds .
+  Time since last request: 10.194852 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35d18cc7f0809f4d9abc0886bb8664c0') in 0.004419 seconds
+  Import took 0.007267 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000215 seconds.
-  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_106.png
-  artifactKey: Guid(a4be9ad3c7b764e4298bd0d18ca01521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/1 Undead/undead_106.png using Guid(a4be9ad3c7b764e4298bd0d18ca01521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1244496c837a52dccb780ffd31b46f08') in 0.009069 seconds
-  Import took 0.011727 seconds .
+  Time since last request: 14.698427 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '810cf52d704da2b25d9f39f1b2f9d797') in 0.022825 seconds
+  Import took 0.026229 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1035.979197 seconds.
-  path: Assets/2D Pixel RPG Monster Pack/Scenes
-  artifactKey: Guid(c3afb712f7b5944c08d9460c5845231a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel RPG Monster Pack/Scenes using Guid(c3afb712f7b5944c08d9460c5845231a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e72f87c30c576a2d4572f5c2fa08d0d') in 0.005598 seconds
-  Import took 0.008999 seconds .
+  Time since last request: 6.868565 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdb70255c3b31139beaee26c078caca0') in 0.023001 seconds
+  Import took 0.025670 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.059652 seconds.
-  path: Assets/2D Pixel RPG Monster Pack/Scenes/PreviewScene.unity
-  artifactKey: Guid(889656c6222bb407d85d3cb7bf812eb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel RPG Monster Pack/Scenes/PreviewScene.unity using Guid(889656c6222bb407d85d3cb7bf812eb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37485b523a037fa8c1eebc9501077507') in 0.004995 seconds
-  Import took 0.007672 seconds .
+  Time since last request: 1.591150 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcd97025a46c94ba686dad059b167e45') in 0.020734 seconds
+  Import took 0.023296 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000480 seconds.
-  path: Assets/2D Pixel RPG Monster Pack/Scenes/PreviewScene.unity
-  artifactKey: Guid(889656c6222bb407d85d3cb7bf812eb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D Pixel RPG Monster Pack/Scenes/PreviewScene.unity using Guid(889656c6222bb407d85d3cb7bf812eb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37485b523a037fa8c1eebc9501077507') in 0.001702 seconds
-  Import took 0.004036 seconds .
+  Time since last request: 4.337109 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab1133af1903c7b9ee5043573d7ca608') in 0.004346 seconds
+  Import took 0.007489 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 484.083422 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(3bdaf3277722cfb4ba0e74c28275cf80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(3bdaf3277722cfb4ba0e74c28275cf80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd84043e1642d845cf1f90cf5bd6b524a') in 0.001646 seconds
-  Import took 0.004966 seconds .
+  Time since last request: 5.288346 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '605e2f65793b4bc8556b1b619e7ce2c0') in 0.003282 seconds
+  Import took 0.006502 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.289788 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4277dab6a28e8e1d23739f05f438b540') in 0.004936 seconds
-  Import took 0.007651 seconds .
+  Time since last request: 0.214693 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '817d7f515a338fe828796f36dbd92fc6') in 0.003125 seconds
+  Import took 0.005731 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000557 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4277dab6a28e8e1d23739f05f438b540') in 0.001723 seconds
-  Import took 0.004032 seconds .
+  Time since last request: 0.393281 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6195a319e6d77c073497dca8526a3423') in 0.003944 seconds
+  Import took 0.006839 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.715349 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10772a89327a66c8bab01a0b790cea4a') in 0.003365 seconds
+  Import took 0.005861 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.425454 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a3ef8971a6247d8eebb3240b7b8c0d5') in 0.002880 seconds
+  Import took 0.005605 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.803570 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3883c955910726a7739c65f70f151381') in 0.003910 seconds
+  Import took 0.006586 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.223973 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b13b8012bfb3a808f7095b6e92e4bf9a') in 0.003244 seconds
+  Import took 0.006369 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.059448 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16005b4e224c1dbf821200fce1199d13') in 0.003310 seconds
+  Import took 0.006130 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.818605 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b624fca87945cf2c444c8dd9c214310d') in 0.002943 seconds
+  Import took 0.005481 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.668507 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21e3f68313f53ed331f6d15115dfc286') in 0.003126 seconds
+  Import took 0.005648 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.588096 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8846ec806a94caef7ef4bb103ad9e922') in 0.003675 seconds
+  Import took 0.006257 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.257418 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcb0881ff913832cd2df21b580c27e68') in 0.003858 seconds
+  Import took 0.006668 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.323086 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c71edf029b71de3bd86ae7cd3b5b1220') in 0.003560 seconds
+  Import took 0.006549 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.262769 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4159fc719d47bb4068089ffa57441629') in 0.003685 seconds
+  Import took 0.006476 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.971322 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '343aba8b67f7e0a6c3df20453a0e7a5a') in 0.003342 seconds
+  Import took 0.005857 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.666473 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c865aaef02bff11ec68d65a2bbba55b') in 0.003336 seconds
+  Import took 0.005946 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.562911 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25071bad79adedfbd8d8f8e22df7ebd0') in 0.003768 seconds
+  Import took 0.006765 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.250187 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d73900757e914a7111a17499c009f33') in 0.003162 seconds
+  Import took 0.005656 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.020604 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77c7879f1183f9b99953326629b64260') in 0.003271 seconds
+  Import took 0.005741 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.458641 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2efbe9646bd2af80c31d1310214d425') in 0.004619 seconds
+  Import took 0.007860 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.050558 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2096ebfb2e560af7c1fa3269e7766527') in 0.003163 seconds
+  Import took 0.005634 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.417118 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f3b33caf132fd30d199c2ee85483d75') in 0.003379 seconds
+  Import took 0.005863 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.855562 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7249e64c1786dd445b300db4f7031c5a') in 0.003279 seconds
+  Import took 0.005781 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.132605 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85c1876aa9fe4dff39dfde99d7edf9df') in 0.003060 seconds
+  Import took 0.005695 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.826051 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1269363ec5405109e3c251292a5b799d') in 0.003357 seconds
+  Import took 0.005936 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.989618 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '167e2b8067e4d034c30ef83e1a14ca49') in 0.003357 seconds
+  Import took 0.005893 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.843714 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d3542ea1b40519754e7fb9aa1295bf7') in 0.003449 seconds
+  Import took 0.006171 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.083516 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a88a6f0b12e4b79ed39defaba8e36207') in 0.003263 seconds
+  Import took 0.006128 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.872544 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42937ebd61972a350105b12fed37a149') in 0.003256 seconds
+  Import took 0.005874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.821689 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be3fe66999c8d6406376440c35faef99') in 0.003235 seconds
+  Import took 0.005897 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 109.058469 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74facd8c69bb76a32a14c1f42db4b648') in 0.003391 seconds
+  Import took 0.006295 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.112888 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1262a4c1889af5b741e8ee7d9aaf5d5') in 0.004115 seconds
+  Import took 0.006750 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.223496 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fee118aefe9c801f816ae70331aa48d0') in 0.003258 seconds
+  Import took 0.005812 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.481913 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db2d8686ae5e1fa1d42dcfcee2a6c50b') in 0.004228 seconds
+  Import took 0.007445 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.255534 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05e49bb186be4b5d6875913a3fa7ed83') in 0.003313 seconds
+  Import took 0.005809 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.237616 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87c160279821ce35a9e5b4c4cf7b7941') in 0.004359 seconds
+  Import took 0.006877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.999972 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32ae7526ee08fc04b2bb44c9a27ff597') in 0.003964 seconds
+  Import took 0.006506 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.204724 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0239abd2ee4e6ba2c74bd19869add650') in 0.004106 seconds
+  Import took 0.006962 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4764.097028 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '251ebbff2231ef7a67d7491dcafc6877') in 0.016459 seconds
+  Import took 0.038108 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.804867 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed6ad64e50977691c53a62047c8e57a5') in 0.004079 seconds
+  Import took 0.006659 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.068737 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dfcadbfa51fabd14d8fbb666571894b') in 0.003508 seconds
+  Import took 0.005977 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.412928 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56b5b964b17fc5915c425653939e5007') in 0.003484 seconds
+  Import took 0.005984 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.664658 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e640e55bbc6e7e2344722a536bae46d') in 0.003721 seconds
+  Import took 0.006458 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.637230 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cd0a03cc528207e567738f4ee730bdd') in 0.004273 seconds
+  Import took 0.007145 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.035464 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec5f54f9c44637f35b8ff42499b49ee3') in 0.003582 seconds
+  Import took 0.006188 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.017413 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43581f5c2e0225dbb60ee51ee3b5edcd') in 0.003570 seconds
+  Import took 0.006139 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.992320 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f57de16ba3a3e15a602728354e2ed85d') in 0.004189 seconds
+  Import took 0.006824 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 71.682349 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9f26b255832fe0a71b3e29896afc3b2') in 0.004190 seconds
+  Import took 0.007043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.102572 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e864db2aa3ed6c34e8e47ec8a237caf') in 0.003887 seconds
+  Import took 0.006736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.472134 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3618782ad0c82b4111ebe6bcbe1be59a') in 0.003370 seconds
+  Import took 0.005877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.273003 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1a62f9a653b9a1cefd39cfb40bee1c3') in 0.003488 seconds
+  Import took 0.006192 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.837489 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcc9e8ff4c38e5b1730a61f2d12a8132') in 0.004243 seconds
+  Import took 0.007225 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.390699 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e85665025d5554c7ecb1115a71bcd2a') in 0.003966 seconds
+  Import took 0.006533 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.056103 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11d5df144758e3a367b929d75907b008') in 0.003457 seconds
+  Import took 0.006072 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.096973 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be3a4e8b9756b9db75023867a16acbe3') in 0.009991 seconds
+  Import took 0.013253 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.103262 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6fe2df87af94567d12d66ebe56963f3') in 0.004168 seconds
+  Import took 0.006921 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.597466 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c273e546282a21e2af30d5d8937f8ca') in 0.004266 seconds
+  Import took 0.026773 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.019471 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71b8397c71551bf4a1b12067483e89a9') in 0.004261 seconds
+  Import took 0.006810 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.712483 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09a7ca45145b13cc93dc510dc8dfb9a7') in 0.004427 seconds
+  Import took 0.007118 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.634898 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c3ee840756a73ee618da3680d7129c9') in 0.003294 seconds
+  Import took 0.005820 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.238695 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbaff12e371ca52f361e07aa05b2cd8b') in 0.004600 seconds
+  Import took 0.007090 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.043292 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.850 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1801 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.8 MB.
+System memory in use after: 91.8 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2309.
+Total: 8.357200 ms (FindLiveObjects: 0.478400 ms CreateObjectMapping: 0.233500 ms MarkObjects: 6.395400 ms  DeleteObjects: 1.246500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000792 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.726 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1801 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.9 MB.
+System memory in use after: 91.9 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2313.
+Total: 7.873700 ms (FindLiveObjects: 0.896400 ms CreateObjectMapping: 0.413800 ms MarkObjects: 6.226200 ms  DeleteObjects: 0.332800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 585.310007 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd28ee5532af54323c6b23ecc8c2237d1') in 0.035490 seconds
+  Import took 0.038459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 111.379310 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4281923e548dcc563b7529fc274c8dfa') in 0.003204 seconds
+  Import took 0.005837 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.681587 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bfc5806c884e4edaa8761012219dde1') in 0.003197 seconds
+  Import took 0.005747 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.419071 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca5b07454811ee146148fc84fa3e779a') in 0.003158 seconds
+  Import took 0.005705 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.832034 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e32ea93a0700f472e257e4180ea1b1f') in 0.003212 seconds
+  Import took 0.005718 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.220635 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3b9c12813b644c44594108a81368d20') in 0.003093 seconds
+  Import took 0.005574 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.861448 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c6e7e936a4ea4d4f07d85248502c9a6') in 0.003627 seconds
+  Import took 0.006114 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.409847 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7db2ca1e2d27a37c22d1a2507fccd243') in 0.003079 seconds
+  Import took 0.005555 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.820511 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '706155c89fc192d79fc2f1c0cde09e8b') in 0.003105 seconds
+  Import took 0.005649 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.561164 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0016cfab244caf706b7247c9727969b0') in 0.003292 seconds
+  Import took 0.005872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.330283 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f23377d9fd94b4b13816e01297b47655') in 0.004362 seconds
+  Import took 0.007353 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.123948 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eff9bc29a15523f6ad161cfe2a7a81c') in 0.003447 seconds
+  Import took 0.006003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.807759 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd60430f9ef1fb1509fb138c6b81ae732') in 0.003766 seconds
+  Import took 0.006582 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.564572 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd0ee1c8a7343a68deafe89e248d0718') in 0.003152 seconds
+  Import took 0.005634 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.022492 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e193440b687bae58e747a0adfd45d3a3') in 0.003212 seconds
+  Import took 0.005708 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.638245 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c09d3d5e01318d31a35c04be8649a0c') in 0.003152 seconds
+  Import took 0.005617 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.667802 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf1937237b356cda426d12322bd795ea') in 0.003598 seconds
+  Import took 0.006250 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.818142 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44a4bd81e63469ecbadc60218df773c2') in 0.003594 seconds
+  Import took 0.006129 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.422472 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea3c09c0f66248d58534f237452f7702') in 0.003220 seconds
+  Import took 0.005713 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.089922 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76686ea341244721557bc80c0bdf5d3e') in 0.003395 seconds
+  Import took 0.006043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.664885 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09fcf0ada81d9f61d258228a3bcc4b88') in 0.003125 seconds
+  Import took 0.005558 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.355040 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c20728e519c3d04179d2dda2129b9b8') in 0.004570 seconds
+  Import took 0.007425 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.646100 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9325c50d57c99399949625c83b1e321c') in 0.003294 seconds
+  Import took 0.006094 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.511748 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'decc9da8ba80ea1516c0fc0fec25505b') in 0.003073 seconds
+  Import took 0.005558 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.830485 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30e30bc94983469d0f60eecd7dfc5172') in 0.003113 seconds
+  Import took 0.005598 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.647875 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2b2c8cda02e98d863577b4e2c7f689e') in 0.003071 seconds
+  Import took 0.005486 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.264825 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f35f30a56cacbe1baf987f3d2b847e3d') in 0.003416 seconds
+  Import took 0.005958 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.260839 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07d6fcc8a107c5e82eb19255369479cb') in 0.003611 seconds
+  Import took 0.006493 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.843334 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8563583b1f47f83be951cd63811b231') in 0.003230 seconds
+  Import took 0.005855 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.456824 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90ce28ea92fb325722df71f70a41a14d') in 0.003138 seconds
+  Import took 0.005967 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.333206 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '057886e2096e7c190542bd6e1121d22a') in 0.003308 seconds
+  Import took 0.006199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.055460 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '601d5d69f04f48767393b6f00abbe3ca') in 0.003103 seconds
+  Import took 0.005775 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.442876 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41a03503f9c3ce36d391bf7159b26178') in 0.003490 seconds
+  Import took 0.006571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.617396 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '471802f57815cc9a45fefa7d32434e6e') in 0.003106 seconds
+  Import took 0.005640 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 62.805177 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16ea4fcfe229e0d1dbde1e239aeb8290') in 0.004165 seconds
+  Import took 0.007153 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.451075 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '573c630e0dff413a5c6315410966bdc1') in 0.003639 seconds
+  Import took 0.006290 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 368.255477 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53dafabf76d4e273ddce99fb3ad509ce') in 0.003997 seconds
+  Import took 0.007069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.816918 seconds.
+  path: Assets/Kureha's/Prefab/BattleField.prefab
+  artifactKey: Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/BattleField.prefab using Guid(81dc965d3fb65bb4790524d5f017e363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51bb4852acb199969485cff183d28615') in 0.003612 seconds
+  Import took 0.006273 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 69.656920 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
+  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f281fba8b08c0ab4344195f1b60af7b7') in 0.233678 seconds
+  Import took 0.236653 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
+  artifactKey: Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat using Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b5990ad77fc11eb3b421140f418b3cd') in 0.061741 seconds
+  Import took 0.064155 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a5fb22d0af73a36e791f1472841c421') in 0.046573 seconds
+  Import took 0.074158 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001299 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
+  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f281fba8b08c0ab4344195f1b60af7b7') in 0.021650 seconds
+  Import took 0.024088 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a5fb22d0af73a36e791f1472841c421') in 0.008627 seconds
+  Import took 0.011068 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47d881cedfef6a8cf91d72922b2dc2f7') in 0.037334 seconds
+  Import took 0.039742 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 440.237556 seconds.
+  path: Assets/Kureha's/Prefab/Inventory.prefab
+  artifactKey: Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/Inventory.prefab using Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab7708945dfa1f7d6651b08cd00b2659') in 0.036351 seconds
+  Import took 0.039581 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 115.327226 seconds.
+  path: Assets/Kureha's/Prefab/Inventory.prefab
+  artifactKey: Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/Inventory.prefab using Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ebffe41e815b275fb54a03cb59af810') in 0.003400 seconds
+  Import took 0.006030 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.413452 seconds.
+  path: Assets/Kureha's/Prefab/Inventory.prefab
+  artifactKey: Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/Inventory.prefab using Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '053dc4aaca41d13c2a5b7bada4d8fdd5') in 0.004716 seconds
+  Import took 0.007267 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.060929 seconds.
+  path: Assets/Kureha's/Prefab/Inventory.prefab
+  artifactKey: Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/Inventory.prefab using Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec3d31e5546ab124aa9db2c1a8c4f656') in 0.002766 seconds
+  Import took 0.005172 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.425270 seconds.
+  path: Assets/Kureha's/Prefab/Inventory.prefab
+  artifactKey: Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/Inventory.prefab using Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd539bb30e1bc2f8f92efe9aa64a56fa') in 0.002950 seconds
+  Import took 0.005484 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.483034 seconds.
+  path: Assets/Kureha's/Prefab/Inventory.prefab
+  artifactKey: Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/Inventory.prefab using Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59fc77f1aa2599f2dc2f71103c59a8ca') in 0.003127 seconds
+  Import took 0.005588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.153252 seconds.
+  path: Assets/Kureha's/Prefab/Inventory.prefab
+  artifactKey: Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/Inventory.prefab using Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a349e78ee155e2d65f1b367f666a5fa9') in 0.002912 seconds
+  Import took 0.005435 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.392324 seconds.
+  path: Assets/Kureha's/Prefab/Inventory.prefab
+  artifactKey: Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/Inventory.prefab using Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d4d7ba571a6ef59c53eeacfd39ad46f') in 0.002847 seconds
+  Import took 0.005379 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.463310 seconds.
+  path: Assets/Kureha's/Prefab/Inventory.prefab
+  artifactKey: Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/Inventory.prefab using Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0de48c35bf5b927c43dfb16a0b84cf80') in 0.003097 seconds
+  Import took 0.006273 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.204649 seconds.
+  path: Assets/Kureha's/Prefab/Inventory.prefab
+  artifactKey: Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/Inventory.prefab using Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a886e9581f19f47d29d83517df7d94ba') in 0.003177 seconds
+  Import took 0.005960 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.415974 seconds.
+  path: Assets/Kureha's/Prefab/Inventory.prefab
+  artifactKey: Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/Inventory.prefab using Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7415773edf9a81f9036745cdc8e886d6') in 0.002781 seconds
+  Import took 0.005711 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 60.070049 seconds.
+  path: Assets/Kureha's/Prefab/Inventory.prefab
+  artifactKey: Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/Inventory.prefab using Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd61a2cf45219b07b18a0a90664be0597') in 0.002918 seconds
+  Import took 0.005391 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.886603 seconds.
+  path: Assets/Kureha's/Prefab/Inventory.prefab
+  artifactKey: Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/Inventory.prefab using Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb8a6179fd7bd6ec716ac9df715828cd') in 0.002859 seconds
+  Import took 0.005612 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.066509 seconds.
+  path: Assets/Kureha's/Prefab/Inventory.prefab
+  artifactKey: Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/Inventory.prefab using Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd0096ad4c8a1eb2697c98f2e872c349') in 0.002840 seconds
+  Import took 0.005408 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.655210 seconds.
+  path: Assets/Kureha's/Prefab/Inventory.prefab
+  artifactKey: Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/Inventory.prefab using Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21044065da3157c951f83b300443b7fd') in 0.002949 seconds
+  Import took 0.005592 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.251085 seconds.
+  path: Assets/Kureha's/Prefab/Inventory.prefab
+  artifactKey: Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/Inventory.prefab using Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27f2380cdf62f8f2ff76a3587263f4ed') in 0.002814 seconds
+  Import took 0.005255 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 329.805830 seconds.
+  path: Assets/Kureha's/Prefab/Inventory.prefab
+  artifactKey: Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/Inventory.prefab using Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0244a7fce71751c086b2f7bc205d5dd') in 0.003095 seconds
+  Import took 0.006008 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.229618 seconds.
+  path: Assets/Kureha's/Prefab/Inventory.prefab
+  artifactKey: Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/Inventory.prefab using Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7960b08062b63e2c16445f4d9bfdefa') in 0.002803 seconds
+  Import took 0.005452 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.473410 seconds.
+  path: Assets/Kureha's/Prefab/Inventory.prefab
+  artifactKey: Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/Inventory.prefab using Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80ab80813c365256e33057aa2e34f3b6') in 0.002912 seconds
+  Import took 0.005433 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.445354 seconds.
+  path: Assets/Kureha's/Prefab/Inventory.prefab
+  artifactKey: Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Prefab/Inventory.prefab using Guid(352cfdd2357b20e478646bf89f9fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33b9b64a614cc831fc8bbb0182964801') in 0.002808 seconds
+  Import took 0.005304 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
