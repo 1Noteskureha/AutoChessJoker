@@ -40,5 +40,21 @@ public static class DataBase
         noToMonster.Add(1002,new Slime(3));
     }
 
+    public static Monster Bt_noToMonster(int value)
+    {
+        switch (value)
+        {
+            case 1000:
+                return new Slime(1);
+                break;
+            case 1001:
+                return new Slime(2);
+                break;
+            case 1002:
+                return new Slime(3);
+                break;
+        }
 
+        return new Blank();
+    }
 }

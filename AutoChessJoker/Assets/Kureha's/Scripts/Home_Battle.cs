@@ -12,6 +12,11 @@ public class Home_Battle : MonoBehaviour
     [SerializeField]
     private Image Enemies;
 
+    [SerializeField]
+    private GameObject BattleField;
+
+    private int Selected = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +36,16 @@ public class Home_Battle : MonoBehaviour
 
     public void OnSelectStage(int Stage)
     {
+        Selected = Stage;
         //Enemies.sprite = ;
         //Treasure.text = ;
+    }
+
+    public void GoBattle()
+    {
+        if (Selected == 0) return;
+
+        BattleField.SetActive(true);
+        BattleController.Instance.Initialize(DataBase.StageName[Selected]);
     }
 }

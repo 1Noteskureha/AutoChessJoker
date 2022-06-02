@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class BattleController : SingletonMonoBehaviour<BattleController>
 {
+    [SerializeField]
+    private GameObject BattleField;
+
     //ステージと深度
     public Stage stage;
 
@@ -54,7 +57,7 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
 
         //最初のハンドル消化
 
-        StartCoroutine(TurnAction());
+        Turn = StartCoroutine(TurnAction());
     }
 
     public void AddLog(string s)
@@ -64,18 +67,26 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
 
     private IEnumerator TurnAction()
     {
-        while (true)
+        int t = 0;
+        while (t < 100)
         {
+
+            Debug.Log(t);
             //ターン初めのハンドル消化
 
             //行動順計算
             SpdDecide();
-            //通常攻撃
-            //スキル
-            while (!AllDone())
+
+            //行動順に行動
+            while (!AllDone() && t <1000)
             {
+                //Debug.Log(spdQueue.Count);
+
                 if (spdQueue.Count == 0) break;
                 int target = spdQueue.Dequeue();
+
+                //Debug.Log(target);
+
                 if (target < 6)
                 {
                     allyField[target].Move();
@@ -84,12 +95,24 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
                 {
                     enemyField[target - 6].Move();
                 }
+                //t++;
 
                 yield return new WaitForSeconds(0.5f);
             }
 
 
             //ターン終了時のハンドル消化
+
+            //リフレッシュ
+            for(int i=0;i<allyField.Count;i++){
+                allyField[i].Refresh();
+            }
+            for (int i = 0; i < enemyField.Count; i++)
+            {
+                enemyField[i].Refresh();
+            }
+
+            t++;
         }
 
         yield break;
@@ -100,6 +123,7 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
     {
         foreach (var enemy in enemyField)
         {
+            //Debug.Log(enemy.done);
             if (!enemy.done) return false;
         }
         foreach (var ally in allyField)
@@ -117,26 +141,36 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
         List<Monster> monsters = new List<Monster>();
         foreach (var enemy in enemyField)
         {
-            monsters.Add(enemy);
+            if(enemy.no != 0)
+                monsters.Add(enemy);
+
         }
         foreach (var ally in allyField)
         {
-            monsters.Add(ally);
+            if (ally.no != 0)
+                monsters.Add(ally);
+
         }
 
-
-        int max = 0;
+        int max = -1;
         int _ally = 0;
         int position = 0;
-        List<bool> calced = new List<bool>(monsters.Count);
+        List<bool> calced = new List<bool>();
+
+        for(int i = 0; i < monsters.Count; i++)
+        {
+            calced.Add(false);
+        }
+
         for (int j = 0; j < monsters.Count; j++)
         {
-
+            max = -1;
             int tmp = -1;
             for (int i = 0; i < monsters.Count; i++)
             {
-                if (max >= monsters[i].spd && !monsters[i].done && calced[i] == false)
+                if (monsters[i].spd > max && !monsters[i].done && !calced[i])
                 {
+                    //Debug.Log("Yeah");
                     max = monsters[i].spd;
                     if (monsters[i].ally)
                     {
@@ -146,15 +180,19 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
                     {
                         _ally = 6;
                     }
+
                     position = monsters[i].field;
-                    tmp = j;
+                    tmp = i;
                 }
             }
+            
 
             if (tmp == -1) return;
             calced[tmp] = true;
             spdQueue.Enqueue(_ally + position);
         }
+
+        Debug.Log(spdQueue.Count);
     }
 
     public void MonsterDead(bool ally,int field)
@@ -226,21 +264,36 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
     //全滅
     private void GameOver()
     {
+        StopCoroutine(Turn);
+
+        BattleField.SetActive(false);
         //戻る
     }
 
     //敵全滅(ステージクリア)
     private void Clear()
     {
+        Debug.Log("ステージ" + progress + "クリア");
         //エッセンス獲得
         GetEssense();
 
+        StopCoroutine(Turn);
+
         progress++;
         if(progress > stage.enemyFields.Count)
-        {   
+        {
             //アンロック
             //戻る
+
+            BattleField.SetActive(false);
+
+            return;
         }
+
+        SummonAllyMonsters();
+        SummonEnemyMonsters();
+
+        Turn = StartCoroutine(TurnAction());
     }
 
     private void GetEssense()
@@ -259,74 +312,92 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
     //戦闘初めに味方モンスターの召喚
     private void SummonAllyMonsters()
     {
-        allyField = new List<Monster>(6);
+        allyField = new List<Monster>();
         allyMonsters = new List<Monster>();
 
         for(int i=0;i<6;i++)
         {
-            allyField[i] = new Blank();
+            allyField.Add(new Blank());
         }
 
         if (PlayerPrefs.GetInt("Bt_Front1") != 0)
         {
-            allyMonsters.Add(DataBase.noToMonster[PlayerPrefs.GetInt("Bt_Front1")]);            
-            allyField[0] = (allyMonsters[allyMonsters.Count - 1]);
+            //Debug.Log(DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Front1")));
+            //allyMonsters.Add(DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Front1")));
+            allyField[0] = DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Front1"));
             allyField[0].ally = true;
             allyField[0].field = 0;
+
+            //StartCoroutine(allyField[0].LoadImage());
+            allyImage[0].sprite = allyField[0].sprite;
         }
         if (PlayerPrefs.GetInt("Bt_Front2") != 0)
         {
-            allyMonsters.Add(DataBase.noToMonster[PlayerPrefs.GetInt("Bt_Front2")]);
-            allyField[1] = (allyMonsters[allyMonsters.Count - 1]);
+            //allyMonsters.Add(DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Front2")));
+            allyField[1] = DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Front2"));
             allyField[1].ally = true;
             allyField[1].field = 1;
+
+            //StartCoroutine(allyField[1].LoadImage());
+            allyImage[1].sprite = allyField[1].sprite;
         }
         if (PlayerPrefs.GetInt("Bt_Front3") != 0)
         {
-            allyMonsters.Add(DataBase.noToMonster[PlayerPrefs.GetInt("Bt_Front3")]);
-            allyField[2] = (allyMonsters[allyMonsters.Count - 1]);
+            //allyMonsters.Add(DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Front3")));
+            allyField[2] = DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Front3"));
             allyField[2].ally = true;
             allyField[2].field = 2;
+            //StartCoroutine(allyField[2].LoadImage());
+            allyImage[2].sprite = allyField[2].sprite;
         }
         if (PlayerPrefs.GetInt("Bt_Back1") != 0)
         {
-            allyMonsters.Add(DataBase.noToMonster[PlayerPrefs.GetInt("Bt_Back1")]);
-            allyField[3] = (allyMonsters[allyMonsters.Count - 1]);
+            //allyMonsters.Add(DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Back1")));
+            allyField[3] = DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Back1"));
             allyField[3].ally = true;
             allyField[3].field = 3;
+            //StartCoroutine(allyField[3].LoadImage());
+            allyImage[3].sprite = allyField[3].sprite;
         }
         if (PlayerPrefs.GetInt("Bt_Back2") != 0)
         {
-            allyMonsters.Add(DataBase.noToMonster[PlayerPrefs.GetInt("Bt_Back2")]);
-            allyField[4] = (allyMonsters[allyMonsters.Count - 1]);
+            //allyMonsters.Add(DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Back2")));
+            allyField[4] = DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Back2"));
             allyField[4].ally = true;
             allyField[4].field = 4;
+            //StartCoroutine(allyField[4].LoadImage());
+            allyImage[4].sprite = allyField[4].sprite;
         }
         if (PlayerPrefs.GetInt("Bt_Back3") != 0)
         {
-            allyMonsters.Add(DataBase.noToMonster[PlayerPrefs.GetInt("Bt_Back3")]);
-            allyField[5] = (allyMonsters[allyMonsters.Count - 1]);
+            //allyMonsters.Add(DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Back3")));
+            allyField[5] = DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Back3"));
             allyField[5].ally = true;
             allyField[5].field = 5;
+            //StartCoroutine(allyField[5].LoadImage());
+            allyImage[5].sprite = allyField[5].sprite;
         }
+
     }
 
     private void SummonEnemyMonsters()
     {
-        enemyField = new List<Monster>(6);
+        enemyField = new List<Monster>();
+        enemyMonsters = new List<Monster>();
 
         for(int i=0;i<6;i++)
         {
-            enemyField[i] = new Blank();
+            enemyField.Add(new Blank());
+            enemyImage[i].sprite = enemyField[i].sprite;
         }
 
         for (int i = 0; i < 6; i++)
         {
-            enemyMonsters.Add(stage.enemyFields[progress][i]);
-            enemyField[i] = (enemyMonsters[enemyMonsters.Count - 1]);
+            //enemyMonsters.Add(stage.enemyFields[progress][i]);
+            enemyField[i] = stage.enemyFields[progress][i];
             enemyField[i].ally = false;
-            enemyField[i].field = 0;
-
+            enemyField[i].field = i;
+            enemyImage[i].sprite = enemyField[i].sprite;
         }
     }
 }
