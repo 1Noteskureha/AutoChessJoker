@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,10 +9,17 @@ public abstract class Monster
     public string description;
     public int rank;
     public int no;
-    public bool living;
+    
+    public bool living;         //生死
+    public bool ally;           //味方か敵か
+    public int field;           //フィールドのどの場所か
+    public bool done;           //行動済みか
+    public bool stan;           //スタンしているか
 
+    //所持シンボル
     public List<Symbol> symbol;
 
+    //立ち絵
     public Sprite sprite;
 
     public int maxHp;
@@ -30,7 +38,15 @@ public abstract class Monster
     public int spd;
     public Skill skill;
 
-    public List<Effect> effect;
+    //ハンドル
+    public List<Effect> effect;                 //恒久的状態異常
+    public List<Effect> turnFirst;              //ターン初め
+    public List<Effect> turnEnd;                //ターン終了時
+    public List<Effect> thenDead;               //死亡時
+    public List<Effect> thenAutoAttack;         //AAした時
+    public List<Effect> thenDealAutoAttack;     //AA受けた時
+    public List<Effect> thenSkill;              //スキルした時
+    public List<Effect> thenDealSkill;          //スキル受けた時
 
     protected void Init()
     {
@@ -42,7 +58,84 @@ public abstract class Monster
         res = baseRes;
         spd = baseSpd;
         living = true;
+        done = false;
+        stan = false;
     }
+
+    public void Move()
+    {
+        if (!living) return;
+        foreach (var first in turnFirst)
+        {
+            first.Excute();
+        }
+
+        if (!stan)
+        {
+            if (mana < maxMana)
+            {
+                AutoAttack();
+            }
+            else
+            {
+                Skill();
+            }
+        }
+
+        foreach (var end in turnEnd)
+        {
+            end.Excute();
+        }
+    }
+
+    public void AutoAttack()
+    {   
+        if (ally) {
+            if (BattleController.Instance.enemyField[field] != null)
+            {
+                BattleController.Instance.enemyField[field].DealADDamage(atk);
+            }
+            else
+            {
+                for(int i = 0; i < 3; i++)
+                {
+                    if (BattleController.Instance.enemyField[i] != null)
+                    {
+                        BattleController.Instance.enemyField[field].DealADDamage(atk);
+                        break;
+                    }
+                }
+            }
+        }
+        else
+        {
+            if (BattleController.Instance.allyField[field] != null)
+            {
+                BattleController.Instance.allyField[field].DealADDamage(atk);
+            }
+            else
+            {
+                for (int i = 0; i < 3; i++)
+                {
+                    if (BattleController.Instance.allyField[i] != null)
+                    {
+                        BattleController.Instance.allyField[field].DealADDamage(atk);
+                        break;
+                    }
+                }
+            }
+        }
+
+        foreach (var AA in thenAutoAttack) {
+            AA.Excute();
+        }
+
+        mana += 10;
+        if (mana > maxMana) mana = maxMana;
+    }
+
+    public void Skill() { }
+
 
     public void ExecuteEffect(Effect _effect)
     {   
@@ -52,23 +145,71 @@ public abstract class Monster
 
     public void DealADDamage(int DMG)
     {
-        hp -= DMG - def;
-        if (hp < 0)
+        if (!living) return;
+        hp -= Mathf.Clamp(DMG - def,0,1000000);
+
+        foreach (var AA in thenDealAutoAttack)
         {
-            hp = 0;
-            living = false;
+            AA.Excute();
         }
+
+        Dead();
     }
 
     public void DealAPDamage(int DMG)
     {
-        hp -= DMG - res;
-        if (hp < 0)
+        if (!living) return;
+        hp -= Mathf.Clamp(DMG - res, 0, 1000000);
+
+        foreach (var sk in thenDealSkill)
         {
-            hp = 0;
-            living = false;
+            sk.Excute();
+        }
+
+        Dead();
+    }
+
+    public void DealTrueDamage(int DMG)
+    {
+        if (!living) return;
+        hp -= Mathf.Clamp(DMG, 0, 1000000);
+        Dead();
+
+    }
+
+    public void Dead()
+    {
+        if (hp > 0) return;
+        hp = 0;
+        living = false;
+        foreach (var d in thenDead)
+        {
+            d.Excute();
+        }
+        if (hp <= 0)
+        {
+            BattleController.Instance.MonsterDead(ally,field);
         }
     }
+}
+//虚無
+public class Blank : Monster
+{
+    public Blank()
+    {
+        Init();
+    }
+
+    protected new void Init()
+    {        
+        living = false;
+        done = true;
+        stan = false;
+
+        sprite = Resources.Load<Sprite>("Monster/blank");
+    }
+
+    public new void Move() { }
 }
 
 //スライム
@@ -83,7 +224,7 @@ public class Slime : Monster
 
         symbol.Add(new Glass());
         //symbol.Add();
-        //sprite = Resources.Load<Sprite>("Monster/Slime");
+        sprite = Resources.Load<Sprite>("Monster/slime");
 
         maxHp = 26;
         maxMana = 100;
@@ -94,5 +235,11 @@ public class Slime : Monster
         skill = new Nenneki(rank);
 
         Init();
+    }
+
+    public new void Skill()
+    {
+        mana = 0;
+        skill.Activate();
     }
 }

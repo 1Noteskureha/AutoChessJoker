@@ -15,11 +15,11 @@ D:/saiky/Documents/AutoChessJoker/AutoChessJoker
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64574
+51688
 Successfully changed project path to: D:/saiky/Documents/AutoChessJoker/AutoChessJoker
 D:/saiky/Documents/AutoChessJoker/AutoChessJoker
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 299.02 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 37.70 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.0f1 (c7b5465681fb)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
@@ -35,19 +35,2368 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56832
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56572
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002023 seconds.
+Registered in 0.002027 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 45.42 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 40.25 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.753 seconds
+- Completed reload, in  1.151 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001357 seconds.
+Registered in 0.000857 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 37.63 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.814 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1830 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.5 MB.
+System memory in use after: 89.4 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2274.
+Total: 1.622900 ms (FindLiveObjects: 0.143200 ms CreateObjectMapping: 0.055200 ms MarkObjects: 1.324800 ms  DeleteObjects: 0.099100 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Kureha's/Scripts/Monster.cs
+  artifactKey: Guid(4dd5a21cb8b93f24ba643d9bd0159c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/Monster.cs using Guid(4dd5a21cb8b93f24ba643d9bd0159c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c057371d11f6825f6e4765fdafb90f3') in 0.103329 seconds
+  Import took 0.109766 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.274309 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '280700e28472781dc4f9afc50da1e90d') in 0.036776 seconds
+  Import took 0.060770 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 189.605355 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0b6975613500880abf902bfbcc95e2a') in 0.003386 seconds
+  Import took 0.007441 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2366.437080 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67e1e7a04430a575c9198da5c7dba237') in 0.032152 seconds
+  Import took 0.038090 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.386670 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '472d7861d4a3eb50a8bfd0367c8d956a') in 0.003175 seconds
+  Import took 0.006347 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.768685 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c363633333fcddcc4bbdc374c30c954') in 0.003366 seconds
+  Import took 0.005956 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.979747 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '382fdf4260a52e078bc4e98437fecbc5') in 0.002791 seconds
+  Import took 0.006194 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 338.765412 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c0eec6713783b4e6e8243d5e8870a4e') in 0.001973 seconds
+  Import took 0.005526 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.257140 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13b060889b6f0f3fe26aab030017b2b2') in 0.003270 seconds
+  Import took 0.006061 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.120203 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85d6a9a5079ea95c68743cc3aa8eb49c') in 0.003092 seconds
+  Import took 0.005878 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.621028 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '141cc54004a257030b9f26c2001b5985') in 0.003040 seconds
+  Import took 0.005762 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.541030 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '195ef9c0d2a9102cda075ef2d3034ef7') in 0.002992 seconds
+  Import took 0.006211 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.718384 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6090be5e1b1088f06aa72ba2565d7b97') in 0.003405 seconds
+  Import took 0.006202 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.638950 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8573764a300c0457ce4ce3f17f26e7f8') in 0.003231 seconds
+  Import took 0.005873 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.031088 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '632f4fa8edbef33350b114967c60bf82') in 0.001906 seconds
+  Import took 0.004626 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.450147 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea60358b970d6d4093a55604bc7596f8') in 0.002032 seconds
+  Import took 0.004939 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 355.242440 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64ed6a7a25f4121e0160b6c42e08d41b') in 0.002469 seconds
+  Import took 0.005452 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 125.987915 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c7666c259d492066792d89bc5944a8d') in 0.001834 seconds
+  Import took 0.004422 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.437537 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e707c5b9e52c39a47c7b953238f05bdb') in 0.001953 seconds
+  Import took 0.004529 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 238.710588 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98f79ccb3b5065de8939662922a44e7d') in 0.002759 seconds
+  Import took 0.006526 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.536393 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8aea596cb00999e82e7681df4e25405') in 0.002145 seconds
+  Import took 0.005495 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.323771 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd6d0cd6b046769546bb7c91e81ef89d') in 0.002099 seconds
+  Import took 0.005167 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.312295 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43d9a9af274752272609423ce93274d4') in 0.002260 seconds
+  Import took 0.005998 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.798738 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '001f2868787d00e8b139c58edaffd966') in 0.002082 seconds
+  Import took 0.005097 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 58.065360 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '089f17e8ca35a67bb7e2f6f4c3876011') in 0.002287 seconds
+  Import took 0.005409 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 160.847740 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66908bfcfd02f9ceb7023635d7584836') in 0.002142 seconds
+  Import took 0.005028 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.702490 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbf1069081d0c9b5a0385991f459ef01') in 0.002139 seconds
+  Import took 0.004925 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.940821 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5703eb83b6bd0eb821f2ff146899412') in 0.001811 seconds
+  Import took 0.004222 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.528673 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c25a6df0ff94e439a1264ea0cfdcea3') in 0.001727 seconds
+  Import took 0.004012 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 70.653515 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91358424deca3defd9c221eea9d93e43') in 0.002034 seconds
+  Import took 0.005168 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.426143 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '467bc22caf87b316ac6e3bf1ae7fa63a') in 0.002040 seconds
+  Import took 0.005142 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.427183 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d98eb2ef5af0d89d3cc629813fbb85f') in 0.002775 seconds
+  Import took 0.005873 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.220927 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a88ba86a374111367211cefab29535a') in 0.002279 seconds
+  Import took 0.005115 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.067568 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '595938175e3e2667bc1d33ada64fb13c') in 0.002364 seconds
+  Import took 0.005162 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.243454 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f291c223712acee337362aac9a0f14b9') in 0.001889 seconds
+  Import took 0.004912 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.131722 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de21328f33f1d27c2ca3b37eda90aa63') in 0.002301 seconds
+  Import took 0.005787 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 62.911894 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ceb97f41433aa8fa7291052cb8822b9') in 0.001962 seconds
+  Import took 0.004282 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.432555 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af2b9af87940276a4bd376458be86912') in 0.001818 seconds
+  Import took 0.004435 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.077763 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab579238456e49bfeb6e64637a9e9d28') in 0.002461 seconds
+  Import took 0.005969 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.834019 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd433f841c0906d2dfec09c34e6afb982') in 0.001976 seconds
+  Import took 0.005361 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.221703 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c17284c740a48faf32b23c08320e64c7') in 0.002201 seconds
+  Import took 0.004900 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 222.975942 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f9aa6beb1e8724b07b51dc17e8d0cb2') in 0.002173 seconds
+  Import took 0.004660 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.425162 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fb1a79e5ea46572c457063e3aa201ee') in 0.001974 seconds
+  Import took 0.004470 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.971040 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91ac898f4829ce81cbbc398550f8d8a8') in 0.002029 seconds
+  Import took 0.004780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.868682 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '712bdd38b791c78bc12fd639b22d9da6') in 0.001908 seconds
+  Import took 0.004362 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 63.384293 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10b6fd8ee7aafa25a580f2a5b40c914a') in 0.001905 seconds
+  Import took 0.004446 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.983815 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c25a6fcb3c7e89811e88693e1660bf2') in 0.001745 seconds
+  Import took 0.004087 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.442350 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59a7851fd0508cf5ac89c661c9665847') in 0.001889 seconds
+  Import took 0.004410 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.405459 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '825c74704cdf844403e92121d2680731') in 0.002211 seconds
+  Import took 0.005269 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.640572 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12b206f11448b9a12284a8dde796f47b') in 0.001742 seconds
+  Import took 0.004093 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.975662 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fefd13f1230789c8c9e1b8adf711b943') in 0.002128 seconds
+  Import took 0.004560 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.891566 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69fb19d4a39602a1f3f8263514bda139') in 0.001781 seconds
+  Import took 0.004151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.606637 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dc7238b7defe570e178b72a1f416c25') in 0.002029 seconds
+  Import took 0.004364 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.562544 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f778ca32d7b6552e7cacd25dadc02f31') in 0.002082 seconds
+  Import took 0.005156 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.658604 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '712bd8800d75af5992fa49bb4caa0bee') in 0.001890 seconds
+  Import took 0.004391 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.237441 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feb1eee684c41cc426d66a2afc45c41b') in 0.002055 seconds
+  Import took 0.004465 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.712932 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5a9cf8fa960c729f20172eba5596d3a') in 0.002107 seconds
+  Import took 0.004859 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 577.591785 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5e2183d98e1283f66a5bbec96b149df') in 0.002123 seconds
+  Import took 0.004897 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.117429 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fabc83dd01f1b074583350241fe3adfe') in 0.001980 seconds
+  Import took 0.004774 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.761552 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '956d598a0922c38e2a2ee28228a12002') in 0.002050 seconds
+  Import took 0.005510 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.616257 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31faa909673112c71df320e35194827a') in 0.001700 seconds
+  Import took 0.004396 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 110.465638 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9e38e1dc526356457bff894e50223be') in 0.001973 seconds
+  Import took 0.004495 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 324.585241 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8190a608df72ba6df7fdb40c7ef8d3e3') in 0.002303 seconds
+  Import took 0.005267 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 51.603243 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ca69213582e0de2c92e61d95fe9ee4b') in 0.001750 seconds
+  Import took 0.004532 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.937889 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04dfb12a656d7c7aad86926d908e20f5') in 0.001792 seconds
+  Import took 0.004613 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.923975 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba5d12b2a027de73f3bdeb9c07141519') in 0.001729 seconds
+  Import took 0.004298 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.007262 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0090ce7021d4a4a9153c386167f67656') in 0.001908 seconds
+  Import took 0.004423 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.347030 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa6d0c802f2e4352982e1c03fd695075') in 0.002057 seconds
+  Import took 0.004968 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.269465 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1ee3a32e7a068d8bc11596574aad192') in 0.003475 seconds
+  Import took 0.007910 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 244.793857 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4535dcf825ce1c42d9f723e31aad3bf5') in 0.002284 seconds
+  Import took 0.005670 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 124.516236 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0368b3bd1cfef7d908656a0b2ab32a9c') in 0.002031 seconds
+  Import took 0.004367 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 162.368616 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd40538ed421fa099668c1335d3045938') in 0.002304 seconds
+  Import took 0.005017 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 182.038459 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53fe36aee1bfb98000fa28b3c7355274') in 0.002119 seconds
+  Import took 0.004909 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 57.380747 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ca0f290e30b243fdcb3ec88f0df7ee2') in 0.001986 seconds
+  Import took 0.004602 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.124281 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5435417337695cb68deace82ea99b3b') in 0.001617 seconds
+  Import took 0.004087 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.823430 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '101babc80478f0a200296ae2a8b97f4a') in 0.001998 seconds
+  Import took 0.004331 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 126.726957 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5609637086061b59e10f14793381b66') in 0.002581 seconds
+  Import took 0.005927 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.495357 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed32328aef64cd14ff2dc8f6696d2621') in 0.002272 seconds
+  Import took 0.004774 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.756232 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2155450e4374ca4ee6f291d839c9036') in 0.001804 seconds
+  Import took 0.004562 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.508227 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '963546d365d8432dfc3786fe2be37969') in 0.001872 seconds
+  Import took 0.004574 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.151413 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '681e5316cd6ef42ba13696b39fea87a1') in 0.002193 seconds
+  Import took 0.004873 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.534966 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad71a7a2b7fd0fdeb17272c68adbe403') in 0.001962 seconds
+  Import took 0.004581 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001157 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.852 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1814 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.6 MB.
+System memory in use after: 88.6 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2278.
+Total: 1.861100 ms (FindLiveObjects: 0.148000 ms CreateObjectMapping: 0.056300 ms MarkObjects: 1.563700 ms  DeleteObjects: 0.092200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028657 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.854 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1814 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.6 MB.
+System memory in use after: 88.6 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2282.
+Total: 1.730900 ms (FindLiveObjects: 0.145600 ms CreateObjectMapping: 0.052200 ms MarkObjects: 1.421700 ms  DeleteObjects: 0.110500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 10798.045632 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7edf7193d26315e3c7ea50eb401afbda') in 0.014031 seconds
+  Import took 0.020410 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001018 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.784 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1814 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.7 MB.
+System memory in use after: 88.7 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2286.
+Total: 1.834400 ms (FindLiveObjects: 0.195500 ms CreateObjectMapping: 0.078700 ms MarkObjects: 1.395800 ms  DeleteObjects: 0.163600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 235.783922 seconds.
+  path: Assets/Kureha's/Scripts/BattleController.cs
+  artifactKey: Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/BattleController.cs using Guid(73062c48802686d4fb0895fd50218fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1781a31fb83a2b478729d3b1a107640b') in 0.010862 seconds
+  Import took 0.019232 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.053289 seconds.
+  path: Assets/Kureha's/Scripts/Stage.cs
+  artifactKey: Guid(1c5f22de7f167ee4daef60606dd0a833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/Stage.cs using Guid(1c5f22de7f167ee4daef60606dd0a833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95843f19097640fe21c0a4538f631319') in 0.004568 seconds
+  Import took 0.007151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.110404 seconds.
+  path: Assets/Kureha's/Scripts/Home_Battle.cs
+  artifactKey: Guid(fd54413a0d215fe4c8f5bd7f739de191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/Home_Battle.cs using Guid(fd54413a0d215fe4c8f5bd7f739de191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67d738eb15b04a55df54b55a13767fda') in 0.005352 seconds
+  Import took 0.008068 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008808 seconds.
+  path: Assets/Kureha's/Scripts/Home_Battle.cs
+  artifactKey: Guid(fd54413a0d215fe4c8f5bd7f739de191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/Home_Battle.cs using Guid(fd54413a0d215fe4c8f5bd7f739de191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67d738eb15b04a55df54b55a13767fda') in 0.002182 seconds
+  Import took 0.004588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.544282 seconds.
+  path: Assets/Kureha's/Scripts/Effect.cs
+  artifactKey: Guid(2b91285c9ba1f7c4e82555f43a12ba64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/Effect.cs using Guid(2b91285c9ba1f7c4e82555f43a12ba64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cefbef2adacb25e8c24236e21d3a8f2a') in 0.004911 seconds
+  Import took 0.007502 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.023828 seconds.
+  path: Assets/Kureha's/Scripts/Monster.cs
+  artifactKey: Guid(4dd5a21cb8b93f24ba643d9bd0159c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/Monster.cs using Guid(4dd5a21cb8b93f24ba643d9bd0159c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ce59d696907ef78e3c1abb89a385029') in 0.004228 seconds
+  Import took 0.006663 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.056835 seconds.
+  path: Assets/Kureha's/Scripts/DataBase.cs
+  artifactKey: Guid(ef25d7d1fc4f61444887639f889e9216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/DataBase.cs using Guid(ef25d7d1fc4f61444887639f889e9216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e01fcbfaa93c4b9c1ca23269b621bd1e') in 0.004961 seconds
+  Import took 0.007552 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000998 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.817 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.7 MB.
+System memory in use after: 88.7 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2291.
+Total: 1.811100 ms (FindLiveObjects: 0.167400 ms CreateObjectMapping: 0.061300 ms MarkObjects: 1.402600 ms  DeleteObjects: 0.179100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2426.835701 seconds.
+  path: Assets/Kureha's/Scripts/Stage.cs
+  artifactKey: Guid(1c5f22de7f167ee4daef60606dd0a833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/Stage.cs using Guid(1c5f22de7f167ee4daef60606dd0a833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ac753adc081a7b5df998965c9461146') in 0.003420 seconds
+  Import took 0.005912 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 136.767849 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/6 Cave/cave_601.png
+  artifactKey: Guid(1eec85d9838a74a348f303eed6d44407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/6 Cave/cave_601.png using Guid(1eec85d9838a74a348f303eed6d44407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f4ed73c4dde7f78b33da98f9258b27a') in 0.130690 seconds
+  Import took 0.133271 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/6 Cave/cave_601.png
+  artifactKey: Guid(275495285f1314108a0945b77b81c4ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/6 Cave/cave_601.png using Guid(275495285f1314108a0945b77b81c4ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '489105d025544387b9ba16f3777e825b') in 0.023893 seconds
+  Import took 0.026178 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/6 Cave/cave_601.png
+  artifactKey: Guid(9acb23d78e1e4478d8082485be8c7def) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/6 Cave/cave_601.png using Guid(9acb23d78e1e4478d8082485be8c7def) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c3cb26c0ca2923fec3b9e7ce6601a58') in 0.039547 seconds
+  Import took 0.042374 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/6 Cave/cave_602.png
+  artifactKey: Guid(e519c453dd7be4609b7bb926bf066b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/6 Cave/cave_602.png using Guid(e519c453dd7be4609b7bb926bf066b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2b407fa89c323a3c20cc3b2b5c6818b') in 0.018543 seconds
+  Import took 0.021316 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/6 Cave/cave_602.png
+  artifactKey: Guid(ba3e39a21456e456eaaa5800ad826164) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/6 Cave/cave_602.png using Guid(ba3e39a21456e456eaaa5800ad826164) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cfb6a2e4ab20c61f74a50210d956b77') in 0.014384 seconds
+  Import took 0.016817 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/6 Cave/cave_601.png
+  artifactKey: Guid(fcfca2cd148e44bf2816515b775d21f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/6 Cave/cave_601.png using Guid(fcfca2cd148e44bf2816515b775d21f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef6add14b0c24f0ba2a119a5bda53f3d') in 0.030713 seconds
+  Import took 0.033177 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/6 Cave/cave_602.png
+  artifactKey: Guid(a62b6ba546dfd4b41ba7a22198746fd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/6 Cave/cave_602.png using Guid(a62b6ba546dfd4b41ba7a22198746fd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cce166161d90a8110dc5789591835451') in 0.025223 seconds
+  Import took 0.028196 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/6 Cave/cave_601.png
+  artifactKey: Guid(1eec85d9838a74a348f303eed6d44407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/6 Cave/cave_601.png using Guid(1eec85d9838a74a348f303eed6d44407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f4ed73c4dde7f78b33da98f9258b27a') in 0.006110 seconds
+  Import took 0.008888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.727034 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/6 Cave/cave_602.png
+  artifactKey: Guid(4a2b8391842884f67974b90373bd5d67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/6 Cave/cave_602.png using Guid(4a2b8391842884f67974b90373bd5d67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17c2ab0beecc0c204208f2919c3b22e7') in 0.032000 seconds
+  Import took 0.034645 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/6 Cave/cave_604.png
+  artifactKey: Guid(1cef50138dd8b446783f4d4cd318741e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/6 Cave/cave_604.png using Guid(1cef50138dd8b446783f4d4cd318741e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '058f3f5c0962cb3b1e7b011c63301ce1') in 0.043791 seconds
+  Import took 0.047678 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/6 Cave/cave_605.png
+  artifactKey: Guid(65ed0b48f68c4444cb0ff08b90652851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/6 Cave/cave_605.png using Guid(65ed0b48f68c4444cb0ff08b90652851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54c48682378bbe0d449c6868f8038d5c') in 0.021550 seconds
+  Import took 0.024710 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/6 Cave/cave_609.png
+  artifactKey: Guid(b43bfd8bc446d4f2d95652c12dabba5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/6 Cave/cave_609.png using Guid(b43bfd8bc446d4f2d95652c12dabba5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a6a3c88a41865931274911b799746ba') in 0.022131 seconds
+  Import took 0.024942 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/6 Cave/cave_603.png
+  artifactKey: Guid(98cf453d7217146e2897c05463976391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/6 Cave/cave_603.png using Guid(98cf453d7217146e2897c05463976391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bd8d1ace65c4bbee547f2f9fb28f12b') in 0.032542 seconds
+  Import took 0.035092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/7 Devil/devil_710.png
+  artifactKey: Guid(1acb0e42c44f64838bf266f471d191a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/7 Devil/devil_710.png using Guid(1acb0e42c44f64838bf266f471d191a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cf9239ee76ccce2269191b7a12f528d') in 0.012925 seconds
+  Import took 0.015518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/7 Devil/devil_711.png
+  artifactKey: Guid(d09d855f5f5ef4fed862392189a4b8a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/7 Devil/devil_711.png using Guid(d09d855f5f5ef4fed862392189a4b8a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd09150899ce2461951b6e09497f4adf4') in 0.014728 seconds
+  Import took 0.017162 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/6 Cave/cave_607.png
+  artifactKey: Guid(792435646e87c4e55998c00d7ebe6ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/6 Cave/cave_607.png using Guid(792435646e87c4e55998c00d7ebe6ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22b383c0d8858c549b9c1aa7382733ba') in 0.025621 seconds
+  Import took 0.027881 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/6 Cave/cave_606.png
+  artifactKey: Guid(92775f20c93584ccda70802f3dad4c9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/6 Cave/cave_606.png using Guid(92775f20c93584ccda70802f3dad4c9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0f688287e3daaa73790feee5e357334') in 0.013400 seconds
+  Import took 0.015806 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/6 Cave/cave_612.png
+  artifactKey: Guid(13811ffa089e443e6b4ad80dc4c9e343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/6 Cave/cave_612.png using Guid(13811ffa089e443e6b4ad80dc4c9e343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c0c26f8520fcfd2a8163b259d6c56b5') in 0.013869 seconds
+  Import took 0.016299 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Monsters/mon3/mon3/mon_055.bmp
+  artifactKey: Guid(aa28b49fc16674b4c89c5ef8e4d4523d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon3/mon3/mon_055.bmp using Guid(aa28b49fc16674b4c89c5ef8e4d4523d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46c0c8c3d38f6ecad46e46f3dd5cdf7f') in 0.031382 seconds
+  Import took 0.033743 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Monsters/mon5/mon5/mon_077.gif
+  artifactKey: Guid(89f8961d3710423458d90eab0fec9dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon5/mon5/mon_077.gif using Guid(89f8961d3710423458d90eab0fec9dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d584c3d8b42fad50be23e4f29b785e1') in 0.028783 seconds
+  Import took 0.031078 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Monsters/mon5/mon5/mon_078.bmp
+  artifactKey: Guid(26fd9c19415368c46ab0ba8142c11656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon5/mon5/mon_078.bmp using Guid(26fd9c19415368c46ab0ba8142c11656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e331e85d545eacaf71a586162fdf3a15') in 0.023162 seconds
+  Import took 0.026419 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Monsters/mon8/mon8/mon_105.bmp
+  artifactKey: Guid(066c2a3c63e887640aefe8478d38fc5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon8/mon8/mon_105.bmp using Guid(066c2a3c63e887640aefe8478d38fc5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9eeb9a8301bb7cdcd10320d185107e9') in 0.015600 seconds
+  Import took 0.018630 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Monsters/mon10/mon10/mon_127.gif
+  artifactKey: Guid(e93f15ea3a87335409e5b4816b5d4980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon10/mon10/mon_127.gif using Guid(e93f15ea3a87335409e5b4816b5d4980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '680ca4c20ce649aad6a4558b2093bcda') in 0.016615 seconds
+  Import took 0.019194 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/4 Forest/forest_411.png
+  artifactKey: Guid(a4865ce45370b43f0adc67818efc478b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/4 Forest/forest_411.png using Guid(a4865ce45370b43f0adc67818efc478b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c941889e9fc67335012040719179a4a0') in 0.012705 seconds
+  Import took 0.015613 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/4 Forest/forest_412.png
+  artifactKey: Guid(4224e0ae60f354990b0b328ad39ecad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/4 Forest/forest_412.png using Guid(4224e0ae60f354990b0b328ad39ecad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6825de203670cae3a9014f8f74dfe126') in 0.025678 seconds
+  Import took 0.028309 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Monsters/mon10/mon10/mon_128r.bmp
+  artifactKey: Guid(f006facb4fbf8f44d8dac79aa363cfbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon10/mon10/mon_128r.bmp using Guid(f006facb4fbf8f44d8dac79aa363cfbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26de5bbffdcba4063426413866468016') in 0.028780 seconds
+  Import took 0.031457 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Monsters/mon15/mon15/mon_173r.bmp
+  artifactKey: Guid(7b543024d2ba7f14894cb8b4fdb891f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon15/mon15/mon_173r.bmp using Guid(7b543024d2ba7f14894cb8b4fdb891f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdad9f1b7ba14b70d8e49cc2388b6487') in 0.028388 seconds
+  Import took 0.030805 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/Monsters/mon18/mon18/mon_202.gif
+  artifactKey: Guid(33ffccac01254ee49a0bd336ba66c4c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon18/mon18/mon_202.gif using Guid(33ffccac01254ee49a0bd336ba66c4c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01d73c5db8342d90a38b02a7e3b8d2f7') in 0.037990 seconds
+  Import took 0.040646 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Monsters/mon23/mon23/mon_256.gif
+  artifactKey: Guid(9038374c6149ec84db2e661a3746de85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon23/mon23/mon_256.gif using Guid(9038374c6149ec84db2e661a3746de85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcddb0d3dae9bb8cff98ba0d11f5f1a7') in 0.033171 seconds
+  Import took 0.035748 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Monsters/mon23/mon23/mon_258r.bmp
+  artifactKey: Guid(a40077a881bbb014db21922ae7431967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon23/mon23/mon_258r.bmp using Guid(a40077a881bbb014db21922ae7431967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e80f0eca160e6ae564bb45a2b66411c') in 0.061844 seconds
+  Import took 0.064327 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/1 Undead/undead_103.png
+  artifactKey: Guid(46a1f74f881664df983be2bdd958182e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/1 Undead/undead_103.png using Guid(46a1f74f881664df983be2bdd958182e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd61f555b0c59addf45a470f832133d3') in 0.031297 seconds
+  Import took 0.034044 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Monsters/mon23/mon23/mon_258.gif
+  artifactKey: Guid(9a3eae7cb6567d74a9e117ba6b137020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon23/mon23/mon_258.gif using Guid(9a3eae7cb6567d74a9e117ba6b137020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3ad2815af5122d1466356de0c95f2a5') in 0.015972 seconds
+  Import took 0.018587 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/1 Undead/undead_104.png
+  artifactKey: Guid(da70b4921720942969a153870131616b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/1 Undead/undead_104.png using Guid(da70b4921720942969a153870131616b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd00ef53065c73a5d1fca9b9651c7aca9') in 0.037631 seconds
+  Import took 0.040325 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Monsters/mon23/mon23/mon_256r.bmp
+  artifactKey: Guid(55d99d4bf50ec98459e1791c3a6234c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon23/mon23/mon_256r.bmp using Guid(55d99d4bf50ec98459e1791c3a6234c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8675a59a155c308d2b210836be4e2f08') in 0.021654 seconds
+  Import took 0.023981 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Monsters/mon3/mon3/mon_056.gif
+  artifactKey: Guid(53aa12b599ec7d74fb41655a7d5d037e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon3/mon3/mon_056.gif using Guid(53aa12b599ec7d74fb41655a7d5d037e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3b91a69e523cb598b1b4371fd460a30') in 0.016688 seconds
+  Import took 0.019238 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Monsters/mon1/mon1/mon_002.bmp
+  artifactKey: Guid(fd4634f8f2c2b4149be21fd39dc575a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon1/mon1/mon_002.bmp using Guid(fd4634f8f2c2b4149be21fd39dc575a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c304bbeb0c35c8aab427039527c074e7') in 0.024153 seconds
+  Import took 0.026471 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/6 Cave/cave_604.png
+  artifactKey: Guid(1e1d99befdcab48e2998733bad9aa6b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/6 Cave/cave_604.png using Guid(1e1d99befdcab48e2998733bad9aa6b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69e41c737a7b2b9b3e7089a862ca5594') in 0.024582 seconds
+  Import took 0.027251 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Monsters/mon2/mon2/mon_002r.bmp
+  artifactKey: Guid(303296217db7c7748b3df3664e1dea3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon2/mon2/mon_002r.bmp using Guid(303296217db7c7748b3df3664e1dea3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fde28bb2759acbe1fb2a1382e3149223') in 0.029688 seconds
+  Import took 0.032009 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/6 Cave/cave_607.png
+  artifactKey: Guid(1fe89d58eb245441187dabad7c33096f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/6 Cave/cave_607.png using Guid(1fe89d58eb245441187dabad7c33096f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70bb735513c8ceb58be09a91534086e6') in 0.021035 seconds
+  Import took 0.023453 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Monsters/mon15/mon15/mon_174.gif
+  artifactKey: Guid(562067db5fcbef0419398d0d4d5e8804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon15/mon15/mon_174.gif using Guid(562067db5fcbef0419398d0d4d5e8804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f46367a3ee74b0851db99fcfa4caa157') in 0.033347 seconds
+  Import took 0.035941 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Monsters/mon8/mon8/mon_107.gif
+  artifactKey: Guid(4821818745cec9843b9c493111c21f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon8/mon8/mon_107.gif using Guid(4821818745cec9843b9c493111c21f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e9076c333a5d58a08d6b6cf7004aba1') in 0.030322 seconds
+  Import took 0.032812 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/6 Cave/cave_603.png
+  artifactKey: Guid(eb8a79758605b48db80a81e74f453dc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/6 Cave/cave_603.png using Guid(eb8a79758605b48db80a81e74f453dc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cf49c90a4dcc2739febd23c4f3f117c') in 0.028535 seconds
+  Import took 0.031073 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Monsters/mon23/mon23/mon_257.gif
+  artifactKey: Guid(df8b60f2e6d108e4394fb3d92fb783ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon23/mon23/mon_257.gif using Guid(df8b60f2e6d108e4394fb3d92fb783ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4909e1ce65820c49cc2aed8c82a6b7f') in 0.030696 seconds
+  Import took 0.033419 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/7 Devil/devil_710.png
+  artifactKey: Guid(9086f0003e2d74c618d6d48529643a7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/7 Devil/devil_710.png using Guid(9086f0003e2d74c618d6d48529643a7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cb7eb3314f3ee51be08d335c89b4742') in 0.025094 seconds
+  Import took 0.027465 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Monsters/mon10/mon10/mon_129r.bmp
+  artifactKey: Guid(452a40972eb5ccb449b9435ae1d7f15c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon10/mon10/mon_129r.bmp using Guid(452a40972eb5ccb449b9435ae1d7f15c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bf05102d231d4c2975af1e555980c94') in 0.014361 seconds
+  Import took 0.016777 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/6 Cave/cave_608.png
+  artifactKey: Guid(bad3c63da41de442ea60e50c02e8498d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/6 Cave/cave_608.png using Guid(bad3c63da41de442ea60e50c02e8498d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45f587e72606da272445cdec827b3087') in 0.019052 seconds
+  Import took 0.022022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Monsters/mon3/mon3/mon_057.bmp
+  artifactKey: Guid(d9c8542a9d8855946b33c9bbc93761a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon3/mon3/mon_057.bmp using Guid(d9c8542a9d8855946b33c9bbc93761a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8b32f319d30923edbf220bbe741c9dc') in 0.025367 seconds
+  Import took 0.027862 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Monsters/mon3/mon3/mon_057.gif
+  artifactKey: Guid(8aabeb5fce8badf4fb7201e19c09bd38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon3/mon3/mon_057.gif using Guid(8aabeb5fce8badf4fb7201e19c09bd38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29f1b97868761273dc7c8de61e86dc7c') in 0.028599 seconds
+  Import took 0.030906 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/6 Cave/cave_610.png
+  artifactKey: Guid(70c0f9823b5924a6c9b3540109d48983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/6 Cave/cave_610.png using Guid(70c0f9823b5924a6c9b3540109d48983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '799df515f574e02cf3ca40c05dc2f367') in 0.026579 seconds
+  Import took 0.029043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/6 Cave/cave_610.png
+  artifactKey: Guid(feae90600911a421d9eef9bcd29a3474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/6 Cave/cave_610.png using Guid(feae90600911a421d9eef9bcd29a3474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e12e2450846e8dbb71a4f28687a36c6f') in 0.012508 seconds
+  Import took 0.014867 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/4 Forest/forest_411.png
+  artifactKey: Guid(eb5f03deb401242d698932c61d193f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/4 Forest/forest_411.png using Guid(eb5f03deb401242d698932c61d193f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb07639207f4a265100305dfcd699400') in 0.011393 seconds
+  Import took 0.013748 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Monsters/mon5/mon5/mon_075.bmp
+  artifactKey: Guid(c6c30d217a5d1004e97977ca01320afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon5/mon5/mon_075.bmp using Guid(c6c30d217a5d1004e97977ca01320afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '037ed49225d16fe1755ee78bcc65a7c8') in 0.030199 seconds
+  Import took 0.033042 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/Monsters/mon8/mon8/mon_106.gif
+  artifactKey: Guid(c98b4afe56363d04aba8b897e6efe018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon8/mon8/mon_106.gif using Guid(c98b4afe56363d04aba8b897e6efe018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c46a003e26ce7f40aaeb6973bcbcd33') in 0.014479 seconds
+  Import took 0.016905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/6 Cave/cave_608.png
+  artifactKey: Guid(55c3869c7d5ef427086946a0a8411e84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/6 Cave/cave_608.png using Guid(55c3869c7d5ef427086946a0a8411e84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31d7829f718e8453f862cf1911a7e898') in 0.025093 seconds
+  Import took 0.027464 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Monsters/mon18/mon18/mon_203.gif
+  artifactKey: Guid(f1541f781cda14b40a40df0568c0d39c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon18/mon18/mon_203.gif using Guid(f1541f781cda14b40a40df0568c0d39c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7ba2c95a15513898f9c070fb50ab089') in 0.029855 seconds
+  Import took 0.032629 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/6 Cave/cave_606.png
+  artifactKey: Guid(e7b19981ca17544de9be9a08386788d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/6 Cave/cave_606.png using Guid(e7b19981ca17544de9be9a08386788d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9a377fcb21c1aa030f6588939abeaf4') in 0.025584 seconds
+  Import took 0.028076 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/7 Devil/devil_709.png
+  artifactKey: Guid(4a76381f137214e3f9c80468b58d5d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/7 Devil/devil_709.png using Guid(4a76381f137214e3f9c80468b58d5d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3ff48a5c8b0a156b0d9efba7c77655f') in 0.018649 seconds
+  Import took 0.021166 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Monsters/mon18/mon18/mon_204r.bmp
+  artifactKey: Guid(04233e8915a9f224b84be84078e5b10a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon18/mon18/mon_204r.bmp using Guid(04233e8915a9f224b84be84078e5b10a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3db807b75be65027ec59d77fccd8c0fd') in 0.033182 seconds
+  Import took 0.036287 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Monsters/mon12/mon12/mon_148.bmp
+  artifactKey: Guid(664e26089af5db3469decfd3cd0f1350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon12/mon12/mon_148.bmp using Guid(664e26089af5db3469decfd3cd0f1350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9111da844ccab385b848ce0d3b2738b8') in 0.023048 seconds
+  Import took 0.025566 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Monsters/mon12/mon12/mon_150.bmp
+  artifactKey: Guid(677edd2328c2ca743a47fdf7d6e00a8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon12/mon12/mon_150.bmp using Guid(677edd2328c2ca743a47fdf7d6e00a8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd600457e4d74b1c61ef492b639220500') in 0.020757 seconds
+  Import took 0.023430 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/4 Forest/forest_412.png
+  artifactKey: Guid(5dbe68b6e17254c2ebdafe9ad1b29fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/4 Forest/forest_412.png using Guid(5dbe68b6e17254c2ebdafe9ad1b29fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '174b3a0d5351a16347c815f5e79dfdb6') in 0.041379 seconds
+  Import took 0.044609 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Monsters/mon5/mon5/mon_076.gif
+  artifactKey: Guid(b0d6de8f5af21d34b930db7988ef23e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon5/mon5/mon_076.gif using Guid(b0d6de8f5af21d34b930db7988ef23e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43774420fed0c3cc1a368920b558e6c2') in 0.024510 seconds
+  Import took 0.026874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Monsters/mon18/mon18/mon_203.bmp
+  artifactKey: Guid(194419f72d8ba6243bf9886b7e606285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon18/mon18/mon_203.bmp using Guid(194419f72d8ba6243bf9886b7e606285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bf685593c397642de43c1ef117e96b9') in 0.027337 seconds
+  Import took 0.029776 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/Monsters/mon12/mon12/mon_149.gif
+  artifactKey: Guid(7c0bfd3de6b8d9e4a87af127c513b264) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon12/mon12/mon_149.gif using Guid(7c0bfd3de6b8d9e4a87af127c513b264) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb15c5a25f4e5459caa21c369028ef62') in 0.025459 seconds
+  Import took 0.027784 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/2 Jungle/jungle_212.png
+  artifactKey: Guid(c57b0e9a158a04adba0086d89b5e1ab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/2 Jungle/jungle_212.png using Guid(c57b0e9a158a04adba0086d89b5e1ab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e79da5b648ca82ea699c050533414f9') in 0.015619 seconds
+  Import took 0.018176 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Monsters/mon3/mon3/mon_054r.bmp
+  artifactKey: Guid(2379498eb7b4dbc4a8310f62db87b6f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon3/mon3/mon_054r.bmp using Guid(2379498eb7b4dbc4a8310f62db87b6f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30767785a846d8a558b70f46c9a3f304') in 0.027545 seconds
+  Import took 0.030400 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Monsters/mon3/mon3/mon_055.gif
+  artifactKey: Guid(bff78305f0e37684db607e92d20d85a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon3/mon3/mon_055.gif using Guid(bff78305f0e37684db607e92d20d85a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd87e24ff2401245b6df35d99146ad6f8') in 0.025036 seconds
+  Import took 0.028080 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Monsters/mon10/mon10/mon_129.bmp
+  artifactKey: Guid(2d40f6a1652046a4896024eae906442a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon10/mon10/mon_129.bmp using Guid(2d40f6a1652046a4896024eae906442a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2427a1a6d32cae3b8498aa245bb63d9') in 0.018832 seconds
+  Import took 0.021614 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/6 Cave/cave_611.png
+  artifactKey: Guid(f3596f074611f43cca771cefd24963a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/6 Cave/cave_611.png using Guid(f3596f074611f43cca771cefd24963a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85cad1df3e3378b657fe18bc048ce1ef') in 0.024152 seconds
+  Import took 0.027037 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Monsters/mon1/mon1/mon_001.bmp
+  artifactKey: Guid(76629fe02425cf74b9240d409e3ddfd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon1/mon1/mon_001.bmp using Guid(76629fe02425cf74b9240d409e3ddfd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94b26d6834ad23348b3d97639bba6281') in 0.024833 seconds
+  Import took 0.027652 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/1 Undead/undead_105.png
+  artifactKey: Guid(80f79be3148704b3c993f78d326a7e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/1 Undead/undead_105.png using Guid(80f79be3148704b3c993f78d326a7e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5aa5f51f5b2c2bf707695a1cde9c7845') in 0.028401 seconds
+  Import took 0.030985 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Monsters/mon12/mon12/mon_149r.bmp
+  artifactKey: Guid(983d1cb234f71614c8659381ada65103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon12/mon12/mon_149r.bmp using Guid(983d1cb234f71614c8659381ada65103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04f7417aa89431b081965966c24a8175') in 0.033756 seconds
+  Import took 0.036581 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Monsters/mon12/mon12/mon_150.gif
+  artifactKey: Guid(5485c802d972a694db89204c1f9f03e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon12/mon12/mon_150.gif using Guid(5485c802d972a694db89204c1f9f03e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc53321e08a2aa21f5afa7b02ba77af5') in 0.027333 seconds
+  Import took 0.029888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Monsters/mon10/mon10/mon_127r.bmp
+  artifactKey: Guid(3ceddc87a00c6904489ed785b950399f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon10/mon10/mon_127r.bmp using Guid(3ceddc87a00c6904489ed785b950399f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dbf49dfe4149bfcec292079475c14eb') in 0.028867 seconds
+  Import took 0.031619 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/Monsters/mon10/mon10/mon_129.gif
+  artifactKey: Guid(c44fbc052cefccd47a02b8224141fe00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon10/mon10/mon_129.gif using Guid(c44fbc052cefccd47a02b8224141fe00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00ea98be7bbbfac684d7a8f3d2cb789a') in 0.042698 seconds
+  Import took 0.045050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Monsters/mon15/mon15/mon_172.gif
+  artifactKey: Guid(610934ab64730234ebb2ad70407deb4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon15/mon15/mon_172.gif using Guid(610934ab64730234ebb2ad70407deb4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da6adb4f3854db1d9636c97127594e06') in 0.032554 seconds
+  Import took 0.035309 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/7 Devil/devil_710.png
+  artifactKey: Guid(17bbadb825c7343dbbfd2be1ebf93a82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/7 Devil/devil_710.png using Guid(17bbadb825c7343dbbfd2be1ebf93a82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5aec3c371f3cd23d7486634f7d6e440c') in 0.031470 seconds
+  Import took 0.033817 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/6 Cave/cave_604.png
+  artifactKey: Guid(ec67b4688bcd7401cb686d4701c8529e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/6 Cave/cave_604.png using Guid(ec67b4688bcd7401cb686d4701c8529e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31b7b2ca32a9f44a6edd55914cdbb05a') in 0.037677 seconds
+  Import took 0.040409 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/4 Forest/forest_410.png
+  artifactKey: Guid(a57e2357d41174e18b3fb7d86c72c91a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/4 Forest/forest_410.png using Guid(a57e2357d41174e18b3fb7d86c72c91a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be8acdd224511c1483bdcec182900903') in 0.013236 seconds
+  Import took 0.015867 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Monsters/mon18/mon18/mon_203r.bmp
+  artifactKey: Guid(8f612e29028502c4aa88534f39201c4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon18/mon18/mon_203r.bmp using Guid(8f612e29028502c4aa88534f39201c4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18291db5dc626247d910e59ac106bae0') in 0.023220 seconds
+  Import took 0.025720 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Monsters/mon23/mon23/mon_258.bmp
+  artifactKey: Guid(856bf5ba7586f144ba8aea1e77bce3e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon23/mon23/mon_258.bmp using Guid(856bf5ba7586f144ba8aea1e77bce3e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dfda94e4ad06dfb5013ded6d8372e0f') in 0.031559 seconds
+  Import took 0.034110 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/1 Undead/undead_104.png
+  artifactKey: Guid(322b0d3ba65f6447f9d7464be643d353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/1 Undead/undead_104.png using Guid(322b0d3ba65f6447f9d7464be643d353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a83a430a0647b1260b701e2a83576632') in 0.015600 seconds
+  Import took 0.017930 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Monsters/mon15/mon15/mon_173.gif
+  artifactKey: Guid(0eca6a001cf7ea94983b1c4362c2bcd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon15/mon15/mon_173.gif using Guid(0eca6a001cf7ea94983b1c4362c2bcd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fbb77d05627941e5cbebfae626e68c0') in 0.017930 seconds
+  Import took 0.020773 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/6 Cave/cave_609.png
+  artifactKey: Guid(252c63a2dff484475a3682537c47429a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/6 Cave/cave_609.png using Guid(252c63a2dff484475a3682537c47429a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14322944fca14a9a7c53d2ac11620169') in 0.020104 seconds
+  Import took 0.022583 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/1 Undead/undead_105.png
+  artifactKey: Guid(87a3a06c87d024e8c9bd2ee63c7b65ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/1 Undead/undead_105.png using Guid(87a3a06c87d024e8c9bd2ee63c7b65ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e16a658b6cc9b8e53330b17c8668452') in 0.014507 seconds
+  Import took 0.016890 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Monsters/mon8/mon8/mon_105.gif
+  artifactKey: Guid(9aa38a003cc3af5489b93ab4fb3d68bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon8/mon8/mon_105.gif using Guid(9aa38a003cc3af5489b93ab4fb3d68bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17e3db6473c956b71cfe5ac85889d452') in 0.024346 seconds
+  Import took 0.026634 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Monsters/mon8/mon8/mon_105r.bmp
+  artifactKey: Guid(e702769a6fbeb66499562d6c2e6a78c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon8/mon8/mon_105r.bmp using Guid(e702769a6fbeb66499562d6c2e6a78c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66f56f42cb11cafa4251187d21fde087') in 0.023016 seconds
+  Import took 0.025381 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Monsters/mon18/mon18/mon_202.bmp
+  artifactKey: Guid(c210a99dd6b77c1479e42554470cf93d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon18/mon18/mon_202.bmp using Guid(c210a99dd6b77c1479e42554470cf93d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc3147536b5430569913c6ac595bfa21') in 0.019541 seconds
+  Import took 0.022117 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Monsters/mon3/mon3/mon_055r.bmp
+  artifactKey: Guid(2469002667a98ab4ea6f3ff5ca576e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon3/mon3/mon_055r.bmp using Guid(2469002667a98ab4ea6f3ff5ca576e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e85f5542fc4e0f5b5eab25c5f73bc89') in 0.023739 seconds
+  Import took 0.026184 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/6 Cave/cave_611.png
+  artifactKey: Guid(73f38a86eb3a3495e8b4ca05cb6ca0db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/6 Cave/cave_611.png using Guid(73f38a86eb3a3495e8b4ca05cb6ca0db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd819c22b6289ff9fe01cebb13459a0c7') in 0.019446 seconds
+  Import took 0.022432 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Monsters/mon8/mon8/mon_106r.bmp
+  artifactKey: Guid(c4064e341a79845448439add8e2942a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon8/mon8/mon_106r.bmp using Guid(c4064e341a79845448439add8e2942a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8aab1790e08876bb3461c4cacca4d2f') in 0.025329 seconds
+  Import took 0.028091 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Monsters/mon5/mon5/mon_076r.bmp
+  artifactKey: Guid(ef2d8ca271382a949913c47fbf660f19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon5/mon5/mon_076r.bmp using Guid(ef2d8ca271382a949913c47fbf660f19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecd69c9ce04aadd9bd6a00e8627300d5') in 0.025457 seconds
+  Import took 0.028021 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/6 Cave/cave_611.png
+  artifactKey: Guid(256c403ed304c436fbf61ad7c5b60be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/6 Cave/cave_611.png using Guid(256c403ed304c436fbf61ad7c5b60be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e011fe77356661083d7fae937f3dd364') in 0.012304 seconds
+  Import took 0.015199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Monsters/mon5/mon5/mon_077r.bmp
+  artifactKey: Guid(68ba86a1e7fcd344fbf06e43c6c68395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon5/mon5/mon_077r.bmp using Guid(68ba86a1e7fcd344fbf06e43c6c68395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba725f45d1169f2d6889ceb11fbc7111') in 0.034511 seconds
+  Import took 0.036895 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/4 Forest/forest_411.png
+  artifactKey: Guid(dff22a01d1b904a1f9c583e670130324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/4 Forest/forest_411.png using Guid(dff22a01d1b904a1f9c583e670130324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50baca811d3658f0dae21bf9c287701b') in 0.037407 seconds
+  Import took 0.040321 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/6 Cave/cave_603.png
+  artifactKey: Guid(0cd822aeab66f4eef974a7fd03137c02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/6 Cave/cave_603.png using Guid(0cd822aeab66f4eef974a7fd03137c02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '549cd38e39ccb9aaec377d6261c89e49') in 0.014942 seconds
+  Import took 0.017698 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Monsters/mon1/mon1/mon_003.bmp
+  artifactKey: Guid(46ea8685a7c9c7d4683d6fa14fcf0bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon1/mon1/mon_003.bmp using Guid(46ea8685a7c9c7d4683d6fa14fcf0bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cfa7c8940e1a3b52942c769d8744b41') in 0.040207 seconds
+  Import took 0.042644 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Monsters/mon8/mon8/mon_106.bmp
+  artifactKey: Guid(970cdf21d97295c4f9eaa192ccf6d5a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon8/mon8/mon_106.bmp using Guid(970cdf21d97295c4f9eaa192ccf6d5a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3870c10eb98c07d6743db60047d29054') in 0.013407 seconds
+  Import took 0.015688 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Monsters/mon18/mon18/mon_204.gif
+  artifactKey: Guid(621597a67be798a4ab7ae70829482efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon18/mon18/mon_204.gif using Guid(621597a67be798a4ab7ae70829482efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5468ff8edac8295aaf2c0af4a6e5ce2') in 0.025781 seconds
+  Import took 0.028109 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/1 Undead/undead_104.png
+  artifactKey: Guid(8b50376ec7ef44d25932ffaf5ecbb6b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/1 Undead/undead_104.png using Guid(8b50376ec7ef44d25932ffaf5ecbb6b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee0f1f1b74d4d83a88afa15002ef1891') in 0.025935 seconds
+  Import took 0.029046 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Monsters/mon15/mon15/mon_174r.bmp
+  artifactKey: Guid(42ebe6da0bb86e24aa45908d33c23c9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon15/mon15/mon_174r.bmp using Guid(42ebe6da0bb86e24aa45908d33c23c9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcd286b34d48468307c18c15a7a91f97') in 0.013170 seconds
+  Import took 0.016040 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/7 Devil/devil_711.png
+  artifactKey: Guid(8e4a834df508a4909b915242691c4ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/7 Devil/devil_711.png using Guid(8e4a834df508a4909b915242691c4ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9587304dd8dc616c76dea318bd250ab5') in 0.023366 seconds
+  Import took 0.025992 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Monsters/mon18/mon18/mon_202r.bmp
+  artifactKey: Guid(45c3c8b92ab488e4fb15c72e2748cadc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon18/mon18/mon_202r.bmp using Guid(45c3c8b92ab488e4fb15c72e2748cadc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fa91cef6a108eaca85661a4f6e1697e') in 0.029417 seconds
+  Import took 0.031705 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/4 Forest/forest_412.png
+  artifactKey: Guid(6f061ce5d106a460094fd5379095a71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/4 Forest/forest_412.png using Guid(6f061ce5d106a460094fd5379095a71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3830507e8b385c4b6297e9285d0f719') in 0.013230 seconds
+  Import took 0.015756 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/7 Devil/devil_709.png
+  artifactKey: Guid(d2a8ffa0c1b89457b8f84a8092d54029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/7 Devil/devil_709.png using Guid(d2a8ffa0c1b89457b8f84a8092d54029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8811d842f1877bb013fe242b8895c6cb') in 0.026776 seconds
+  Import took 0.029216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/1 Undead/undead_105.png
+  artifactKey: Guid(2bc58a85e68fd40c192ef55bbaf96e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/1 Undead/undead_105.png using Guid(2bc58a85e68fd40c192ef55bbaf96e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85ce8aca91d772e781094f6eae7fa13a') in 0.022265 seconds
+  Import took 0.024615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/2 Jungle/jungle_212.png
+  artifactKey: Guid(dca118eabeb334aa2baa927af2339ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/2 Jungle/jungle_212.png using Guid(dca118eabeb334aa2baa927af2339ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0835f8f8022a8fe07383221455076f9') in 0.017393 seconds
+  Import took 0.020435 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Monsters/mon15/mon15/mon_173.bmp
+  artifactKey: Guid(e2eea0898c393e342ac4695a7e79e305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon15/mon15/mon_173.bmp using Guid(e2eea0898c393e342ac4695a7e79e305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9b6d10057746d2e65ca5fbf8d60af9a') in 0.025599 seconds
+  Import took 0.027995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Monsters/mon8/mon8/mon_107r.bmp
+  artifactKey: Guid(22aa27fbdd8121e458bb65c7b69f807f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon8/mon8/mon_107r.bmp using Guid(22aa27fbdd8121e458bb65c7b69f807f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '110bf27919e4fb1a13f72e9420d10f0a') in 0.029941 seconds
+  Import took 0.032590 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Monsters/mon5/mon5/mon_076.bmp
+  artifactKey: Guid(d300a487c9cd88e4584a64207bc1ccb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon5/mon5/mon_076.bmp using Guid(d300a487c9cd88e4584a64207bc1ccb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12f729fbd846a998007fb4ab6168744b') in 0.015536 seconds
+  Import took 0.018163 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Monsters/mon12/mon12/mon_147r.bmp
+  artifactKey: Guid(33f80e55adcf78740861bbc7e5ac6d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon12/mon12/mon_147r.bmp using Guid(33f80e55adcf78740861bbc7e5ac6d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b31c120aa9c9921d9ee3c81c42e3e155') in 0.028604 seconds
+  Import took 0.031548 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Monsters/mon12/mon12/mon_149.bmp
+  artifactKey: Guid(ec3c243bac4cf374384c23c370047154) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon12/mon12/mon_149.bmp using Guid(ec3c243bac4cf374384c23c370047154) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd123b2e4a1ff81b98704af6807b1922') in 0.028067 seconds
+  Import took 0.030370 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Monsters/mon15/mon15/mon_174.bmp
+  artifactKey: Guid(2324fdd2c36e8b6408fd146facb4b122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon15/mon15/mon_174.bmp using Guid(2324fdd2c36e8b6408fd146facb4b122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c777bdf8d80d73c8c521d5798af36209') in 0.018076 seconds
+  Import took 0.020433 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Monsters/mon23/mon23/mon_257.bmp
+  artifactKey: Guid(ab5e2783ee274b5409a18968e1cc8051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon23/mon23/mon_257.bmp using Guid(ab5e2783ee274b5409a18968e1cc8051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '286f7060b295b523aaeac0ae42d923c8') in 0.021031 seconds
+  Import took 0.023866 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/4 Forest/forest_411.png
+  artifactKey: Guid(70a88b80d1f004658a91a4020e83dcc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/4 Forest/forest_411.png using Guid(70a88b80d1f004658a91a4020e83dcc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f11b9d99a215cfe01627a39e19e548d') in 0.022593 seconds
+  Import took 0.025179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/6 Cave/cave_610.png
+  artifactKey: Guid(4611652f8ed704272a6c25a92bd19586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/6 Cave/cave_610.png using Guid(4611652f8ed704272a6c25a92bd19586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '724518727b8b73bf6b4d4e179265e616') in 0.027367 seconds
+  Import took 0.029742 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Monsters/mon5/mon5/mon_077.bmp
+  artifactKey: Guid(f9dddeda21656fd49835fc7b7697a99c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon5/mon5/mon_077.bmp using Guid(f9dddeda21656fd49835fc7b7697a99c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b12bf7948f350502462501d1b89bc1a') in 0.031984 seconds
+  Import took 0.034251 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Monsters/mon10/mon10/mon_128.bmp
+  artifactKey: Guid(49da1d5c54254e24fa53e3e300fcf54e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon10/mon10/mon_128.bmp using Guid(49da1d5c54254e24fa53e3e300fcf54e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7387d763c4bffdf59235735f228512aa') in 0.024840 seconds
+  Import took 0.027259 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/6 Cave/cave_605.png
+  artifactKey: Guid(52423c42afa5541ad99062f8c41a4ad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/6 Cave/cave_605.png using Guid(52423c42afa5541ad99062f8c41a4ad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37abf73707387a0ae405e503324baf14') in 0.024024 seconds
+  Import took 0.026462 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/7 Devil/devil_710.png
+  artifactKey: Guid(9912b53df126d4850b8aba7f4b3d8184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/7 Devil/devil_710.png using Guid(9912b53df126d4850b8aba7f4b3d8184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5651a7d2a3e219a1332d11ee8ba4dd18') in 0.014773 seconds
+  Import took 0.018158 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Monsters/mon10/mon10/mon_127.bmp
+  artifactKey: Guid(bc61e69b743f751408eaa6312650ca99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon10/mon10/mon_127.bmp using Guid(bc61e69b743f751408eaa6312650ca99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1ba77b2df525d65e82684e127f0af9c') in 0.013239 seconds
+  Import took 0.016736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/6 Cave/cave_603.png
+  artifactKey: Guid(5239110c281ef40dda2ba995c429ff4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/6 Cave/cave_603.png using Guid(5239110c281ef40dda2ba995c429ff4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96b3657e0e09522ce349c3875c175c61') in 0.012295 seconds
+  Import took 0.015174 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/6 Cave/cave_605.png
+  artifactKey: Guid(ec930dd4a5cd54beb9fd1ca0e22929fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/6 Cave/cave_605.png using Guid(ec930dd4a5cd54beb9fd1ca0e22929fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d9905dc4a98af3f045bfe61bfe335b0') in 0.013870 seconds
+  Import took 0.018394 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/6 Cave/cave_605.png
+  artifactKey: Guid(4932922eada0c4b1d993d89d58eba955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/6 Cave/cave_605.png using Guid(4932922eada0c4b1d993d89d58eba955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5adfbeeb5597b32b2fe58ef74fdcb5b0') in 0.012606 seconds
+  Import took 0.015865 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/6 Cave/cave_606.png
+  artifactKey: Guid(6573a3a2199444db9819a1f85bb1b3f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/6 Cave/cave_606.png using Guid(6573a3a2199444db9819a1f85bb1b3f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e455a645b994683a30a1f89ae5213f9a') in 0.026804 seconds
+  Import took 0.030592 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Monsters/mon23/mon23/mon_256.bmp
+  artifactKey: Guid(eff0c8c22647672498a41bc853a9734b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon23/mon23/mon_256.bmp using Guid(eff0c8c22647672498a41bc853a9734b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5cd750fc3a781c80edd92814b22e477') in 0.046325 seconds
+  Import took 0.048817 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/2 Jungle/jungle_212.png
+  artifactKey: Guid(5b65e0e35abc0478899b899cc43df02b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/2 Jungle/jungle_212.png using Guid(5b65e0e35abc0478899b899cc43df02b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0848ed9c3317b60bf1cbe211fa6f1e7e') in 0.012784 seconds
+  Import took 0.015030 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Monsters/mon3/mon3/mon_056.bmp
+  artifactKey: Guid(53fab1c9f4124da4095e771d7da3ce37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon3/mon3/mon_056.bmp using Guid(53fab1c9f4124da4095e771d7da3ce37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d80f3dcf3c7589b900900dfcaeb5171') in 0.061324 seconds
+  Import took 0.063591 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/6 Cave/cave_611.png
+  artifactKey: Guid(7720e217ee603448cb402c3121fe3528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/6 Cave/cave_611.png using Guid(7720e217ee603448cb402c3121fe3528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d165c8a81f0a3a6efb902547bff7b8a') in 0.035105 seconds
+  Import took 0.037480 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/7 Devil/devil_711.png
+  artifactKey: Guid(00ffb63efac784bf6ad181276442af28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/7 Devil/devil_711.png using Guid(00ffb63efac784bf6ad181276442af28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba94c3dd88294102d32055b59b94d34d') in 0.028045 seconds
+  Import took 0.030489 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/6 Cave/cave_604.png
+  artifactKey: Guid(3ab13123eea064feb83e2949fc7acb71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/6 Cave/cave_604.png using Guid(3ab13123eea064feb83e2949fc7acb71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07bf1b45f10230f246bd9fbe755061b7') in 0.030301 seconds
+  Import took 0.032810 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Monsters/mon18/mon18/mon_204.bmp
+  artifactKey: Guid(353028ae8cf553a4cba905126962484f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon18/mon18/mon_204.bmp using Guid(353028ae8cf553a4cba905126962484f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3699b6168bd0f65ac571f90ae78b8cf') in 0.030819 seconds
+  Import took 0.033071 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/Monsters/mon8/mon8/mon_107.bmp
+  artifactKey: Guid(f8d08db986803624a91749b9364209a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon8/mon8/mon_107.bmp using Guid(f8d08db986803624a91749b9364209a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c136f8b33624982167f5749d88ae3758') in 0.020996 seconds
+  Import took 0.023255 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/6 Cave/cave_610.png
+  artifactKey: Guid(9e4aa769e9ca244529ce84f468b2d030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/6 Cave/cave_610.png using Guid(9e4aa769e9ca244529ce84f468b2d030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55f59cd9649fae71a5d2a76e178b1383') in 0.026456 seconds
+  Import took 0.028846 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Monsters/mon2/mon2/mon_001r.bmp
+  artifactKey: Guid(ff8e955f89e95064c8dbdc74a6440818) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon2/mon2/mon_001r.bmp using Guid(ff8e955f89e95064c8dbdc74a6440818) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7aaede79fcf970f262efdf0bf0578e86') in 0.035117 seconds
+  Import took 0.037572 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Monsters/mon5/mon5/mon_075r.bmp
+  artifactKey: Guid(095dde88ec5289244974de5cf44b910d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon5/mon5/mon_075r.bmp using Guid(095dde88ec5289244974de5cf44b910d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac5801e6994fa393002d87cb2452c2ea') in 0.027672 seconds
+  Import took 0.030259 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Monsters/mon10/mon10/mon_128.gif
+  artifactKey: Guid(0299ab067302525419866298bb489286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon10/mon10/mon_128.gif using Guid(0299ab067302525419866298bb489286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2392fee4cea8205016e202d8335b80dd') in 0.026054 seconds
+  Import took 0.028619 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Monsters/mon12/mon12/mon_148r.bmp
+  artifactKey: Guid(b0cf5c22638507e46b426b881dfa6bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon12/mon12/mon_148r.bmp using Guid(b0cf5c22638507e46b426b881dfa6bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44d37fe01465988e94336f6a089a8981') in 0.029857 seconds
+  Import took 0.032083 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Monsters/mon12/mon12/mon_148.gif
+  artifactKey: Guid(76665852bb424c144b7bc290ffd829dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon12/mon12/mon_148.gif using Guid(76665852bb424c144b7bc290ffd829dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9b865b74e29ba04beb164f3ce5da932') in 0.028565 seconds
+  Import took 0.030851 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/6 Cave/cave_609.png
+  artifactKey: Guid(e4997720f4bd34e0da855ddb66a59666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/6 Cave/cave_609.png using Guid(e4997720f4bd34e0da855ddb66a59666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4f150dc33af884b4a82c6ba276b19d4') in 0.019677 seconds
+  Import took 0.021985 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/6 Cave/cave_608.png
+  artifactKey: Guid(f18a62f2cbd7c4c3eb40014244a93dc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/6 Cave/cave_608.png using Guid(f18a62f2cbd7c4c3eb40014244a93dc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2090427d55306316bb2e2e1bef220e6e') in 0.022038 seconds
+  Import took 0.024584 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/6 Cave/cave_608.png
+  artifactKey: Guid(a55b7edebae3048bda2be377a7225be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/no shadow/6 Cave/cave_608.png using Guid(a55b7edebae3048bda2be377a7225be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c565ea5fbb5b87d6e0d073e3fc17de9') in 0.019824 seconds
+  Import took 0.022168 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/2 Jungle/jungle_212.png
+  artifactKey: Guid(62494322298b64a4cbf45df8463c63fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/min size/shadow/2 Jungle/jungle_212.png using Guid(62494322298b64a4cbf45df8463c63fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94ca077c3fa8a9c50d8667f35103ca30') in 0.031310 seconds
+  Import took 0.033630 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Monsters/mon15/mon15/mon_172.bmp
+  artifactKey: Guid(fd3675b3c3225374b8960ad2d52e097e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon15/mon15/mon_172.bmp using Guid(fd3675b3c3225374b8960ad2d52e097e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf527c493570b0b1f1b4d52f85301a94') in 0.028248 seconds
+  Import took 0.030777 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Monsters/mon23/mon23/mon_257r.bmp
+  artifactKey: Guid(3f61e12bb0c77144eb40ee17070d787b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon23/mon23/mon_257r.bmp using Guid(3f61e12bb0c77144eb40ee17070d787b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16d3406d4625085b410eebd667f7d584') in 0.023705 seconds
+  Import took 0.026135 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/4 Forest/forest_410.png
+  artifactKey: Guid(8bdde99fc1352488b99dc3d4e9bd25df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/no shadow/4 Forest/forest_410.png using Guid(8bdde99fc1352488b99dc3d4e9bd25df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c81d6a5d2cf7f013455dac3fa5baf37') in 0.026069 seconds
+  Import took 0.028502 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Monsters/mon3/mon3/mon_056r.bmp
+  artifactKey: Guid(25d4c91826c7e8b4ba0bd575f0f29f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon3/mon3/mon_056r.bmp using Guid(25d4c91826c7e8b4ba0bd575f0f29f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79d776b1fa4770fe66f78bd6f76d043e') in 0.025184 seconds
+  Import took 0.027728 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Monsters/mon15/mon15/mon_172r.bmp
+  artifactKey: Guid(cf30066eb29c94f4bac140ed5c617ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters/mon15/mon15/mon_172r.bmp using Guid(cf30066eb29c94f4bac140ed5c617ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f1b189dae8d9a82b643d66317e66e65') in 0.014531 seconds
+  Import took 0.017057 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 504.577753 seconds.
+  path: Assets/Resources
+  artifactKey: Guid(7a241208f083d9b4eb9077a6ff789e2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources using Guid(7a241208f083d9b4eb9077a6ff789e2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af65122c5dd8ca0fe01b34557c9fa13f') in 0.005009 seconds
+  Import took 0.008442 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 103.368021 seconds.
+  path: Assets/Resources/blank.png
+  artifactKey: Guid(7a78f3f150d9b19408203a99dd5661c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/blank.png using Guid(7a78f3f150d9b19408203a99dd5661c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9c2c9913849e97f05c3fbfb5f6be856') in 0.005115 seconds
+  Import took 0.008054 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.045641 seconds.
+  path: Assets/Resources/blank.png
+  artifactKey: Guid(7a78f3f150d9b19408203a99dd5661c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/blank.png using Guid(7a78f3f150d9b19408203a99dd5661c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9c2c9913849e97f05c3fbfb5f6be856') in 0.002225 seconds
+  Import took 0.004773 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000947 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.745 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.3 MB.
+System memory in use after: 92.3 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2441.
+Total: 1.613500 ms (FindLiveObjects: 0.153300 ms CreateObjectMapping: 0.054800 ms MarkObjects: 1.321500 ms  DeleteObjects: 0.083100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 451.198722 seconds.
+  path: Assets/Resources/blank.png
+  artifactKey: Guid(7a78f3f150d9b19408203a99dd5661c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/blank.png using Guid(7a78f3f150d9b19408203a99dd5661c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3f1ac7f25ec41f5ed86805b632f775a') in 0.011057 seconds
+  Import took 0.013604 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.050583 seconds.
+  path: Assets/Resources/blank.png
+  artifactKey: Guid(7a78f3f150d9b19408203a99dd5661c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/blank.png using Guid(7a78f3f150d9b19408203a99dd5661c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3f1ac7f25ec41f5ed86805b632f775a') in 0.002032 seconds
+  Import took 0.004996 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 146.836792 seconds.
+  path: Assets/Resources/blank.png
+  artifactKey: Guid(7a78f3f150d9b19408203a99dd5661c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/blank.png using Guid(7a78f3f150d9b19408203a99dd5661c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6de889544e413680a0a8bbfc00ccd2cc') in 0.045709 seconds
+  Import took 0.048403 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.078642 seconds.
+  path: Assets/Resources/Monster
+  artifactKey: Guid(14f1bccbef26b8b4787d73dcd91682a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Monster using Guid(14f1bccbef26b8b4787d73dcd91682a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c755ff76ebd2c011bcbaf41743be5be5') in 0.001710 seconds
+  Import took 0.004918 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.145022 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Font
+  artifactKey: Guid(cca768e6e5dd54dd69182d28d791ff60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Font using Guid(cca768e6e5dd54dd69182d28d791ff60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fc7b6d7f6adf86489f8682c7f791bef') in 0.005760 seconds
+  Import took 0.008762 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.462394 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/2 Jungle
+  artifactKey: Guid(8b44472c6ce14482195fada974ec81aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/2 Jungle using Guid(8b44472c6ce14482195fada974ec81aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f5ce37d3b297541961eeaf62ce656b5') in 0.005254 seconds
+  Import took 0.008337 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.944721 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/3 Sea
+  artifactKey: Guid(cfaadb302cd9a4bc78a1bcdfb9509fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/3 Sea using Guid(cfaadb302cd9a4bc78a1bcdfb9509fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eee19ccd94ced40dad63e7b112ca8728') in 0.005125 seconds
+  Import took 0.007872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.398152 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/3 Sea/sea_312.png
+  artifactKey: Guid(490fc5021ade345a9a2fa82d9ddd668e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/3 Sea/sea_312.png using Guid(490fc5021ade345a9a2fa82d9ddd668e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57795310cc15f1ab4c934c2d62bc4474') in 0.009254 seconds
+  Import took 0.012340 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.573554 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/3 Sea/sea_308.png
+  artifactKey: Guid(75c3f93916f574d87955f6adc0241d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/3 Sea/sea_308.png using Guid(75c3f93916f574d87955f6adc0241d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '377538b6145b2155dce486e406e53a3f') in 0.014634 seconds
+  Import took 0.017851 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.428440 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/3 Sea/sea_303.png
+  artifactKey: Guid(5d69c745df721435f839facc3fc46e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/3 Sea/sea_303.png using Guid(5d69c745df721435f839facc3fc46e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c942f80e2447f6219356cdb47ec4c5e') in 0.009219 seconds
+  Import took 0.011980 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.176889 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/3 Sea/sea_302.png
+  artifactKey: Guid(f2c475f93997d4c0f92c4250bb1273e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/3 Sea/sea_302.png using Guid(f2c475f93997d4c0f92c4250bb1273e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '665c1059495b3bd42fcc7d55c1085d03') in 0.023090 seconds
+  Import took 0.025924 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000681 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/3 Sea/sea_302.png
+  artifactKey: Guid(f2c475f93997d4c0f92c4250bb1273e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/3 Sea/sea_302.png using Guid(f2c475f93997d4c0f92c4250bb1273e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '665c1059495b3bd42fcc7d55c1085d03') in 0.005688 seconds
+  Import took 0.008139 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.567442 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/3 Sea/sea_301.png
+  artifactKey: Guid(358b80e8e30f14e4c8f0679a413501f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/3 Sea/sea_301.png using Guid(358b80e8e30f14e4c8f0679a413501f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf9d451cfc1a7ed0c3584ee264384e07') in 0.009076 seconds
+  Import took 0.011607 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.738484 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/4 Forest
+  artifactKey: Guid(e14e7024a0a94451a94c976ad31e4e91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/4 Forest using Guid(e14e7024a0a94451a94c976ad31e4e91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7f29224c514c455da02500a3ddd5428') in 0.005935 seconds
+  Import took 0.008584 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.923443 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/4 Forest/forest_402.png
+  artifactKey: Guid(1308fec8d1c534773bcd8b107beffa09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/4 Forest/forest_402.png using Guid(1308fec8d1c534773bcd8b107beffa09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '862139f6263b176ff91838dc3fb8bf29') in 0.009498 seconds
+  Import took 0.012104 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.722811 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/4 Forest/forest_401.png
+  artifactKey: Guid(ca9de0fc31291434aa9d3dc4db560133) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/4 Forest/forest_401.png using Guid(ca9de0fc31291434aa9d3dc4db560133) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe8a24038a3f86528f0105536d277e5c') in 0.010089 seconds
+  Import took 0.012726 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.416044 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/4 Forest/forest_403.png
+  artifactKey: Guid(20ac51acb2b0a408a89f3e0bffe83cde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/4 Forest/forest_403.png using Guid(20ac51acb2b0a408a89f3e0bffe83cde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dbac2557a5b3d65cbba4018dd46df75') in 0.009141 seconds
+  Import took 0.011968 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.422079 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/4 Forest/forest_405.png
+  artifactKey: Guid(85dd0f08bc6924af4bf90b0f2c091841) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/4 Forest/forest_405.png using Guid(85dd0f08bc6924af4bf90b0f2c091841) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa9353da7759e749af59756306bb44e7') in 0.010735 seconds
+  Import took 0.013295 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.419872 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/4 Forest/forest_408.png
+  artifactKey: Guid(85fe6bff0eacd47bb8648c42aa216f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/4 Forest/forest_408.png using Guid(85fe6bff0eacd47bb8648c42aa216f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '880f2de2ee356a60107a32786f72787d') in 0.010409 seconds
+  Import took 0.012921 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.308290 seconds.
+  path: Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/6 Cave
+  artifactKey: Guid(1188b598ad42f4c0ca49204a8f4abf96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel RPG Monster Pack/Icons/default size/shadow/6 Cave using Guid(1188b598ad42f4c0ca49204a8f4abf96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79fd4ded6a0a3c651c830ff281ea551d') in 0.005746 seconds
+  Import took 0.009052 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 63.167008 seconds.
+  path: Assets/Resources/Monster/field_501.png
+  artifactKey: Guid(cb41a29d64629f54b8506d377221afa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Monster/field_501.png using Guid(cb41a29d64629f54b8506d377221afa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f3c48d803e9ef9096520820dde4e481') in 0.011099 seconds
+  Import took 0.014363 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.653434 seconds.
+  path: Assets/Resources/Monster/field_501 - コピー.png
+  artifactKey: Guid(ed4bc73a9fc9305438997efd4bf0fc7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Monster/field_501 - コピー.png using Guid(ed4bc73a9fc9305438997efd4bf0fc7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e1f5b9d35bcd839c37cfab27773cb59') in 0.044722 seconds
+  Import took 0.047241 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.037736 seconds.
+  path: Assets/Resources/Monster/slime.png
+  artifactKey: Guid(ed4bc73a9fc9305438997efd4bf0fc7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Monster/slime.png using Guid(ed4bc73a9fc9305438997efd4bf0fc7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ff88087094c70d68e0e3c58247a4d88') in 0.009704 seconds
+  Import took 0.012383 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000956 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.746 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.4 MB.
+System memory in use after: 92.3 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2448.
+Total: 1.784900 ms (FindLiveObjects: 0.149700 ms CreateObjectMapping: 0.052100 ms MarkObjects: 1.490900 ms  DeleteObjects: 0.091100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001391 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.793 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.4 MB.
+System memory in use after: 92.4 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2452.
+Total: 2.118000 ms (FindLiveObjects: 0.197900 ms CreateObjectMapping: 0.074100 ms MarkObjects: 1.749400 ms  DeleteObjects: 0.095500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000948 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.754 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.4 MB.
+System memory in use after: 92.4 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2456.
+Total: 1.607100 ms (FindLiveObjects: 0.167600 ms CreateObjectMapping: 0.057500 ms MarkObjects: 1.293400 ms  DeleteObjects: 0.087900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000912 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.779 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.4 MB.
+System memory in use after: 92.4 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2460.
+Total: 5.047700 ms (FindLiveObjects: 0.639300 ms CreateObjectMapping: 0.178400 ms MarkObjects: 3.950900 ms  DeleteObjects: 0.274800 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

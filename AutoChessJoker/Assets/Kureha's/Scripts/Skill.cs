@@ -25,11 +25,24 @@ public class Nenneki : Skill
     //�Ώۂ̈ʒu
     public override void Activate(params int[] args)
     {
-        if (skillLevel == 1) BattleController.Instance.enemyField[args[0]].DealAPDamage(25);
-        if (skillLevel == 2) BattleController.Instance.enemyField[args[0]].DealAPDamage(50);
-        if (skillLevel == 3) BattleController.Instance.enemyField[args[0]].DealAPDamage(100);
-        if (skillLevel == 1) BattleController.Instance.enemyField[args[0]].ExecuteEffect(new Betobeto(args[0],5));   
-        if(skillLevel == 2) BattleController.Instance.enemyField[args[0]].ExecuteEffect(new Betobeto(args[0],10));   
-        if(skillLevel == 3) BattleController.Instance.enemyField[args[0]].ExecuteEffect(new Betobeto(args[0],20));   
+        if (args[0] == 0)
+        {
+            if (skillLevel == 1) BattleController.Instance.enemyField[args[0]].DealAPDamage(25);
+            if (skillLevel == 2) BattleController.Instance.enemyField[args[0]].DealAPDamage(50);
+            if (skillLevel == 3) BattleController.Instance.enemyField[args[0]].DealAPDamage(100);
+            if (skillLevel == 1) BattleController.Instance.enemyField[args[0]].ExecuteEffect(new Betobeto(false, args[1], 5));
+            if (skillLevel == 2) BattleController.Instance.enemyField[args[0]].ExecuteEffect(new Betobeto(false, args[1], 10));
+            if (skillLevel == 3) BattleController.Instance.enemyField[args[0]].ExecuteEffect(new Betobeto(false, args[1], 20));
+        }
+        else
+        {
+            if (skillLevel == 1) BattleController.Instance.allyField[args[0]].DealAPDamage(25);
+            if (skillLevel == 2) BattleController.Instance.allyField[args[0]].DealAPDamage(50);
+            if (skillLevel == 3) BattleController.Instance.allyField[args[0]].DealAPDamage(100);
+            if (skillLevel == 1) BattleController.Instance.allyField[args[0]].ExecuteEffect(new Betobeto(true, args[1], 5));
+            if (skillLevel == 2) BattleController.Instance.allyField[args[0]].ExecuteEffect(new Betobeto(true, args[1], 10));
+            if (skillLevel == 3) BattleController.Instance.allyField[args[0]].ExecuteEffect(new Betobeto(true, args[1], 20));
+
+        }
     }
 }
