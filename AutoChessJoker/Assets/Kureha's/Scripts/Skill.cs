@@ -24,7 +24,6 @@ public class Nenneki : Skill
         skillLevel = _skillLevel;
     }
 
-    //�Ώۂ̈ʒu
     public override void Activate(bool Ally, int field)
     {
         int Value = 25;
@@ -56,7 +55,6 @@ public class Ishitsubute : Skill
         skillLevel = _skillLevel;
     }
 
-    //�Ώۂ̈ʒu
     public override void Activate(bool Ally, int field)
     {
 

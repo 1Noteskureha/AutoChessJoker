@@ -120,6 +120,10 @@ public abstract class Monster
             {
                 BattleController.Instance.enemyField[field%3].DealADDamage(atk);
             }
+            else if (field % 3 == 2 && BattleController.Instance.enemyField[field % 3 + 1].living)
+            {
+                BattleController.Instance.enemyField[field % 3 + 1].DealADDamage(atk);
+            }
             else
             {
                 for(int i = 0; i < 3; i++)
@@ -137,6 +141,10 @@ public abstract class Monster
             if (BattleController.Instance.allyField[field%3].living)
             {
                 BattleController.Instance.allyField[field%3].DealADDamage(atk);
+            }
+            else if (field % 3 == 2 && BattleController.Instance.allyField[field % 3 + 1].living)
+            {
+                BattleController.Instance.allyField[field % 3 + 1].DealADDamage(atk);
             }
             else
             {

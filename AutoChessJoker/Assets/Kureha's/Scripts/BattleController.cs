@@ -52,6 +52,7 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
         //モンスター召喚
         SummonAllyMonsters();
         SummonEnemyMonsters();
+        FieldUpdate();
 
         //シンボルの計算
         ActivationSymbol();
@@ -349,6 +350,7 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
 
         SummonAllyMonsters();
         SummonEnemyMonsters();
+        FieldUpdate();
 
         Turn = StartCoroutine(TurnAction());
     }
@@ -377,64 +379,27 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
             allyField.Add(new Blank());
         }
 
-        if (PlayerPrefs.GetInt("Bt_Front1") != 0)
+        for(int i = 0; i < 3; i++)
         {
-            //Debug.Log(DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Front1")));
-            //allyMonsters.Add(DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Front1")));
-            allyField[0] = DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Front1"));
-            allyField[0].ally = true;
-            allyField[0].field = 0;
+            if (PlayerPrefs.GetInt("Bt_Front" + (i + 1)) != 0)
+            {
+                allyField[i] = DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Front" + (i+1)));
+                allyField[i].ally = true;
+                allyField[i].field = i;
 
-            //StartCoroutine(allyField[0].LoadImage());
-            allyImage[0].sprite = allyField[0].sprite;
-        }
-        if (PlayerPrefs.GetInt("Bt_Front2") != 0)
-        {
-            //allyMonsters.Add(DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Front2")));
-            allyField[1] = DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Front2"));
-            allyField[1].ally = true;
-            allyField[1].field = 1;
+                allyImage[i].sprite = allyField[i].sprite;
+            }
+            if (PlayerPrefs.GetInt("Bt_Back" + (i + 1)) != 0)
+            {
+                allyField[i + 3] = DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Back" + (i + 1)));
+                allyField[i + 3].ally = true;
+                allyField[i + 3].field = i+3;
 
-            //StartCoroutine(allyField[1].LoadImage());
-            allyImage[1].sprite = allyField[1].sprite;
-        }
-        if (PlayerPrefs.GetInt("Bt_Front3") != 0)
-        {
-            //allyMonsters.Add(DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Front3")));
-            allyField[2] = DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Front3"));
-            allyField[2].ally = true;
-            allyField[2].field = 2;
-            //StartCoroutine(allyField[2].LoadImage());
-            allyImage[2].sprite = allyField[2].sprite;
-        }
-        if (PlayerPrefs.GetInt("Bt_Back1") != 0)
-        {
-            //allyMonsters.Add(DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Back1")));
-            allyField[3] = DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Back1"));
-            allyField[3].ally = true;
-            allyField[3].field = 3;
-            //StartCoroutine(allyField[3].LoadImage());
-            allyImage[3].sprite = allyField[3].sprite;
-        }
-        if (PlayerPrefs.GetInt("Bt_Back2") != 0)
-        {
-            //allyMonsters.Add(DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Back2")));
-            allyField[4] = DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Back2"));
-            allyField[4].ally = true;
-            allyField[4].field = 4;
-            //StartCoroutine(allyField[4].LoadImage());
-            allyImage[4].sprite = allyField[4].sprite;
-        }
-        if (PlayerPrefs.GetInt("Bt_Back3") != 0)
-        {
-            //allyMonsters.Add(DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Back3")));
-            allyField[5] = DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Back3"));
-            allyField[5].ally = true;
-            allyField[5].field = 5;
-            //StartCoroutine(allyField[5].LoadImage());
-            allyImage[5].sprite = allyField[5].sprite;
+                allyImage[i + 3].sprite = allyField[i].sprite;
+            }
         }
 
+        //FieldUpdate();
     }
 
     private void SummonEnemyMonsters()
@@ -455,6 +420,31 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
             enemyField[i].ally = false;
             enemyField[i].field = i;
             enemyImage[i].sprite = enemyField[i].sprite;
+        }
+
+        //FieldUpdate();
+    }
+
+    private void FieldUpdate()
+    {
+        for (int i = 0; i < 6; i++)
+        {   
+            
+            float size;
+
+            allyImage[i].sprite = allyField[i].sprite;
+            allyImage[i].SetNativeSize();
+            
+            if(allyImage[i].rectTransform.sizeDelta.x > allyImage[i].rectTransform.sizeDelta.y) size = allyImage[i].rectTransform.sizeDelta.x;
+            else size = allyImage[i].rectTransform.sizeDelta.y;
+            if (size < 100) allyImage[i].rectTransform.sizeDelta = new Vector2(allyImage[i].rectTransform.sizeDelta.x * (100 / size), allyImage[i].rectTransform.sizeDelta.y * (100 / size));
+
+            enemyImage[i].sprite = enemyField[i].sprite;
+            enemyImage[i].SetNativeSize();
+
+            if (enemyImage[i].rectTransform.sizeDelta.x > enemyImage[i].rectTransform.sizeDelta.y) size = enemyImage[i].rectTransform.sizeDelta.x;
+            else size = enemyImage[i].rectTransform.sizeDelta.y;
+            if (size < 100) enemyImage[i].rectTransform.sizeDelta = new Vector2(enemyImage[i].rectTransform.sizeDelta.x * (100 / size), enemyImage[i].rectTransform.sizeDelta.y * (100 / size));
         }
     }
 }
