@@ -8,7 +8,9 @@ public abstract class Symbol
     public string description;
 
     public List<int> activation;
-    public int nowActive;
+    //public bool nowActive;
+
+    public void Activate(int level) { }
 }
 
 public class Glass : Symbol
@@ -18,6 +20,29 @@ public class Glass : Symbol
         name = "草";
         description = "攻撃ごとのマナ回復量が(5/10/20)増える";
         activation = new List<int>() { 3, 4, 6 };
-        nowActive = 0;
+        //nowActive = false;
+    }
+
+    public void Activate(int level)
+    {
+        Debug.Log("草のシンボル(" + level + ")が発動中");
+
+        for(int i=0;i < BattleController.Instance.allyField.Count; i++)
+        {
+            if(BattleController.Instance.allyField[i].no != 0 && BattleController.Instance.allyField[i].living)
+            {
+                switch (level) {
+                    case 1:
+                    BattleController.Instance.allyField[i].thenDealAutoAttack.Add(new RegenMana(true, BattleController.Instance.allyField[i].field,5));
+                        break;
+                    case 2:
+                        BattleController.Instance.allyField[i].thenDealAutoAttack.Add(new RegenMana(true, BattleController.Instance.allyField[i].field, 10));
+                        break;
+                    case 3:
+                        BattleController.Instance.allyField[i].thenDealAutoAttack.Add(new RegenMana(true, BattleController.Instance.allyField[i].field, 20));
+                        break;
+                }
+            }
+        }
     }
 }

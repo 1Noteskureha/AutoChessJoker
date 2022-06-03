@@ -25,8 +25,8 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
     public List<Image> allyImage;
     public List<Image> enemyImage;
 
-    public List<Monster> allyMonsters;
-    public List<Monster> enemyMonsters;
+    //public List<Monster> allyMonsters;
+    //public List<Monster> enemyMonsters;
 
     public List<string> log;
     public Queue<int> spdQueue;     //0~5 = ñ°ï˚ÅA6~11 = ìG
@@ -54,10 +54,60 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
         SummonEnemyMonsters();
 
         //ÉVÉìÉ{ÉãÇÃåvéZ
+        ActivationSymbol();
 
         //ç≈èâÇÃÉnÉìÉhÉãè¡âª
 
         Turn = StartCoroutine(TurnAction());
+    }
+
+    private void ActivationSymbol()
+    {
+        Dictionary<int,bool> CalcedMonster = new Dictionary<int,bool>();
+        Dictionary<Symbol,int> CalcedSymbol = new Dictionary<Symbol,int>();
+
+
+        for(int i=0;i< allyField.Count; i++)
+        {               
+            if (!CalcedMonster.ContainsKey(allyField[i].no))
+            {
+                CalcedMonster[allyField[i].no] = true;
+
+                
+                for(int j = 0; j < allyField[i].symbol.Count; j++)
+                {
+                    if (!CalcedSymbol.ContainsKey(allyField[i].symbol[j])) CalcedSymbol[allyField[i].symbol[j]] = 0;
+                    CalcedSymbol[allyField[i].symbol[j]]++;
+                }
+            }
+        }
+
+        for(int i=1; i <= 4; i++)
+        {
+            if (!CalcedMonster.ContainsKey(PlayerPrefs.GetInt("Bt_Support" + i)))
+            {
+                CalcedMonster[PlayerPrefs.GetInt("Bt_Support" + i)] = true;
+
+                for (int j = 0; j < DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Support" + i)).symbol.Count; j++)
+                {
+                    if (!CalcedSymbol.ContainsKey(DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Support" + i)).symbol[j])) CalcedSymbol[DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Support" + i)).symbol[j]] = 0;
+                    CalcedSymbol[DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Support" + i)).symbol[j]]++;
+                }
+            }
+        }
+
+        foreach(var sb in CalcedSymbol)
+        {
+            for(int i = sb.Key.activation.Count; i > 0; i--)
+            {
+                if(CalcedSymbol[sb.Key] >= sb.Key.activation[i - 1])
+                {
+                    sb.Key.Activate(i);
+                    break;
+                }
+            }
+        }
+
     }
 
     public void AddLog(string s)
@@ -192,14 +242,20 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
             spdQueue.Enqueue(_ally + position);
         }
 
-        Debug.Log(spdQueue.Count);
+        //Debug.Log(spdQueue.Count);
     }
 
     public void MonsterDead(bool ally,int field)
-    {
+    {   
+
+        if (ally) Debug.Log("ñ°ï˚ÇÃ" + allyField[field].name + "(" + allyField[field].field + ")ÇÕì|ÇÍÇΩ");
+        else Debug.Log("ìGÇÃ" + enemyField[field].name + "(" + allyField[field].field + ")ÇÕì|ÇÍÇΩ");
+        
+
         if (ally)
         {
-            allyImage[field].sprite = Resources.Load<Sprite>("Monster/blank");
+            allyField[field].sprite = Resources.Load<Sprite>("Monster/blank");
+            allyImage[field].sprite = allyField[field].sprite;
 
             if (allyField[0].living == false && allyField[1].living == false && allyField[2].living == false && allyField[3].living == false && allyField[4].living == false && allyField[5].living == false)
             {
@@ -229,7 +285,8 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
         }
         else
         {
-            enemyImage[field].sprite = Resources.Load<Sprite>("Monster/blank");
+            enemyField[field].sprite = Resources.Load<Sprite>("Monster/blank");
+            enemyImage[field].sprite = enemyField[field].sprite;
 
             if (enemyField[0].living == false && enemyField[1].living == false && enemyField[2].living == false && enemyField[3].living == false && enemyField[4].living == false && enemyField[5].living == false)
             {
@@ -313,7 +370,7 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
     private void SummonAllyMonsters()
     {
         allyField = new List<Monster>();
-        allyMonsters = new List<Monster>();
+        //allyMonsters = new List<Monster>();
 
         for(int i=0;i<6;i++)
         {
@@ -383,7 +440,7 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
     private void SummonEnemyMonsters()
     {
         enemyField = new List<Monster>();
-        enemyMonsters = new List<Monster>();
+        //enemyMonsters = new List<Monster>();
 
         for(int i=0;i<6;i++)
         {

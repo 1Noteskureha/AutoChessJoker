@@ -17,7 +17,7 @@ public abstract class Monster
     public bool stan;           //スタンしているか
 
     //所持シンボル
-    public List<Symbol> symbol;
+    public List<Symbol> symbol = new List<Symbol>();
 
     //立ち絵
     public Sprite sprite;
@@ -50,6 +50,24 @@ public abstract class Monster
 
     protected void Init()
     {
+        if (rank == 2)
+        {
+            maxHp *= 2;
+            baseAtk *= 2;
+            baseDef *= 2;
+            baseMag *= 2;
+            baseRes *= 2;
+            baseSpd *= 2;
+        }
+        else if(rank == 3)
+        {
+            maxHp *= 5;
+            baseAtk *= 5;
+            baseDef *= 5;
+            baseMag *= 5;
+            baseRes *= 5;
+            baseSpd *= 5;
+        }
         hp = maxHp;
         mana = 0;
         atk = baseAtk;
@@ -66,8 +84,6 @@ public abstract class Monster
     {
         
         if (!living) return;
-        if (ally)Debug.Log("味方の" + name + "(" + field + ")" + "の行動");
-        else Debug.Log("敵の" + name + "(" + field + ")" + "の行動");
 
         foreach (var first in turnFirst)
         {
@@ -78,10 +94,14 @@ public abstract class Monster
         {
             if (mana < maxMana)
             {
+                if (ally) Debug.Log("味方の" + name + "(" + field + ")" + "の攻撃");
+                else Debug.Log("敵の" + name + "(" + field + ")" + "の攻撃");
                 AutoAttack();
             }
             else
             {
+                if (ally) Debug.Log("味方の" + name + "(" + field + ")" + "のスキル");
+                else Debug.Log("敵の" + name + "(" + field + ")" + "のスキル");
                 Skill();
             }
         }
@@ -92,6 +112,7 @@ public abstract class Monster
         }
     }
 
+    //通常攻撃
     public void AutoAttack()
     {   
         if (ally) {
@@ -134,15 +155,20 @@ public abstract class Monster
             AA.Excute();
         }
 
-        mana += 10;
+        //マナはmagだけ上昇
+        mana += mag;
         if (mana > maxMana) mana = maxMana;
     }
 
-    public void Skill() { }
-
+    public void Skill()
+    {
+        mana = 0;
+        skill.Activate(ally,field);
+    }
 
     public void ExecuteEffect(Effect _effect)
-    {   
+    {
+        if (!living) return;
         effect.Add(_effect);
         _effect.Activate();
     }
@@ -190,7 +216,7 @@ public abstract class Monster
         done = false;
     }
 
-    public void Dead()
+        public void Dead()
     {
 
         if (hp > 0) return;
@@ -229,6 +255,7 @@ public class Blank : Monster
     public new void Move() { }
 
     public new void Refresh() { }
+    
 }
 
 //スライム
@@ -243,7 +270,7 @@ public class Slime : Monster
 
         //Debug.Log(no);
 
-        //symbol.Add(new Glass());
+        symbol.Add(new Glass());
         //symbol.Add();
         sprite = Resources.Load<Sprite>("Monster/slime");
 
@@ -258,10 +285,32 @@ public class Slime : Monster
 
         Init();
     }
+}
 
-    public new void Skill()
+public class Goblin : Monster
+{
+    public Goblin(int _rank)
     {
-        mana = 0;
-        skill.Activate();
+        name = "ゴブリン";
+        description = "小型の亜人族。いたずらが大好き。";
+        rank = _rank;
+        no = 2000;
+
+        //Debug.Log(no);
+
+        symbol.Add(new Glass());
+        //symbol.Add();
+        sprite = Resources.Load<Sprite>("Monster/goblin");
+
+        maxHp = 28;
+        maxMana = 50;
+        baseAtk = 14;
+        baseDef = 0;
+        baseMag = 8;
+        baseRes = 0;
+        baseSpd = 34;
+        skill = new Ishitsubute(rank);
+
+        Init();
     }
 }

@@ -7,6 +7,10 @@ public abstract class Effect
     public string name;
     public string description;
 
+    public bool ally;
+    public int target;
+    public int value;
+
     //付与時の行動
     public void Activate() { }
 
@@ -41,11 +45,34 @@ public class Poison : Effect
     }
 }
 
+//Atk変化
+public class AtkChange : Effect
+{
+
+}
+
+//Def変化
+public class DefChange : Effect
+{
+
+}
+
+//攻撃ごとのマナ回復
+public class RegenMana : Effect
+{
+    public RegenMana(bool _ally, int _target, int _value)
+    {
+        name = "マナ回復";
+        description = "攻撃ごとのマナ回復量が(" +  value + ")増える";
+
+        ally = _ally;
+        target = _target;
+        value = _value;
+    }
+}
+
 public class Betobeto : Effect
 {
-    public bool ally;
-    public int target;
-    public int value;
 
     public Betobeto(bool _ally,int _target, int _value)
     {
