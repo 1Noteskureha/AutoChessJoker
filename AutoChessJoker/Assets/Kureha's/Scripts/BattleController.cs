@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class BattleController : SingletonMonoBehaviour<BattleController>
 {
@@ -14,6 +15,16 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
     [HideInInspector]
     public int progress;
 
+    //オーバーレイ
+    [SerializeField]
+    private GameObject overrayStart;
+    [SerializeField]
+    private GameObject overrayContinue;
+    [SerializeField]
+    private GameObject overrayEnd;
+    [SerializeField]
+    private GameObject overrayLose;
+
     //ハンドル
     public List<Effect> first;
     public List<Effect> turnFirst;
@@ -25,17 +36,35 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
     public List<Image> allyImage;
     public List<Image> enemyImage;
 
-    //public List<Monster> allyMonsters;
-    //public List<Monster> enemyMonsters;
+    public List<Slider> allyHP;
+    public List<Slider> enemyHP;
 
-    public List<string> log;
-    public Queue<int> spdQueue;     //0~5 = 味方、6~11 = 敵
+    public List<Slider> allyMana;
+    public List<Slider> enemyMana;
+
+    public List<Image> allyRank;
+    public List<Image> enemyRank;
+
+    [SerializeField]
+    private GameObject cutIn;
+
+    //ログ関連
+    [SerializeField]
+    private GameObject logText;
+    [SerializeField]
+    private Transform content;
+
+    private List<GameObject> log = new List<GameObject>();
+    private Queue<int> spdQueue;     //0~5 = 味方、6~11 = 敵
     private Coroutine Turn;
+    private ParticleSystem ps;
+
+    public bool gameStop = true;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        BattleField.SetActive(false);
     }
 
     // Update is called once per frame
@@ -49,6 +78,8 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
         stage = _stage;
         progress = 0;
 
+        LogReset();
+
         //モンスター召喚
         SummonAllyMonsters();
         SummonEnemyMonsters();
@@ -56,9 +87,14 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
 
         //シンボルの計算
         ActivationSymbol();
+        StateUpdate();
 
         //最初のハンドル消化
 
+        gameStop = true;
+        overrayStart.SetActive(true);
+
+        AddLog("Wave 1 スタート");
         Turn = StartCoroutine(TurnAction());
     }
 
@@ -111,18 +147,43 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
 
     }
 
+    private void LogReset()
+    {
+        foreach(var l in log)
+        {
+            Destroy(l);
+        }
+
+        log = new List<GameObject>();
+    }
+
     public void AddLog(string s)
     {
-        log.Add((log.Count+1) + ": " + s);
+        var add = Instantiate(logText, content);
+
+        add.GetComponent<TMP_Text>().text = $"{log.Count + 1}: {s}";
+
+        log.Add(add);
     }
 
     private IEnumerator TurnAction()
     {
-        int t = 0;
-        while (t < 100)
+        int t = 1;//無限ループ防止
+        while (t < 1000)
         {
+            while (gameStop) {
+                yield return new WaitForSeconds(0.1f);
+            }
 
-            Debug.Log(t);
+            //カットイン
+            cutIn.GetComponent<TMP_Text>().text = "ターン" + t;
+            cutIn.SetActive(true);;
+
+            yield return new WaitForAnimation(cutIn.GetComponent<Animator>());
+
+            cutIn.SetActive(false);
+            
+
             //ターン初めのハンドル消化
 
             //行動順計算
@@ -131,7 +192,11 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
             //行動順に行動
             while (!AllDone() && t <1000)
             {
-                //Debug.Log(spdQueue.Count);
+
+                while (gameStop)
+                {
+                    yield return new WaitForSeconds(0.1f);
+                }
 
                 if (spdQueue.Count == 0) break;
                 int target = spdQueue.Dequeue();
@@ -149,6 +214,16 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
                 //t++;
 
                 yield return new WaitForSeconds(0.5f);
+
+                if (ps != null)
+                {
+                    while (ps.isPlaying)
+                    {
+                        yield return new WaitForSeconds(0.1f);
+                    }
+                }
+
+                ps = null;
             }
 
 
@@ -190,18 +265,20 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
     {
         spdQueue = new Queue<int>();
         List<Monster> monsters = new List<Monster>();
-        foreach (var enemy in enemyField)
-        {
-            if(enemy.no != 0)
-                monsters.Add(enemy);
-
-        }
+        
         foreach (var ally in allyField)
         {
             if (ally.no != 0)
                 monsters.Add(ally);
 
         }
+        foreach (var enemy in enemyField)
+        {
+            if(enemy.no != 0)
+                monsters.Add(enemy);
+
+        }
+
 
         int max = -1;
         int _ally = 0;
@@ -249,14 +326,14 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
     public void MonsterDead(bool ally,int field)
     {   
 
-        if (ally) Debug.Log("味方の" + allyField[field].name + "(" + allyField[field].field + ")は倒れた");
-        else Debug.Log("敵の" + enemyField[field].name + "(" + allyField[field].field + ")は倒れた");
+        if (ally) AddLog("味方の" + allyField[field].name + "(" + allyField[field].field + ")は倒れた");
+        else AddLog("敵の" + enemyField[field].name + "(" + allyField[field].field + ")は倒れた");
         
 
         if (ally)
         {
             allyField[field].sprite = Resources.Load<Sprite>("Monster/blank");
-            allyImage[field].sprite = allyField[field].sprite;
+
 
             if (allyField[0].living == false && allyField[1].living == false && allyField[2].living == false && allyField[3].living == false && allyField[4].living == false && allyField[5].living == false)
             {
@@ -264,30 +341,21 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
                 return;
             }
             if(allyField[0].living == false && allyField[1].living == false && allyField[2].living == false)
-            {
-                var tmp = allyField[0];
-                allyField[0] = allyField[3];
-                allyField[3] = tmp;
-                allyImage[0].sprite = allyField[0].sprite;
-                allyImage[3].sprite = allyField[3].sprite;
-
-                tmp = allyField[1];
-                allyField[1] = allyField[4];
-                allyField[4] = tmp;
-                allyImage[1].sprite = allyField[1].sprite;
-                allyImage[4].sprite = allyField[4].sprite;
-
-                tmp = allyField[2];
-                allyField[2] = allyField[5];
-                allyField[5] = tmp;
-                allyImage[2].sprite = allyField[2].sprite;
-                allyImage[5].sprite = allyField[5].sprite;
+            {   
+                for(int i = 0; i < 3; i++)
+                {
+                    var tmp = allyField[i];
+                    var tmp2 = allyField[i].field;
+                    allyField[i] = allyField[i + 3];
+                    allyField[i + 3] = tmp;
+                    allyField[i].field = allyField[i + 3].field;
+                    allyField[i + 3].field = tmp2;
+                }
             }
         }
         else
         {
             enemyField[field].sprite = Resources.Load<Sprite>("Monster/blank");
-            enemyImage[field].sprite = enemyField[field].sprite;
 
             if (enemyField[0].living == false && enemyField[1].living == false && enemyField[2].living == false && enemyField[3].living == false && enemyField[4].living == false && enemyField[5].living == false)
             {
@@ -296,42 +364,72 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
             }
             if (enemyField[0].living == false && enemyField[1].living == false && enemyField[2].living == false)
             {
-                var tmp = enemyField[0];
-                enemyField[0] = enemyField[3];
-                enemyField[3] = tmp;
-                enemyImage[0].sprite = enemyField[0].sprite;
-                enemyImage[3].sprite = enemyField[3].sprite;
-
-                tmp = enemyField[1];
-                enemyField[1] = enemyField[4];
-                enemyField[4] = tmp;
-                enemyImage[1].sprite = enemyField[1].sprite;
-                enemyImage[4].sprite = enemyField[4].sprite;
-
-                tmp = enemyField[2];
-                enemyField[2] = enemyField[5];
-                enemyField[5] = tmp;
-                enemyImage[2].sprite = enemyField[2].sprite;
-                enemyImage[5].sprite = enemyField[5].sprite;
+                for (int i = 0; i < 3; i++)
+                {
+                    var tmp = enemyField[i];
+                    var tmp2 = enemyField[i].field;
+                    enemyField[i] = enemyField[i + 3];
+                    enemyField[i + 3] = tmp;
+                    enemyField[i].field = enemyField[i + 3].field;
+                    enemyField[i + 3].field = tmp2;
+                }
             }
         }
 
+        FieldUpdate();
+        StateUpdate();
         SpdDecide();
+    }
+
+    public void StateUpdate()
+    {
+        for(int i = 0; i < 6; i++)
+        {
+            if (allyField[i].living)
+            {
+                allyHP[i].gameObject.SetActive(true);
+                allyMana[i].gameObject.SetActive(true);
+            }
+            else
+            {                
+                allyHP[i].gameObject.SetActive(false);
+                allyMana[i].gameObject.SetActive(false);
+
+            }
+            allyHP[i].maxValue = allyField[i].maxHp;
+            allyHP[i].value = allyField[i].hp;
+            allyMana[i].maxValue = allyField[i].maxMana;
+            allyMana[i].value = allyField[i].mana;
+
+            if (enemyField[i].living)
+            {
+                enemyHP[i].gameObject.SetActive(true);
+                enemyMana[i].gameObject.SetActive(true);
+            }
+            else
+            {
+                enemyHP[i].gameObject.SetActive(false);
+                enemyMana[i].gameObject.SetActive(false);
+            }
+            enemyHP[i].maxValue = enemyField[i].maxHp;
+            enemyHP[i].value = enemyField[i].hp;
+            enemyMana[i].maxValue = enemyField[i].maxMana;
+            enemyMana[i].value = enemyField[i].mana;
+        }
     }
     
     //全滅
     private void GameOver()
     {
         StopCoroutine(Turn);
-
-        BattleField.SetActive(false);
         //戻る
+        overrayLose.SetActive(true);
     }
 
     //敵全滅(ステージクリア)
     private void Clear()
     {
-        Debug.Log("ステージ" + progress + "クリア");
+        AddLog("ステージ" + progress + "クリア");
         //エッセンス獲得
         GetEssense();
 
@@ -343,14 +441,20 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
             //アンロック
             //戻る
 
-            BattleField.SetActive(false);
-
+            overrayEnd.SetActive(true);
             return;
         }
 
         SummonAllyMonsters();
         SummonEnemyMonsters();
         FieldUpdate();
+        StateUpdate();
+        LogReset();
+
+        AddLog($"Wave {progress + 1} スタート");
+
+        gameStop = true;
+        overrayContinue.SetActive(true);
 
         Turn = StartCoroutine(TurnAction());
     }
@@ -439,12 +543,73 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
             else size = allyImage[i].rectTransform.sizeDelta.y;
             if (size < 100) allyImage[i].rectTransform.sizeDelta = new Vector2(allyImage[i].rectTransform.sizeDelta.x * (100 / size), allyImage[i].rectTransform.sizeDelta.y * (100 / size));
 
+            //Rank
+            switch (allyField[i].rank)
+            {
+                case 1:
+                    allyRank[i].sprite = Resources.Load<Sprite>("blank");
+                    break;
+                case 2:
+                    allyRank[i].sprite = Resources.Load<Sprite>("rank/2");
+                    allyRank[i].rectTransform.sizeDelta = new Vector2(20, 20);
+                    
+                    break;
+                case 3:
+                    allyRank[i].sprite = Resources.Load<Sprite>("rank/3");
+                    allyRank[i].rectTransform.sizeDelta = new Vector2(30, 30);
+                    break;
+            }
+            
+
             enemyImage[i].sprite = enemyField[i].sprite;
             enemyImage[i].SetNativeSize();
 
             if (enemyImage[i].rectTransform.sizeDelta.x > enemyImage[i].rectTransform.sizeDelta.y) size = enemyImage[i].rectTransform.sizeDelta.x;
             else size = enemyImage[i].rectTransform.sizeDelta.y;
             if (size < 100) enemyImage[i].rectTransform.sizeDelta = new Vector2(enemyImage[i].rectTransform.sizeDelta.x * (100 / size), enemyImage[i].rectTransform.sizeDelta.y * (100 / size));
+
+            switch (enemyField[i].rank)
+            {
+                case 1:
+                    enemyRank[i].sprite = Resources.Load<Sprite>("blank");
+                    break;
+                case 2:
+                    enemyRank[i].sprite = Resources.Load<Sprite>("rank/2");
+                    enemyRank[i].rectTransform.sizeDelta = new Vector2(20, 20);
+
+                    break;
+                case 3:
+                    enemyRank[i].sprite = Resources.Load<Sprite>("rank/3");
+                    enemyRank[i].rectTransform.sizeDelta = new Vector2(30, 30);
+                    break;
+            }
         }
+    }
+
+    public void WaitAnimation(GameObject anim,AudioClip ac,bool ally,int field)
+    {
+        if (ally) ps = Instantiate(anim, allyImage[field].transform).GetComponent<ParticleSystem>();
+        else ps = Instantiate(anim, enemyImage[field].transform).GetComponent<ParticleSystem>();
+        ps.Play();
+
+        AudioPlayer.Instance.Play(ac);
+    }
+
+    public void OnContinue()
+    {
+        gameStop = false;
+        overrayStart.SetActive(false);
+        overrayContinue.SetActive(false);
+    }
+
+    public void OnEnd()
+    {
+        gameStop = true;
+        overrayLose.SetActive(false);
+        overrayEnd.SetActive(false);
+        overrayStart.SetActive(false);
+        overrayContinue.SetActive(false);
+
+        BattleField.SetActive(false);
     }
 }

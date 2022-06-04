@@ -22,6 +22,11 @@ public class DeckFieldSetting : MonoBehaviour
 
     public void Initialize()
     {
-        Fields[0].sprite = Resources.Load<Sprite>(PlayerPrefs.GetString("Bt_Front1"));
+        Fields[0].sprite = DataBase.noToMonster[PlayerPrefs.GetInt("Bt_Front1")].sprite;
+        Fields[1].sprite = DataBase.noToMonster[PlayerPrefs.GetInt("Bt_Front2")].sprite;
+        Fields[2].sprite = DataBase.noToMonster[PlayerPrefs.GetInt("Bt_Front3")].sprite;
+        Fields[3].sprite = DataBase.noToMonster[PlayerPrefs.GetInt("Bt_Back1")].sprite;
+        Fields[4].sprite = DataBase.noToMonster[PlayerPrefs.GetInt("Bt_Back2")].sprite;
+        Fields[5].sprite = DataBase.noToMonster[PlayerPrefs.GetInt("Bt_Back3")].sprite;
     }
 }

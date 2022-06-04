@@ -72,4 +72,9 @@ public class Home_Battle : SingletonMonoBehaviour<Home_Battle>
         BattleController.Instance.Initialize(new Stage(selected));
         selected = 0;
     }
+
+    public void SetField()
+    {
+
+    }
 }

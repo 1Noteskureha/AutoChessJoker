@@ -48,6 +48,9 @@ public abstract class Monster
     public List<Effect> thenSkill = new List<Effect>();              //スキルした時
     public List<Effect> thenDealSkill = new List<Effect>();          //スキル受けた時
 
+    protected GameObject AAAnim;
+    protected AudioClip AASound;
+
     protected void Init()
     {
         if (rank == 2)
@@ -78,6 +81,9 @@ public abstract class Monster
         living = true;
         done = false;
         stan = false;
+
+        AAAnim = Resources.Load<GameObject>("Animation/AA");
+        AASound = Resources.Load<AudioClip>("Sound/AA");
     }
 
     public void Move()
@@ -94,14 +100,14 @@ public abstract class Monster
         {
             if (mana < maxMana)
             {
-                if (ally) Debug.Log("味方の" + name + "(" + field + ")" + "の攻撃");
-                else Debug.Log("敵の" + name + "(" + field + ")" + "の攻撃");
+                if (ally) BattleController.Instance.AddLog("味方の" + name + "(" + field + ")" + "の攻撃");
+                else BattleController.Instance.AddLog("敵の" + name + "(" + field + ")" + "の攻撃");
                 AutoAttack();
             }
             else
             {
-                if (ally) Debug.Log("味方の" + name + "(" + field + ")" + "のスキル");
-                else Debug.Log("敵の" + name + "(" + field + ")" + "のスキル");
+                if (ally) BattleController.Instance.AddLog("味方の" + name + "(" + field + ")" + "の" + skill.name);
+                else BattleController.Instance.AddLog("敵の" + name + "(" + field + ")" + "の" + skill.name);
                 Skill();
             }
         }
@@ -110,6 +116,8 @@ public abstract class Monster
         {
             end.Excute();
         }
+
+        BattleController.Instance.StateUpdate();
     }
 
     //通常攻撃
@@ -130,7 +138,7 @@ public abstract class Monster
                 {
                     if (BattleController.Instance.enemyField[i%3].living)
                     {
-                        BattleController.Instance.enemyField[field%3].DealADDamage(atk);
+                        BattleController.Instance.enemyField[i%3].DealADDamage(atk);
                         break;
                     }
                 }
@@ -152,7 +160,7 @@ public abstract class Monster
                 {
                     if (BattleController.Instance.allyField[i%3].living)
                     {
-                        BattleController.Instance.allyField[field%3].DealADDamage(atk);
+                        BattleController.Instance.allyField[i%3].DealADDamage(atk);
                         break;
                     }
                 }
@@ -184,13 +192,17 @@ public abstract class Monster
     public void DealADDamage(int DMG)
     {
         if (!living) return;
-        
         hp -= Mathf.Clamp(DMG - def,0,1000000);
+
+        if (ally) BattleController.Instance.AddLog($"味方の{name}は{DMG - def}のダメージを受けた");
+        else BattleController.Instance.AddLog($"敵の{name}は{DMG - def}のダメージを受けた");
 
         foreach (var AA in thenDealAutoAttack)
         {
             AA.Excute();
         }
+
+        BattleController.Instance.WaitAnimation(AAAnim,AASound,ally,field);
 
         Dead();
     }
@@ -200,7 +212,9 @@ public abstract class Monster
         if (!living) return;
         hp -= Mathf.Clamp(DMG - res, 0, 1000000);
 
-        Debug.Log(hp);
+        if (ally) BattleController.Instance.AddLog($"味方の{name}は{DMG - res}のダメージを受けた");
+        else BattleController.Instance.AddLog($"敵の{name}は{DMG - res}のダメージを受けた");
+
         foreach (var sk in thenDealSkill)
         {
             sk.Excute();
@@ -213,6 +227,10 @@ public abstract class Monster
     {
         if (!living) return;
         hp -= Mathf.Clamp(DMG, 0, 1000000);
+
+        if (ally) BattleController.Instance.AddLog($"味方の{name}は{DMG}のダメージを受けた");
+        else BattleController.Instance.AddLog($"敵の{name}は{DMG}のダメージを受けた");
+
         Dead();
 
     }
@@ -220,12 +238,13 @@ public abstract class Monster
     //リフレッシュ
     public void Refresh()
     {   
-        if(!living)
+        if(living)
         done = false;
     }
 
-        public void Dead()
+    public void Dead()
     {
+        BattleController.Instance.StateUpdate();
 
         if (hp > 0) return;
         hp = 0;
@@ -238,6 +257,13 @@ public abstract class Monster
         {
             BattleController.Instance.MonsterDead(ally,field);
         }
+    }
+
+    protected IEnumerator AAAnimationWait()
+    {
+        
+
+        yield break;
     }
 }
 

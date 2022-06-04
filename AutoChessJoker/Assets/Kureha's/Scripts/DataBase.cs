@@ -29,6 +29,12 @@ public static class DataBase
                 return new Slime(2);
             case 1002:
                 return new Slime(3);
+            case 2000:
+                return new Goblin(1);
+            case 2001:
+                return new Goblin(2);
+            case 2002:
+                return new Goblin(3);
         }
 
         return new Blank();

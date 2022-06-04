@@ -36,8 +36,11 @@ public class SettingMenu : MonoBehaviour
     //メニュー表示をトグルする
     public void MenuToggle()
     {
+        Debug.Log("?");
         menu.SetActive(!menu.activeSelf);
         menuBack.SetActive(!menuBack.activeSelf);
+
+        BattleController.Instance.gameStop = menu.activeSelf;
     }
 
     //メニュー表示を消す

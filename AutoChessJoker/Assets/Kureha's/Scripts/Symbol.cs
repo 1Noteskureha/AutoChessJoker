@@ -10,6 +10,8 @@ public abstract class Symbol
     public List<int> activation;
     //public bool nowActive;
 
+    public Sprite sprite;
+
     public void Activate(int level) { }
 }
 
@@ -21,6 +23,8 @@ public class Glass : Symbol
         description = "UŒ‚‚²‚Æ‚Ìƒ}ƒi‰ñ•œ—Ê‚ª(5/10/20)‘‚¦‚é";
         activation = new List<int>() { 3, 4, 6 };
         //nowActive = false;
+
+        sprite = Resources.Load<Sprite>("Symbol/Glass");
     }
 
     public void Activate(int level)

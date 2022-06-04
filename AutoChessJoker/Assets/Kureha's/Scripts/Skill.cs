@@ -19,7 +19,7 @@ public class Nenneki : Skill
     public Nenneki(int _skillLevel)
     {
         name = "”S‰t";
-        description = "”S‰t‚ğ”ò‚Î‚µ‚Ä“G‚Ì“®‚«‚ğ“İ‚­‚·‚éB(25/50/100)‚Ìƒ_ƒ[ƒW‚ğ—^‚¦A‘f‘‚³‚ğ(5/10/20)‰º‚°‚éB";
+        description = "³–Ê‚Ì“G‚É”S‰t‚ğ”ò‚Î‚µ‚Ä“G‚Ì“®‚«‚ğ“İ‚­‚·‚éB(25/50/100)‚Ìƒ_ƒ[ƒW‚ğ—^‚¦A‘f‘‚³‚ğ(5/10/20)‰º‚°‚éB";
 
         skillLevel = _skillLevel;
     }
