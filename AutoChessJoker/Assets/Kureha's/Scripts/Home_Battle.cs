@@ -21,6 +21,10 @@ public class Home_Battle : SingletonMonoBehaviour<Home_Battle>
     [SerializeField]
     private Transform Content;
 
+    //フィールド
+    [SerializeField]
+    private DeckFieldSetting ds;
+
     private int selected = 0;
 
     // Start is called before the first frame update
@@ -32,6 +36,7 @@ public class Home_Battle : SingletonMonoBehaviour<Home_Battle>
         }
 
         SelectStage();
+
     }
 
     // Update is called once per frame
@@ -47,21 +52,22 @@ public class Home_Battle : SingletonMonoBehaviour<Home_Battle>
     }
 
     private void SelectStage()
-    {
-        switch (selected)
+    {   
+        if(selected == 0)
         {
-            case 0:
-                treasure.text = "";
-                enemies.sprite = null;
-                break;
+            treasure.text = "";
+            enemies.sprite = null;
+            return;
         }
+        treasure.text = new Stage(selected).description;
+        enemies.sprite = new Stage(selected).sprite;
     }
 
     public void OnSelectStage(int Stage)
     {
         selected = Stage;
-        //Enemies.sprite = ;
-        //Treasure.text = ;
+
+        SelectStage();
     }
 
     public void GoBattle()
@@ -73,8 +79,4 @@ public class Home_Battle : SingletonMonoBehaviour<Home_Battle>
         selected = 0;
     }
 
-    public void SetField()
-    {
-
-    }
 }

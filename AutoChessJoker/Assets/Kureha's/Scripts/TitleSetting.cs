@@ -43,13 +43,19 @@ public class TitleSetting : MonoBehaviour
             {
                 PlayerPrefs.SetInt("Dict_Unlock" + i, 0);
                 PlayerPrefs.SetInt("Inventory_Monster" + i, 0);
-                PlayerPrefs.SetInt("Inventory_Level" + i, 0);
             }
 
             PlayerPrefs.SetInt("Screen_Size" , 1920);
             PlayerPrefs.SetInt("Screen_FullScreen" , 0);
 
             PlayerPrefs.SetInt("Init",1);
+
+#if UNITY_EDITOR
+            PlayerPrefs.SetInt("Inventory_Monster1",1000);
+            PlayerPrefs.SetInt("Inventory_Monster2",2000);
+            PlayerPrefs.SetInt("Inventory_Monster4",1002);
+            PlayerPrefs.SetInt("Inventory_Monster20",1001);
+#endif
         }
 
         DataBase.Init();

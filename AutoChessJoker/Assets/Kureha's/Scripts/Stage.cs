@@ -7,6 +7,7 @@ public class Stage
     public string name;
     public string description;
     public List<List<int>> essense;
+    public Sprite sprite;
     //public Sprite sprite;
     
 

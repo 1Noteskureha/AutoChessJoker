@@ -273,12 +273,15 @@ public class Blank : Monster
     public Blank()
     {
         no = 0;
+        rank = 1;
+        name = "ÉXÉSÉCã‡ã ";
 
         Init();
     }
 
     protected new void Init()
-    {        
+    {
+        name = "";
         living = false;
         done = true;
         stan = false;

@@ -22,8 +22,8 @@ public class StageButton : MonoBehaviour
     }
 
     public void Init(int Selected)
-    {   
-        
+    {
+        StageName.text = new Stage(Selected).name;
         GetComponent<Button>().onClick.AddListener(() => Home_Battle.Instance.OnSelectStage(Selected));
     }
 }

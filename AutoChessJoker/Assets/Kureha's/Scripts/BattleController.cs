@@ -436,7 +436,8 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
         StopCoroutine(Turn);
 
         progress++;
-        if(progress > stage.enemyFields.Count)
+
+        if(progress == stage.enemyFields.Count)
         {
             //ÉAÉìÉçÉbÉN
             //ñﬂÇÈ
@@ -543,6 +544,7 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
             else size = allyImage[i].rectTransform.sizeDelta.y;
             if (size < 100) allyImage[i].rectTransform.sizeDelta = new Vector2(allyImage[i].rectTransform.sizeDelta.x * (100 / size), allyImage[i].rectTransform.sizeDelta.y * (100 / size));
 
+            
             //Rank
             switch (allyField[i].rank)
             {
@@ -559,7 +561,7 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
                     allyRank[i].rectTransform.sizeDelta = new Vector2(30, 30);
                     break;
             }
-            
+            if(!allyField[i].living) allyRank[i].sprite = Resources.Load<Sprite>("blank");
 
             enemyImage[i].sprite = enemyField[i].sprite;
             enemyImage[i].SetNativeSize();
@@ -583,6 +585,7 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
                     enemyRank[i].rectTransform.sizeDelta = new Vector2(30, 30);
                     break;
             }
+            if (!enemyField[i].living) enemyRank[i].sprite = Resources.Load<Sprite>("blank");
         }
     }
 

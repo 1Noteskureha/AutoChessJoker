@@ -6,12 +6,12 @@ using UnityEngine.UI;
 public class DeckFieldSetting : MonoBehaviour
 {
     [SerializeField]
-    List<Image> Fields;
+    private List<DragAndDrop> dd;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        SetInfo();
     }
 
     // Update is called once per frame
@@ -20,13 +20,17 @@ public class DeckFieldSetting : MonoBehaviour
         
     }
 
-    public void Initialize()
+    public void OnEnable()
     {
-        Fields[0].sprite = DataBase.noToMonster[PlayerPrefs.GetInt("Bt_Front1")].sprite;
-        Fields[1].sprite = DataBase.noToMonster[PlayerPrefs.GetInt("Bt_Front2")].sprite;
-        Fields[2].sprite = DataBase.noToMonster[PlayerPrefs.GetInt("Bt_Front3")].sprite;
-        Fields[3].sprite = DataBase.noToMonster[PlayerPrefs.GetInt("Bt_Back1")].sprite;
-        Fields[4].sprite = DataBase.noToMonster[PlayerPrefs.GetInt("Bt_Back2")].sprite;
-        Fields[5].sprite = DataBase.noToMonster[PlayerPrefs.GetInt("Bt_Back3")].sprite;
+        SetInfo();
+    }
+
+    public void SetInfo()
+    {
+        int i = 0;
+        for (int no = 100; no < 110; no++,i++)
+        {
+            dd[i].Init(no);
+        }
     }
 }
