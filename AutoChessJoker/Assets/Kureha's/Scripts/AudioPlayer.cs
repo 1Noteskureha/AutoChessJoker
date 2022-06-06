@@ -3,13 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AudioPlayer : SingletonMonoBehaviour<AudioPlayer>
-{
-    private AudioSource AS;
+{   
+    [SerializeField]
+    private AudioSource BGM;
+    [SerializeField]
+    private AudioSource SE;
 
+    private float masterVolume;
+    private float BGMVolume;
+    private float SEVolume;
     // Start is called before the first frame update
     void Start()
     {
-        AS = GetComponent<AudioSource>();
+        masterVolume = PlayerPrefs.GetFloat("Volume_Master");
+        BGMVolume = PlayerPrefs.GetFloat("Volume_BGM");
+        SEVolume = PlayerPrefs.GetFloat("Volume_SE");
+
+        SetMasterVolume(masterVolume);
+        SetBGMVolume(BGMVolume);
+        SetSEVolume(SEVolume);
     }
 
     // Update is called once per frame
@@ -17,9 +29,35 @@ public class AudioPlayer : SingletonMonoBehaviour<AudioPlayer>
     {
         
     }
-
-    public void Play(AudioClip ac)
+    public void BGMPlay(AudioClip ac)
     {
-        AS.PlayOneShot(ac);
+        BGM.Play();
+    }
+
+    public void SEPlay(AudioClip ac)
+    {
+        SE.PlayOneShot(ac);
+    }
+
+    public void SetMasterVolume(float volume)
+    {
+        masterVolume = volume;
+        PlayerPrefs.SetFloat("Volume_Master",masterVolume);
+        SetBGMVolume(BGMVolume);
+        SetSEVolume(SEVolume);
+    }
+
+    public void SetBGMVolume(float volume)
+    {
+        BGMVolume = volume;
+        PlayerPrefs.SetFloat("Volume_BGM", BGMVolume);
+        BGM.volume = masterVolume * BGMVolume;
+    }
+
+    public void SetSEVolume(float volume)
+    {
+        SEVolume = volume;
+        PlayerPrefs.SetFloat("Volume_SE", SEVolume);
+        SE.volume = masterVolume * SEVolume;
     }
 }

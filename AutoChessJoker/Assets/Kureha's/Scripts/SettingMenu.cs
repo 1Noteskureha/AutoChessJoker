@@ -40,6 +40,7 @@ public class SettingMenu : MonoBehaviour
         menu.SetActive(!menu.activeSelf);
         menuBack.SetActive(!menuBack.activeSelf);
 
+        if(BattleController.Instance != null)
         BattleController.Instance.gameStop = menu.activeSelf;
     }
 

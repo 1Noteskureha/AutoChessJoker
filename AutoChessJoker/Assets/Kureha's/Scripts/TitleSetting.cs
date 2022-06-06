@@ -58,6 +58,10 @@ public class TitleSetting : MonoBehaviour
 #endif
         }
 
+        PlayerPrefs.SetFloat("Volume_BGM", 1);
+        PlayerPrefs.SetFloat("Volume_SE", 1);
+        PlayerPrefs.SetFloat("Volume_Master", 1);
+
         DataBase.Init();
 
         SceneManager.LoadSceneAsync("MainScene");

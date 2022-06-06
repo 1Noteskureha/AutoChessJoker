@@ -21,10 +21,6 @@ public class Home_Battle : SingletonMonoBehaviour<Home_Battle>
     [SerializeField]
     private Transform Content;
 
-    //フィールド
-    [SerializeField]
-    private DeckFieldSetting ds;
-
     private int selected = 0;
 
     // Start is called before the first frame update

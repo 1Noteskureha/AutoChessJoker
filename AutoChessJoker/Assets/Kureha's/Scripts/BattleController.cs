@@ -595,7 +595,7 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
         else ps = Instantiate(anim, enemyImage[field].transform).GetComponent<ParticleSystem>();
         ps.Play();
 
-        AudioPlayer.Instance.Play(ac);
+        AudioPlayer.Instance.SEPlay(ac);
     }
 
     public void OnContinue()
