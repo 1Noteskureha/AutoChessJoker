@@ -39,4 +39,26 @@ public static class DataBase
 
         return new Blank();
     }
+
+    public static Symbol DictSymbol(int value)
+    {
+        switch (value)
+        {
+            case 1:
+                return new Glass();
+        }
+
+        return null;
+    }
+
+    public static string DictYougo(int value)
+    {
+        switch (value)
+        {
+            case 1:
+                return "1ÉRÉÅ";
+        }
+
+        return "";
+    }
 }

@@ -50,6 +50,12 @@ public class SettingMenu : MonoBehaviour
         menu.SetActive(false);
     }
 
+    public void OnDictSetting()
+    {
+        Debug.Log("??");
+        dictMenu.SetActive(true);
+    }
+
     public void OnScreenSetting()
     {
         screenMenu.SetActive(true);
