@@ -525,6 +525,8 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
             enemyField[i].ally = false;
             enemyField[i].field = i;
             enemyImage[i].sprite = enemyField[i].sprite;
+
+            if (PlayerPrefs.GetInt("Dict_Unlock" + enemyField[i].no,0) == 0) PlayerPrefs.SetInt("Dict_Unlock" + enemyField[i].no, 1);
         }
 
         //FieldUpdate();

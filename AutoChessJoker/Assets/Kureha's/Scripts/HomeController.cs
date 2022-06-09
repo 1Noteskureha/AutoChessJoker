@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HomeController : MonoBehaviour
+public class HomeController : SingletonMonoBehaviour<HomeController>
 {
 
     [SerializeField]
@@ -14,6 +14,11 @@ public class HomeController : MonoBehaviour
 
     [SerializeField]
     private GameObject BattleField;
+
+    [SerializeField]
+    private List<GameObject> TabButton;
+    [SerializeField]
+    private GameObject SettingMenu;
 
     // Start is called before the first frame update
     void Start()
@@ -53,5 +58,13 @@ public class HomeController : MonoBehaviour
         if (Summon.activeSelf) return;
         StateReset();
         Summon.SetActive(true);
+    }
+
+    public void TabButtonDisplay(bool b)
+    {
+        TabButton[0].SetActive(b);
+        TabButton[1].SetActive(b);
+        TabButton[2].SetActive(b);
+        SettingMenu.SetActive(b);
     }
 }

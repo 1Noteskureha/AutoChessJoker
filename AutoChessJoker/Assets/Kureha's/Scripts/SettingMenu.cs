@@ -36,7 +36,6 @@ public class SettingMenu : MonoBehaviour
     //メニュー表示をトグルする
     public void MenuToggle()
     {
-        Debug.Log("?");
         menu.SetActive(!menu.activeSelf);
         menuBack.SetActive(!menuBack.activeSelf);
 
@@ -52,7 +51,6 @@ public class SettingMenu : MonoBehaviour
 
     public void OnDictSetting()
     {
-        Debug.Log("??");
         dictMenu.SetActive(true);
     }
 

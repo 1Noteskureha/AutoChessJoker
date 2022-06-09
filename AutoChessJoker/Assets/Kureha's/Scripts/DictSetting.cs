@@ -102,7 +102,9 @@ public class DictSetting : MonoBehaviour
     }
 
     private void TabSetting()
-    {
+    {   
+
+
         monsterList = new List<GameObject>();
         symbolList = new List<GameObject>();
         glossaryList = new List<GameObject>();
@@ -158,4 +160,27 @@ public class DictSetting : MonoBehaviour
 
         this.gameObject.SetActive(false);
     }
+
+    public void OnEnable()
+    {
+
+        for (int i = 0; i < 1; i++)
+        {
+            int no = i + 1;
+            symbolList[i].GetComponent<Dict_Symbol>().Init(this, no);
+        }
+
+        for (int i = 0; i < 1; i++)
+        {
+            int no = i + 1;
+            glossaryList[i].GetComponent<Dict_Glossary>().Init(this, no);
+        }
+
+        for (int i = 0; i < monsterList.Count; i++)
+        {
+            int no = (i + 1) * 1000;
+            monsterList[i].GetComponent<Dict_Monster>().Init(this, no);
+        }
+    }
+    
 }
