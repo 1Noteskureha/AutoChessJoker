@@ -4,19 +4,19 @@ using UnityEngine;
 
 public static class DataBase
 {
-    public static Dictionary<int, string> noToName = new Dictionary<int, string>();
+    //public static Dictionary<int, string> noToName = new Dictionary<int, string>();
     //public static Dictionary<int, Stage> StageName = new Dictionary<int, Stage>();
-    public static Dictionary<int, Monster> noToMonster = new Dictionary<int, Monster>();
+    //public static Dictionary<int, Monster> noToMonster = new Dictionary<int, Monster>();
 
     public static void Init()
     {   
         //noToName
-        noToName.Add(1000,"スライム"); 
+        //noToName.Add(1000,"スライム"); 
 
         //noToMonster
-        noToMonster.Add(1000,new Slime(1));
-        noToMonster.Add(1001,new Slime(2));
-        noToMonster.Add(1002,new Slime(3));
+        //noToMonster.Add(1000,new Slime(1));
+        //noToMonster.Add(1001,new Slime(2));
+        //noToMonster.Add(1002,new Slime(3));
     }
 
     public static Monster Bt_noToMonster(int value)
@@ -60,5 +60,10 @@ public static class DataBase
         }
 
         return "";
+    }
+
+    public static Monster DictMatching(int monsterNo1,int monsterNo2)
+    {
+        return new Blank();
     }
 }

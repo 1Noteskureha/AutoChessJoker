@@ -77,7 +77,6 @@ public class InventoryPick : MonoBehaviour
 
     public void OnInventoryNext()
     {
-        Debug.Log(page);
         if (page == 4) return;
 
         page++;
@@ -95,16 +94,17 @@ public class InventoryPick : MonoBehaviour
         switch (type)
         {
             case 0:
-                Home_Summon.Instance.OnSelectMatchMonster(place,no);
+                Home_Summon.Instance.OnSelectMatchMonster(place,no + 1);
                 break;
             case 1:
-                Home_Summon.Instance.OnSelectEvolveMonster(no);
+                Home_Summon.Instance.OnSelectEvolveMonster(no + 1);
                 break;
             case 2:
-                Home_Summon.Instance.OnSelectDeleteMonster(no);
+                Home_Summon.Instance.OnSelectDeleteMonster(no + 1);
                 break;
         }
-        
+
+        HomeController.Instance.TabButtonDisplay(true);
         this.gameObject.SetActive(false);
     }
 
