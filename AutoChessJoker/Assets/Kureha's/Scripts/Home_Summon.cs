@@ -29,6 +29,8 @@ public class Home_Summon : SingletonMonoBehaviour<Home_Summon>
     //Summon
     [SerializeField]
     private Image SummonMonster;
+    [SerializeField]
+    private Animator summonAnim;
 
     private int SummonNo = -1;
 
@@ -39,6 +41,8 @@ public class Home_Summon : SingletonMonoBehaviour<Home_Summon>
     private Image MatchMonsterRight;
     [SerializeField]
     private Image MatchMonsterAfter;
+    [SerializeField]
+    private Animator matchAnim;
 
     private int MatchNo1 = -1;
     private int MatchNo2 = -1;
@@ -48,12 +52,16 @@ public class Home_Summon : SingletonMonoBehaviour<Home_Summon>
     private Image EvolveMonster;
     [SerializeField]
     private Image EvolveMonsterAfter;
+    [SerializeField]
+    private Animator evolveAnim;
 
     private int EvolveNo = -1;
 
     //Delete
     [SerializeField]
     private Image DeleteMonster;
+    [SerializeField]
+    private Animator deleteAnim;
 
     private int DeleteNo = -1;
 
@@ -179,11 +187,51 @@ public class Home_Summon : SingletonMonoBehaviour<Home_Summon>
     //召喚を行う
     public void OnLetSummon()
     {   
+        Monster monster = SelectMonster(SummonNo);
+
         //召喚できるか判定
-        //インベントリの空き判定
-        //アニメーション
-        //エッセンスを減らす
-        //インベントリに増やす
+        if (PlayerPrefs.GetInt("Essense_A") >= monster.essense[0] &&
+            PlayerPrefs.GetInt("Essense_B") >= monster.essense[1] &&
+            PlayerPrefs.GetInt("Essense_C") >= monster.essense[2] &&
+            PlayerPrefs.GetInt("Essense_D") >= monster.essense[3] &&
+            PlayerPrefs.GetInt("Essense_E") >= monster.essense[4] &&
+            PlayerPrefs.GetInt("Essense_F") >= monster.essense[5] &&
+            PlayerPrefs.GetInt("Essense_G") >= monster.essense[6] &&
+            PlayerPrefs.GetInt("Essense_H") >= monster.essense[7] &&
+            PlayerPrefs.GetInt("Essense_I") >= monster.essense[8]
+            )
+        {   
+            //インベントリの空き判定
+            for(int i = 0; i < 100; i++)
+            {
+                if(PlayerPrefs.GetInt("Inventory_Monster" + (i + 1)) == 0)
+                {   
+                    //エッセンスを減らす
+                    PlayerPrefs.SetInt("Essense_A", PlayerPrefs.GetInt("Essense_A") - monster.essense[0]);
+                    PlayerPrefs.SetInt("Essense_B", PlayerPrefs.GetInt("Essense_B") - monster.essense[1]);
+                    PlayerPrefs.SetInt("Essense_C", PlayerPrefs.GetInt("Essense_C") - monster.essense[2]);
+                    PlayerPrefs.SetInt("Essense_D", PlayerPrefs.GetInt("Essense_D") - monster.essense[3]);
+                    PlayerPrefs.SetInt("Essense_E", PlayerPrefs.GetInt("Essense_E") - monster.essense[4]);
+                    PlayerPrefs.SetInt("Essense_F", PlayerPrefs.GetInt("Essense_F") - monster.essense[5]);
+                    PlayerPrefs.SetInt("Essense_G", PlayerPrefs.GetInt("Essense_G") - monster.essense[6]);
+                    PlayerPrefs.SetInt("Essense_H", PlayerPrefs.GetInt("Essense_H") - monster.essense[7]);
+                    PlayerPrefs.SetInt("Essense_I", PlayerPrefs.GetInt("Essense_I") - monster.essense[8]);
+
+                    //インベントリに増やす
+                    PlayerPrefs.SetInt("Inventory_Monster" + (i + 1),monster.no);
+
+                    //アニメーション
+                    StartCoroutine(WaitAnimation(summonAnim));
+
+                    SummonNo = 0;
+                    SummonMonster.sprite = Resources.Load<Sprite>("Monster/blank");
+
+                    break;
+                }
+            }
+        }
+        
+        
     }
 
     //ボタンどっちが押されたか
@@ -259,10 +307,44 @@ public class Home_Summon : SingletonMonoBehaviour<Home_Summon>
     //進化を行う
     public void OnLetEvolve()
     {
-        //進化できるか判定（3体いるか、ランク3じゃないか判定）
-        //アニメーション
-        //指定したインベントリ以外のモンスターを2体消去
-        //指定したインベントリのランクを増やす
+        Monster monster = DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Inventory_Monster" + EvolveNo));
+
+        if (monster.no != 0) return;
+        int monsterCount = 1;
+        int inventory1 = 0;
+        int inventory2 = 0;
+        //進化できるか判定（3体いるか、ランク3じゃないか判定）    
+        if (monster.rank == 3) return;
+        
+        for (int i = 0; i < 100; i++) {
+
+            if (PlayerPrefs.GetInt("Inventory_Monster" + (i + 1)) == monster.no && (i + 1) != EvolveNo && monster.rank == PlayerPrefs.GetInt("Inventory_Monster" + (i + 1))%1000 + 1)
+            {
+                monsterCount++;
+
+                if(monsterCount == 2) inventory1 = i + 1;
+                if(monsterCount == 3){
+                    inventory2 = i + 1;
+
+                    //指定したインベントリ以外のモンスターを2体消去
+                    PlayerPrefs.SetInt("Inventory_Monster" + inventory1,0);
+                    PlayerPrefs.SetInt("Inventory_Monster" + inventory2,0);
+
+                    //指定したインベントリのランクを増やす
+                    PlayerPrefs.SetInt("Inventory_Monster" + (i + 1), monster.no + monster.rank);
+
+                    //アニメーション
+                    StartCoroutine(WaitAnimation(evolveAnim));
+
+                    EvolveNo = 0;
+                    EvolveMonster.sprite = Resources.Load<Sprite>("Monster/blank");
+
+                    EvolveMonsterAfter.sprite = Resources.Load<Sprite>("Monster/blank");
+                    break;
+                }
+            }
+        }
+
     }
 
     public void OnSelectDelete()
@@ -291,10 +373,30 @@ public class Home_Summon : SingletonMonoBehaviour<Home_Summon>
     //分解を行う
     public void OnLetDelete()
     {
+        Monster monster = DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Inventory_Monster" + DeleteNo));
+
         //削除できるか判定
-        //アニメーション
+        if (PlayerPrefs.GetInt("Inventory_Monster" + DeleteNo) == 0) return;
+
         //インベントリから指定したモンスターを消去
+        PlayerPrefs.SetInt("Inventory_Monster" + DeleteNo, 0);
+
         //エッセンスを増加
+        PlayerPrefs.SetInt("Essense_A", PlayerPrefs.GetInt("Essense_A") + monster.essense[0]);
+        PlayerPrefs.SetInt("Essense_B", PlayerPrefs.GetInt("Essense_B") + monster.essense[1]);
+        PlayerPrefs.SetInt("Essense_C", PlayerPrefs.GetInt("Essense_C") + monster.essense[2]);
+        PlayerPrefs.SetInt("Essense_D", PlayerPrefs.GetInt("Essense_D") + monster.essense[3]);
+        PlayerPrefs.SetInt("Essense_E", PlayerPrefs.GetInt("Essense_E") + monster.essense[4]);
+        PlayerPrefs.SetInt("Essense_F", PlayerPrefs.GetInt("Essense_F") + monster.essense[5]);
+        PlayerPrefs.SetInt("Essense_G", PlayerPrefs.GetInt("Essense_G") + monster.essense[6]);
+        PlayerPrefs.SetInt("Essense_H", PlayerPrefs.GetInt("Essense_H") + monster.essense[7]);
+        PlayerPrefs.SetInt("Essense_I", PlayerPrefs.GetInt("Essense_I") + monster.essense[8]);
+
+        //アニメーション
+        StartCoroutine(WaitAnimation(deleteAnim));
+
+        DeleteNo = 0;
+        DeleteMonster.sprite = Resources.Load<Sprite>("Monster/blank");
     }
 
     private Monster SelectMonster(int no)
@@ -324,5 +426,16 @@ public class Home_Summon : SingletonMonoBehaviour<Home_Summon>
         {
             
         }
+    }
+
+    private IEnumerator WaitAnimation(Animator anim)
+    {
+        anim.gameObject.SetActive(true);
+
+        yield return new WaitForAnimation(anim.GetComponent<Animator>());
+
+        anim.gameObject.SetActive(false);
+
+        yield break;
     }
 }

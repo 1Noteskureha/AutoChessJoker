@@ -156,6 +156,11 @@ public class InventoryPick : MonoBehaviour
     private void OnEnable()
     {
         HomeController.Instance.TabButtonDisplay(false);
+
+        for (int i = 0; i < inventory.Count; i++)
+        {
+            inventory[i].GetComponent<DragAndDrop>().Init(i);
+        }
     }
 
     public void OnExit()
