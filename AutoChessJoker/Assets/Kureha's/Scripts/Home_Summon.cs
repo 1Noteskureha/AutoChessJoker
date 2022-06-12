@@ -175,7 +175,8 @@ public class Home_Summon : SingletonMonoBehaviour<Home_Summon>
         
         if (no == -1) return;
 
-        Monster monster = SelectMonster(no);
+        
+        Monster monster = DataBase.Bt_noToMonster(no);
         
         SummonNo = no;
         SummonMonster.sprite = monster.sprite;
@@ -187,7 +188,7 @@ public class Home_Summon : SingletonMonoBehaviour<Home_Summon>
     //召喚を行う
     public void OnLetSummon()
     {   
-        Monster monster = SelectMonster(SummonNo);
+        Monster monster = DataBase.Bt_noToMonster(SummonNo);
 
         //召喚できるか判定
         if (PlayerPrefs.GetInt("Essense_A") >= monster.essense[0] &&
@@ -278,11 +279,17 @@ public class Home_Summon : SingletonMonoBehaviour<Home_Summon>
 
     //合成を行う
     public void OnLetMatch()
-    {
+    {   
+        Monster monster = FindMonsterMatching();
+
+        if (monster == null) return;
+
         //合成できるか判定        
         //アニメーション
         //モンスター1,2をインベントリから消去
         //インベントリに増やす
+
+        PlayerPrefs.SetInt("Dict_Unlock" + monster.no,2);
     }
 
     public void OnSelectEvolve()
@@ -293,7 +300,6 @@ public class Home_Summon : SingletonMonoBehaviour<Home_Summon>
     //インベントリNo(0~110)
     public void OnSelectEvolveMonster(int no)
     {
-        Debug.Log(no);
         Monster monster = SelectMonster(no);
 
         if (monster.no == 0) return;
@@ -309,29 +315,34 @@ public class Home_Summon : SingletonMonoBehaviour<Home_Summon>
     {
         Monster monster = DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Inventory_Monster" + EvolveNo));
 
-        if (monster.no != 0) return;
+        
+        if (monster.no == 0) return;
         int monsterCount = 1;
         int inventory1 = 0;
         int inventory2 = 0;
         //進化できるか判定（3体いるか、ランク3じゃないか判定）    
         if (monster.rank == 3) return;
-        
+
         for (int i = 0; i < 100; i++) {
 
-            if (PlayerPrefs.GetInt("Inventory_Monster" + (i + 1)) == monster.no && (i + 1) != EvolveNo && monster.rank == PlayerPrefs.GetInt("Inventory_Monster" + (i + 1))%1000 + 1)
+            if (PlayerPrefs.GetInt("Inventory_Monster" + (i + 1)) == monster.no + monster.rank - 1 && (i + 1) != EvolveNo)
             {
+
+                Debug.Log(monsterCount);
+                Debug.Log(monsterCount);
                 monsterCount++;
 
                 if(monsterCount == 2) inventory1 = i + 1;
                 if(monsterCount == 3){
                     inventory2 = i + 1;
 
+                    Debug.Log("?");
                     //指定したインベントリ以外のモンスターを2体消去
                     PlayerPrefs.SetInt("Inventory_Monster" + inventory1,0);
                     PlayerPrefs.SetInt("Inventory_Monster" + inventory2,0);
 
                     //指定したインベントリのランクを増やす
-                    PlayerPrefs.SetInt("Inventory_Monster" + (i + 1), monster.no + monster.rank);
+                    PlayerPrefs.SetInt("Inventory_Monster" + EvolveNo, monster.no + monster.rank);
 
                     //アニメーション
                     StartCoroutine(WaitAnimation(evolveAnim));
@@ -420,12 +431,14 @@ public class Home_Summon : SingletonMonoBehaviour<Home_Summon>
 
     }
 
-    private void FindMonsterMatching()
+    private Monster FindMonsterMatching()
     {
         if (PlayerPrefs.GetInt($"{MatchNo1}") != 0 && PlayerPrefs.GetInt($"{MatchNo2}") != 0)
         {
             
         }
+
+        return null;
     }
 
     private IEnumerator WaitAnimation(Animator anim)

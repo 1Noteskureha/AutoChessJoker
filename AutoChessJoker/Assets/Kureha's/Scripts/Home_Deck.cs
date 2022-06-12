@@ -160,4 +160,12 @@ public class Home_Deck : SingletonMonoBehaviour<Home_Deck>
             }
         }
     }
+
+    public void OnEnable()
+    {
+        for (int i = 0; i < inventory.Count; i++)
+        {            
+            inventory[i].GetComponent<DragAndDrop>().Init(i);
+        }
+    }
 }

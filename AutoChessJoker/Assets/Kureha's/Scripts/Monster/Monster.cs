@@ -66,12 +66,12 @@ public abstract class Monster
         }
         else if(rank == 3)
         {
-            maxHp *= 5;
-            baseAtk *= 5;
-            baseDef *= 5;
-            baseMag *= 5;
-            baseRes *= 5;
-            baseSpd *= 5;
+            maxHp *= 3;
+            baseAtk *= 3;
+            baseDef *= 3;
+            baseMag *= 3;
+            baseRes *= 3;
+            baseSpd *= 3;
         }
         hp = maxHp;
         mana = 0;
@@ -92,12 +92,14 @@ public abstract class Monster
     {
         
         if (!living) return;
-
+        
+        done = true;
         foreach (var first in turnFirst)
         {
             first.Excute();
         }
 
+        
         if (!stan)
         {
             if (mana < maxMana)
@@ -124,49 +126,14 @@ public abstract class Monster
 
     //通常攻撃
     public void AutoAttack()
-    {   
-        if (ally) {
-            if (BattleController.Instance.enemyField[field%3].living)
-            {
-                BattleController.Instance.enemyField[field%3].DealADDamage(atk);
-            }
-            else if (field % 3 == 2 && BattleController.Instance.enemyField[field % 3 + 1].living)
-            {
-                BattleController.Instance.enemyField[field % 3 + 1].DealADDamage(atk);
-            }
-            else
-            {
-                for(int i = 0; i < 3; i++)
-                {
-                    if (BattleController.Instance.enemyField[i%3].living)
-                    {
-                        BattleController.Instance.enemyField[i%3].DealADDamage(atk);
-                        break;
-                    }
-                }
-            }
+    {
+        if (ally)
+        {
+            BattleController.Instance.enemyField[BattleController.Instance.FrontSearch(false, field)].DealADDamage(atk);
         }
         else
         {
-            if (BattleController.Instance.allyField[field%3].living)
-            {
-                BattleController.Instance.allyField[field%3].DealADDamage(atk);
-            }
-            else if (field % 3 == 2 && BattleController.Instance.allyField[field % 3 + 1].living)
-            {
-                BattleController.Instance.allyField[field % 3 + 1].DealADDamage(atk);
-            }
-            else
-            {
-                for (int i = 0; i < 3; i++)
-                {
-                    if (BattleController.Instance.allyField[i%3].living)
-                    {
-                        BattleController.Instance.allyField[i%3].DealADDamage(atk);
-                        break;
-                    }
-                }
-            }
+            BattleController.Instance.allyField[BattleController.Instance.FrontSearch(true, field)].DealADDamage(atk);
         }
 
         foreach (var AA in thenAutoAttack) {
@@ -184,16 +151,62 @@ public abstract class Monster
         skill.Activate(ally,field);
     }
 
+    #region Effect
     public void ExecuteEffect(Effect _effect)
     {
         if (!living) return;
+        for(int i = 0; i < effect.Count; i++)
+        {
+            if (effect[i].name == _effect.name)
+            {
+                effect[i].value += _effect.value;
+                effect[i].Activate();
+                return;
+            }
+        }
+
         effect.Add(_effect);
         _effect.Activate();
     }
 
-    public void DealADDamage(int DMG)
+    public void addTurnEnd(Effect _effect)
     {
         if (!living) return;
+        for (int i = 0; i < turnFirst.Count; i++)
+        {
+            if (turnFirst[i].name == _effect.name)
+            {
+                turnFirst[i].value += _effect.value;
+                turnFirst[i].Activate();
+                return;
+            }
+        }
+
+        turnFirst.Add(_effect);
+        _effect.Activate();
+    }
+
+    public void addThenDealAutoAttack(Effect _effect)
+    {
+        if (!living) return;
+        for (int i = 0; i < turnFirst.Count; i++)
+        {
+            if (thenDealAutoAttack[i].name == _effect.name)
+            {
+                thenDealAutoAttack[i].value += _effect.value;
+                thenDealAutoAttack[i].Activate();
+                return;
+            }
+        }
+
+        thenDealAutoAttack.Add(_effect);
+        _effect.Activate();
+    }
+
+    #endregion 
+    public int DealADDamage(int DMG)
+    {
+        if (!living) return -1;
         hp -= Mathf.Clamp(DMG - def,0,1000000);
 
         if (ally) BattleController.Instance.AddLog($"味方の{name}は{DMG - def}のダメージを受けた");
@@ -207,11 +220,13 @@ public abstract class Monster
         BattleController.Instance.WaitAnimation(AAAnim,AASound,ally,field);
 
         Dead();
+
+        return DMG - def;
     }
 
-    public void DealAPDamage(int DMG)
+    public int DealAPDamage(int DMG)
     {
-        if (!living) return;
+        if (!living) return -1;
         hp -= Mathf.Clamp(DMG - res, 0, 1000000);
 
         if (ally) BattleController.Instance.AddLog($"味方の{name}は{DMG - res}のダメージを受けた");
@@ -223,11 +238,13 @@ public abstract class Monster
         }
 
         Dead();
+
+        return DMG - res;
     }
 
-    public void DealTrueDamage(int DMG)
+    public int DealTrueDamage(int DMG)
     {
-        if (!living) return;
+        if (!living) return -1;
         hp -= Mathf.Clamp(DMG, 0, 1000000);
 
         if (ally) BattleController.Instance.AddLog($"味方の{name}は{DMG}のダメージを受けた");
@@ -235,6 +252,18 @@ public abstract class Monster
 
         Dead();
 
+        return DMG;
+    }
+
+    public void DealHeal(int Value)
+    {
+        if (!living) return;
+        hp += Mathf.Clamp(Value, 0, maxHp);
+
+        if (ally) BattleController.Instance.AddLog($"味方の{name}は{Value}回復した");
+        else BattleController.Instance.AddLog($"敵の{name}は{Value}回復した");
+
+        Dead();
     }
 
     //リフレッシュ
@@ -261,12 +290,6 @@ public abstract class Monster
         }
     }
 
-    protected IEnumerator AAAnimationWait()
-    {
-        
-
-        yield break;
-    }
 }
 
 //虚無

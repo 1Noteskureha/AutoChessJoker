@@ -23,7 +23,7 @@ public class HomeController : SingletonMonoBehaviour<HomeController>
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (!BattleField.activeSelf) BattleField.SetActive(true);
     }
 
     // Update is called once per frame

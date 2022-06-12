@@ -79,8 +79,6 @@ public class DictSetting : MonoBehaviour
         symbolTab.SetActive(false);
         glossaryTab.SetActive(false);
 
-        
-
         InfomationUpdate();
     }
     public void OnSymbolTab()
@@ -109,7 +107,7 @@ public class DictSetting : MonoBehaviour
         symbolList = new List<GameObject>();
         glossaryList = new List<GameObject>();
 
-        for (int i = 0; i < 2; i++)
+        for (int i = 0; i < 7; i++)
         {
             int no = (i + 1) * 1000;
             monsterList.Add(Instantiate(monsterSample, monsterContent));
@@ -137,7 +135,7 @@ public class DictSetting : MonoBehaviour
         description.text = left;
         description2.text = right;
 
-        for(int i = 0; i < symbol.Count; i++)
+        for(int i = 0; i < symbolSprite.Count; i++)
         {
             if(i > symbol.Count)
             {

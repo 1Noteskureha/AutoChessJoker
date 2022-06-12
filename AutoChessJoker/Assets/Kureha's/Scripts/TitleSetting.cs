@@ -55,6 +55,8 @@ public class TitleSetting : MonoBehaviour
             PlayerPrefs.SetInt("Inventory_Monster2",2000);
             PlayerPrefs.SetInt("Inventory_Monster4",1002);
             PlayerPrefs.SetInt("Inventory_Monster20",1001);
+
+            PlayerPrefs.SetInt("Dict_Unlock" + 1000, 2);
 #endif
         }
 

@@ -76,5 +76,11 @@ public class ScrollPick : MonoBehaviour
         }
     }
 
+    public void OnSelect(int no)
+    {
+        Home_Summon.Instance.OnSelectSummonMonster(no + 1);
 
+        HomeController.Instance.TabButtonDisplay(true);
+        this.gameObject.SetActive(false);
+    }
 }

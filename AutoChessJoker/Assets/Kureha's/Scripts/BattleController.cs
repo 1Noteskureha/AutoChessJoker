@@ -70,7 +70,7 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void Initialize(Stage _stage)
@@ -100,18 +100,18 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
 
     private void ActivationSymbol()
     {
-        Dictionary<int,bool> CalcedMonster = new Dictionary<int,bool>();
-        Dictionary<Symbol,int> CalcedSymbol = new Dictionary<Symbol,int>();
+        Dictionary<int, bool> CalcedMonster = new Dictionary<int, bool>();
+        Dictionary<Symbol, int> CalcedSymbol = new Dictionary<Symbol, int>();
 
 
-        for(int i=0;i< allyField.Count; i++)
-        {               
+        for (int i = 0; i < allyField.Count; i++)
+        {
             if (!CalcedMonster.ContainsKey(allyField[i].no))
             {
                 CalcedMonster[allyField[i].no] = true;
 
-                
-                for(int j = 0; j < allyField[i].symbol.Count; j++)
+
+                for (int j = 0; j < allyField[i].symbol.Count; j++)
                 {
                     if (!CalcedSymbol.ContainsKey(allyField[i].symbol[j])) CalcedSymbol[allyField[i].symbol[j]] = 0;
                     CalcedSymbol[allyField[i].symbol[j]]++;
@@ -119,7 +119,7 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
             }
         }
 
-        for(int i=1; i <= 4; i++)
+        for (int i = 1; i <= 4; i++)
         {
             if (!CalcedMonster.ContainsKey(PlayerPrefs.GetInt("Bt_Support" + i)))
             {
@@ -133,11 +133,11 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
             }
         }
 
-        foreach(var sb in CalcedSymbol)
+        foreach (var sb in CalcedSymbol)
         {
-            for(int i = sb.Key.activation.Count; i > 0; i--)
+            for (int i = sb.Key.activation.Count; i > 0; i--)
             {
-                if(CalcedSymbol[sb.Key] >= sb.Key.activation[i - 1])
+                if (CalcedSymbol[sb.Key] >= sb.Key.activation[i - 1])
                 {
                     sb.Key.Activate(i);
                     break;
@@ -149,7 +149,7 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
 
     private void LogReset()
     {
-        foreach(var l in log)
+        foreach (var l in log)
         {
             Destroy(l);
         }
@@ -169,20 +169,44 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
     private IEnumerator TurnAction()
     {
         int t = 1;//無限ループ防止
+
+        while (gameStop)
+        {
+            yield return new WaitForSeconds(0.1f);
+        }
+
+        SummonAllyMonsters();
+        SummonEnemyMonsters();
+        FieldUpdate();
+        StateUpdate();
+        LogReset();
+
+        AddLog($"Wave {progress + 1} スタート");
+
+        cutIn.GetComponent<TMP_Text>().text = $"ウェーブ {progress + 1} スタート";
+        cutIn.SetActive(true); ;
+
+        yield return new WaitForAnimation(cutIn.GetComponent<Animator>());
+
+        cutIn.SetActive(false);
+
         while (t < 1000)
         {
-            while (gameStop) {
+            while (gameStop)
+            {
                 yield return new WaitForSeconds(0.1f);
             }
 
+
+
             //カットイン
             cutIn.GetComponent<TMP_Text>().text = "ターン" + t;
-            cutIn.SetActive(true);;
+            cutIn.SetActive(true); ;
 
             yield return new WaitForAnimation(cutIn.GetComponent<Animator>());
 
             cutIn.SetActive(false);
-            
+
 
             //ターン初めのハンドル消化
 
@@ -190,13 +214,15 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
             SpdDecide();
 
             //行動順に行動
-            while (!AllDone() && t <1000)
+            while (!AllDone() && t < 1000)
             {
 
                 while (gameStop)
                 {
                     yield return new WaitForSeconds(0.1f);
                 }
+
+                //Debug.Log(spdQueue.Count);
 
                 if (spdQueue.Count == 0) break;
                 int target = spdQueue.Dequeue();
@@ -230,7 +256,8 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
             //ターン終了時のハンドル消化
 
             //リフレッシュ
-            for(int i=0;i<allyField.Count;i++){
+            for (int i = 0; i < allyField.Count; i++)
+            {
                 allyField[i].Refresh();
             }
             for (int i = 0; i < enemyField.Count; i++)
@@ -265,16 +292,16 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
     {
         spdQueue = new Queue<int>();
         List<Monster> monsters = new List<Monster>();
-        
+
         foreach (var ally in allyField)
         {
-            if (ally.no != 0)
+            if (ally.no != 0 && ally.living)
                 monsters.Add(ally);
 
         }
         foreach (var enemy in enemyField)
         {
-            if(enemy.no != 0)
+            if (enemy.no != 0 && enemy.living)
                 monsters.Add(enemy);
 
         }
@@ -285,7 +312,7 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
         int position = 0;
         List<bool> calced = new List<bool>();
 
-        for(int i = 0; i < monsters.Count; i++)
+        for (int i = 0; i < monsters.Count; i++)
         {
             calced.Add(false);
         }
@@ -313,7 +340,7 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
                     tmp = i;
                 }
             }
-            
+
 
             if (tmp == -1) return;
             calced[tmp] = true;
@@ -323,12 +350,12 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
         //Debug.Log(spdQueue.Count);
     }
 
-    public void MonsterDead(bool ally,int field)
-    {   
+    public void MonsterDead(bool ally, int field)
+    {
 
         if (ally) AddLog("味方の" + allyField[field].name + "(" + allyField[field].field + ")は倒れた");
         else AddLog("敵の" + enemyField[field].name + "(" + allyField[field].field + ")は倒れた");
-        
+
 
         if (ally)
         {
@@ -340,9 +367,9 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
                 GameOver();
                 return;
             }
-            if(allyField[0].living == false && allyField[1].living == false && allyField[2].living == false)
-            {   
-                for(int i = 0; i < 3; i++)
+            if (allyField[0].living == false && allyField[1].living == false && allyField[2].living == false)
+            {
+                for (int i = 0; i < 3; i++)
                 {
                     var tmp = allyField[i];
                     var tmp2 = allyField[i].field;
@@ -383,7 +410,7 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
 
     public void StateUpdate()
     {
-        for(int i = 0; i < 6; i++)
+        for (int i = 0; i < 6; i++)
         {
             if (allyField[i].living)
             {
@@ -391,7 +418,7 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
                 allyMana[i].gameObject.SetActive(true);
             }
             else
-            {                
+            {
                 allyHP[i].gameObject.SetActive(false);
                 allyMana[i].gameObject.SetActive(false);
 
@@ -417,11 +444,12 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
             enemyMana[i].value = enemyField[i].mana;
         }
     }
-    
+
     //全滅
     private void GameOver()
     {
         StopCoroutine(Turn);
+        FieldUpdate();
         //戻る
         overrayLose.SetActive(true);
     }
@@ -437,22 +465,16 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
 
         progress++;
 
-        if(progress == stage.enemyFields.Count)
+        FieldUpdate();
+
+        if (progress == stage.enemyFields.Count)
         {
             //アンロック
+            
             //戻る
-
             overrayEnd.SetActive(true);
             return;
         }
-
-        SummonAllyMonsters();
-        SummonEnemyMonsters();
-        FieldUpdate();
-        StateUpdate();
-        LogReset();
-
-        AddLog($"Wave {progress + 1} スタート");
 
         gameStop = true;
         overrayContinue.SetActive(true);
@@ -462,15 +484,15 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
 
     private void GetEssense()
     {
-        PlayerPrefs.SetInt("Essense_A",PlayerPrefs.GetInt("Essense_A") + stage.essense[progress][0]);
-        PlayerPrefs.SetInt("Essense_B",PlayerPrefs.GetInt("Essense_B") + stage.essense[progress][1]);
-        PlayerPrefs.SetInt("Essense_C",PlayerPrefs.GetInt("Essense_C") + stage.essense[progress][2]);
-        PlayerPrefs.SetInt("Essense_D",PlayerPrefs.GetInt("Essense_D") + stage.essense[progress][3]);
-        PlayerPrefs.SetInt("Essense_E",PlayerPrefs.GetInt("Essense_E") + stage.essense[progress][4]);
-        PlayerPrefs.SetInt("Essense_F",PlayerPrefs.GetInt("Essense_F") + stage.essense[progress][5]);
-        PlayerPrefs.SetInt("Essense_G",PlayerPrefs.GetInt("Essense_G") + stage.essense[progress][6]);
-        PlayerPrefs.SetInt("Essense_H",PlayerPrefs.GetInt("Essense_H") + stage.essense[progress][7]);
-        PlayerPrefs.SetInt("Essense_I",PlayerPrefs.GetInt("Essense_I") + stage.essense[progress][8]);
+        PlayerPrefs.SetInt("Essense_A", PlayerPrefs.GetInt("Essense_A") + stage.essense[progress][0]);
+        PlayerPrefs.SetInt("Essense_B", PlayerPrefs.GetInt("Essense_B") + stage.essense[progress][1]);
+        PlayerPrefs.SetInt("Essense_C", PlayerPrefs.GetInt("Essense_C") + stage.essense[progress][2]);
+        PlayerPrefs.SetInt("Essense_D", PlayerPrefs.GetInt("Essense_D") + stage.essense[progress][3]);
+        PlayerPrefs.SetInt("Essense_E", PlayerPrefs.GetInt("Essense_E") + stage.essense[progress][4]);
+        PlayerPrefs.SetInt("Essense_F", PlayerPrefs.GetInt("Essense_F") + stage.essense[progress][5]);
+        PlayerPrefs.SetInt("Essense_G", PlayerPrefs.GetInt("Essense_G") + stage.essense[progress][6]);
+        PlayerPrefs.SetInt("Essense_H", PlayerPrefs.GetInt("Essense_H") + stage.essense[progress][7]);
+        PlayerPrefs.SetInt("Essense_I", PlayerPrefs.GetInt("Essense_I") + stage.essense[progress][8]);
     }
 
     //戦闘初めに味方モンスターの召喚
@@ -479,16 +501,16 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
         allyField = new List<Monster>();
         //allyMonsters = new List<Monster>();
 
-        for(int i=0;i<6;i++)
+        for (int i = 0; i < 6; i++)
         {
             allyField.Add(new Blank());
         }
 
-        for(int i = 0; i < 3; i++)
+        for (int i = 0; i < 3; i++)
         {
             if (PlayerPrefs.GetInt("Bt_Front" + (i + 1)) != 0)
             {
-                allyField[i] = DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Front" + (i+1)));
+                allyField[i] = DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Front" + (i + 1)));
                 allyField[i].ally = true;
                 allyField[i].field = i;
 
@@ -498,7 +520,7 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
             {
                 allyField[i + 3] = DataBase.Bt_noToMonster(PlayerPrefs.GetInt("Bt_Back" + (i + 1)));
                 allyField[i + 3].ally = true;
-                allyField[i + 3].field = i+3;
+                allyField[i + 3].field = i + 3;
 
                 allyImage[i + 3].sprite = allyField[i].sprite;
             }
@@ -512,7 +534,7 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
         enemyField = new List<Monster>();
         //enemyMonsters = new List<Monster>();
 
-        for(int i=0;i<6;i++)
+        for (int i = 0; i < 6; i++)
         {
             enemyField.Add(new Blank());
             enemyImage[i].sprite = enemyField[i].sprite;
@@ -526,7 +548,7 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
             enemyField[i].field = i;
             enemyImage[i].sprite = enemyField[i].sprite;
 
-            if (PlayerPrefs.GetInt("Dict_Unlock" + enemyField[i].no,0) == 0) PlayerPrefs.SetInt("Dict_Unlock" + enemyField[i].no, 1);
+            if (PlayerPrefs.GetInt("Dict_Unlock" + enemyField[i].no, 0) == 0) PlayerPrefs.SetInt("Dict_Unlock" + enemyField[i].no, 1);
         }
 
         //FieldUpdate();
@@ -535,18 +557,18 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
     private void FieldUpdate()
     {
         for (int i = 0; i < 6; i++)
-        {   
-            
+        {
+
             float size;
 
             allyImage[i].sprite = allyField[i].sprite;
             allyImage[i].SetNativeSize();
-            
-            if(allyImage[i].rectTransform.sizeDelta.x > allyImage[i].rectTransform.sizeDelta.y) size = allyImage[i].rectTransform.sizeDelta.x;
+
+            if (allyImage[i].rectTransform.sizeDelta.x > allyImage[i].rectTransform.sizeDelta.y) size = allyImage[i].rectTransform.sizeDelta.x;
             else size = allyImage[i].rectTransform.sizeDelta.y;
             if (size < 100) allyImage[i].rectTransform.sizeDelta = new Vector2(allyImage[i].rectTransform.sizeDelta.x * (100 / size), allyImage[i].rectTransform.sizeDelta.y * (100 / size));
 
-            
+
             //Rank
             switch (allyField[i].rank)
             {
@@ -556,14 +578,14 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
                 case 2:
                     allyRank[i].sprite = Resources.Load<Sprite>("rank/2");
                     allyRank[i].rectTransform.sizeDelta = new Vector2(20, 20);
-                    
+
                     break;
                 case 3:
                     allyRank[i].sprite = Resources.Load<Sprite>("rank/3");
                     allyRank[i].rectTransform.sizeDelta = new Vector2(30, 30);
                     break;
             }
-            if(!allyField[i].living) allyRank[i].sprite = Resources.Load<Sprite>("blank");
+            if (!allyField[i].living) allyRank[i].sprite = Resources.Load<Sprite>("blank");
 
             enemyImage[i].sprite = enemyField[i].sprite;
             enemyImage[i].SetNativeSize();
@@ -591,7 +613,7 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
         }
     }
 
-    public void WaitAnimation(GameObject anim,AudioClip ac,bool ally,int field)
+    public void WaitAnimation(GameObject anim, AudioClip ac, bool ally, int field)
     {
         if (ally) ps = Instantiate(anim, allyImage[field].transform).GetComponent<ParticleSystem>();
         else ps = Instantiate(anim, enemyImage[field].transform).GetComponent<ParticleSystem>();
@@ -616,5 +638,159 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
         overrayContinue.SetActive(false);
 
         BattleField.SetActive(false);
+    }
+
+    //攻撃範囲を調査(正面優先前列)
+    public int FrontSearch(bool ally, int field)
+    {
+        if (!ally)
+        {
+            if (enemyField[field % 3].living)
+            {
+                return field % 3;
+            }
+            else if (field % 3 == 2 && enemyField[field % 3 + 1].living)
+            {
+                return field % 3 + 1;
+            }
+            else
+            {
+                for (int i = 0; i < 3; i++)
+                {
+                    if (enemyField[i % 3].living)
+                    {
+                        return i % 3;
+                    }
+                }
+            }
+        }
+        else
+        {
+            if (allyField[field % 3].living)
+            {
+                return field % 3;
+            }
+            else if (field % 3 == 2 && allyField[field % 3 + 1].living)
+            {
+                return field % 3 + 1;
+            }
+            else
+            {
+                for (int i = 0; i < 3; i++)
+                {
+                    if (allyField[i % 3].living)
+                    {
+                        return i % 3;
+                    }
+                }
+            }
+
+
+        }
+
+        //誰もいないとき
+        return -1;
+    }
+
+    //攻撃範囲を調査(正面優先後列→前列)
+    public int BackSearch(bool ally,int field)
+    {   
+        if(!ally)
+        {
+            if (enemyField[field % 3 + 3].living)
+            {
+                return field % 3 + 3;
+            }
+            else if (field % 3 == 2 && enemyField[field % 3 + 1].living)
+            {
+                return field % 3 + 1;
+            }
+            else
+            {
+                for (int i = 3; i < 6; i++)
+                {
+                    if (enemyField[i].living)
+                    {
+                        return i;
+                    }
+                }
+
+                for (int i = 0; i < 3; i++)
+                {
+                    if (enemyField[i].living)
+                    {
+                        return i;
+                    }
+                }
+            }
+        }
+        else
+        {
+            if (allyField[field % 3 + 3].living)
+            {
+                return field % 3 + 3;
+            }
+            else if (field % 3 == 2 && allyField[field % 3 + 1].living)
+            {
+                return field % 3 + 1;
+            }
+            else
+            {
+                for (int i = 3; i < 6; i++)
+                {
+                    if (allyField[i].living)
+                    {
+                        return i;
+                    }
+                }
+
+                for (int i = 0; i < 3; i++)
+                {
+                    if (allyField[i].living)
+                    {
+                        return i;
+                    }
+                }
+            }
+        }
+
+        return -1;
+    }
+
+    //一番HPの低いモンスターを調査(前列優先)
+    public int LessHPSearch(bool ally, int field)
+    {
+        if (!ally)
+        {
+            int maxHP = enemyField[0].hp;
+            int soeji = 0;
+            for(int i = 0; i < enemyField.Count; i++)
+            {
+                if (maxHP > enemyField[i].hp)
+                {
+                    maxHP = enemyField[i].hp;
+                    soeji = i;
+                }
+            }
+
+            return soeji;
+        }
+        else
+        {
+            int maxHP = allyField[0].hp;
+            int soeji = 0;
+            for (int i = 0; i < allyField.Count; i++)
+            {
+                if (maxHP > allyField[i].hp)
+                {
+                    maxHP = allyField[i].hp;
+                    soeji = i;
+                }
+            }
+
+            return soeji;
+        }
+
+        return -1;
     }
 }

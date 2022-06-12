@@ -258,7 +258,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3028727805071918085}
         m_TargetAssemblyTypeName: ScrollMonster, Assembly-CSharp
-        m_MethodName: Display
+        m_MethodName: OnSelect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.EventSystems;
 
-public class ScrollMonster : MonoBehaviour
+public class ScrollMonster : MonoBehaviour, IPointerEnterHandler
 {
     [SerializeField]
     private TMP_Text text;
@@ -38,6 +39,12 @@ public class ScrollMonster : MonoBehaviour
         }
     }
 
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        Display();
+    }
+
     public void Display()
     {
         Monster monster = DataBase.Bt_noToMonster(no);
@@ -62,5 +69,10 @@ public class ScrollMonster : MonoBehaviour
         for (int i = 0; i < monster.symbol.Count; i++) symbols.Add(monster.symbol[i].sprite);
 
         parent.InfomationUpdate(monster.sprite, description, symbols);
+    }
+
+    public void OnSelect()
+    {
+        parent.OnSelect(no);
     }
 }
