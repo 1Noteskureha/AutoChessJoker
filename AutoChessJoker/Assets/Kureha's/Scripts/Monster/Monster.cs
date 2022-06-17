@@ -10,7 +10,6 @@ public abstract class Monster
     public int rank;
     public int no;
 
-    public bool canSummon = true;//召喚可能か(基本モンスターじゃないか)
     public bool living;         //生死
     public bool ally;           //味方か敵か
     public int field;           //フィールドのどの場所か
@@ -93,6 +92,7 @@ public abstract class Monster
         
         if (!living) return;
         
+
         done = true;
         foreach (var first in turnFirst)
         {
@@ -169,7 +169,7 @@ public abstract class Monster
         _effect.Activate();
     }
 
-    public void addTurnEnd(Effect _effect)
+    public void addTurnFirst(Effect _effect)
     {
         if (!living) return;
         for (int i = 0; i < turnFirst.Count; i++)
@@ -186,10 +186,57 @@ public abstract class Monster
         _effect.Activate();
     }
 
-    public void addThenDealAutoAttack(Effect _effect)
+    public void deleteTurnFirst(Effect _effect)
     {
         if (!living) return;
         for (int i = 0; i < turnFirst.Count; i++)
+        {
+            if (turnFirst[i].name == _effect.name)
+            {
+                turnFirst.RemoveAt(i);
+                return;
+            }
+        }
+
+        return;
+    }
+
+    public void addTurnEnd(Effect _effect)
+    {
+        if (!living) return;
+        for (int i = 0; i < turnEnd.Count; i++)
+        {
+            if (turnEnd[i].name == _effect.name)
+            {
+                turnEnd[i].value += _effect.value;
+                turnEnd[i].Activate();
+                return;
+            }
+        }
+
+        turnEnd.Add(_effect);
+        _effect.Activate();
+    }
+
+    public void deleteTurnEnd(Effect _effect)
+    {
+        if (!living) return;
+        for (int i = 0; i < turnEnd.Count; i++)
+        {
+            if (turnEnd[i].name == _effect.name)
+            {
+                turnEnd.RemoveAt(i);
+                return;
+            }
+        }
+
+        return;
+    }
+
+    public void addThenDealAutoAttack(Effect _effect)
+    {
+        if (!living) return;
+        for (int i = 0; i < thenDealAutoAttack.Count; i++)
         {
             if (thenDealAutoAttack[i].name == _effect.name)
             {

@@ -26,7 +26,6 @@ public class Bat : Monster
         baseSpd = 34;
         skill = new BloodSteal(rank);
         essense = new List<int>() { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-        canSummon = true;
 
         Init();
     }

@@ -26,7 +26,6 @@ public class Konton : Monster
         baseSpd = 51;
         skill = new Darkness(rank);
         essense = new List<int>() { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-        canSummon = false;
 
         Init();
     }

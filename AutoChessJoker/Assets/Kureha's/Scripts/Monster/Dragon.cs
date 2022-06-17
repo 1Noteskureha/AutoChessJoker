@@ -26,7 +26,6 @@ public class Dragon : Monster
         baseSpd = 22;
         skill = new Kamitsuki(rank);
         essense = new List<int>() { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-        canSummon = false;
 
         Init();
     }

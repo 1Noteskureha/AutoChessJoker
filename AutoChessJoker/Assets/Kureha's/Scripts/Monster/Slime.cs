@@ -27,7 +27,6 @@ public class Slime : Monster
         baseSpd = 29;
         skill = new Nenneki(rank);
         essense = new List<int>() { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-        canSummon = false;
 
         Init();
     }

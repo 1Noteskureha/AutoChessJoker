@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class flyDragon : Monster
+public class FlyDragon : Monster
 {
-    public flyDragon(int _rank)
+    public FlyDragon(int _rank)
     {
         name = "”ò—³";
         description = "‹ó‚ğ”ò‚Ô—ƒ‚ğè‚É“ü‚ê‰Š‚ğ“f‚¢‚Ä”ò‚Ñ‰ñ‚éƒhƒ‰ƒSƒ“B";
@@ -17,7 +17,7 @@ public class flyDragon : Monster
         //symbol.Add();
         sprite = Resources.Load<Sprite>("Monster/flyDragon");
 
-        maxHp = 84;
+        maxHp = 124;
         maxMana = 150;
         baseAtk = 35;
         baseDef = 4;
@@ -26,7 +26,6 @@ public class flyDragon : Monster
         baseSpd = 28;
         skill = new FireBreath(rank);
         essense = new List<int>() { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-        canSummon = true;
 
         Init();
     }

@@ -26,7 +26,6 @@ public class Goblin : Monster
         baseSpd = 34;
         skill = new Ishitsubute(rank);
         essense = new List<int>() { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-        canSummon = false;
 
         Init();
     }

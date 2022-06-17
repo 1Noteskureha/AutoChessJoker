@@ -26,7 +26,6 @@ public class Nazonotamago : Monster
         baseSpd = 3;
         skill = new Jibaku(rank);
         essense = new List<int>() { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-        canSummon = false;
 
         Init();
     }

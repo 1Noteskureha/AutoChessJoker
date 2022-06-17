@@ -26,7 +26,6 @@ public class Fairy : Monster
         baseSpd = 35;
         skill = new Heal(rank);
         essense = new List<int>() { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-        canSummon = false;
 
         Init();
     }

@@ -32,7 +32,7 @@ public class Fire : Skill
         {
             BattleController.Instance.enemyField[BattleController.Instance.FrontSearch(false, field)].DealAPDamage(Value);
             BattleController.Instance.enemyField[BattleController.Instance.FrontSearch(false, field)].addTurnEnd(new OnFire(false, BattleController.Instance.FrontSearch(false, field), Value2));
-            BattleController.Instance.WaitAnimation(SkillAnim, SkillSound, false, BattleController.Instance.FrontSearch(true, field));
+            BattleController.Instance.WaitAnimation(SkillAnim, SkillSound, false, BattleController.Instance.FrontSearch(false, field));
         }
         else
         {

@@ -27,7 +27,6 @@ public class Cobolt : Monster
         baseSpd = 22;
         skill = new Kamitsuki(rank);
         essense = new List<int>() { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-        canSummon = false;
 
         Init();
     }

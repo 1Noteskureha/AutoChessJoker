@@ -26,7 +26,6 @@ public class MagicalSlime : Monster
         baseSpd = 29;
         skill = new Fire(rank);
         essense = new List<int>() { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-        canSummon = true;
 
         Init();
     }

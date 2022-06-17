@@ -62,5 +62,7 @@ public class OnFire : Effect
                 BattleController.Instance.enemyField[target].atk += value + 1;
             }
         }
+
+        if(value <= 0) BattleController.Instance.allyField[target].deleteTurnFirst(this);
     }
 }
