@@ -20,13 +20,45 @@ public class SpdChange : Effect
         if (ally)
         {
             BattleController.Instance.allyField[target].spd += value;
-            if (BattleController.Instance.allyField[target].spd < 0) BattleController.Instance.allyField[target].spd = 0;
+            if (BattleController.Instance.allyField[target].spd < 0)
+            {
+                BattleController.Instance.allyField[target].spd = 0;
+                BattleController.Instance.enemyField[target].deleteEffect(this);
+            }
         }
         else
         {
-            BattleController.Instance.enemyField[target].spd -= value;
-            if (BattleController.Instance.enemyField[target].spd < 0) BattleController.Instance.enemyField[target].spd = 0;
+            BattleController.Instance.enemyField[target].spd += value;
+            if (BattleController.Instance.enemyField[target].spd < 0)
+            {
+                BattleController.Instance.enemyField[target].spd = 0;
+                BattleController.Instance.enemyField[target].deleteEffect(this);
+            }
         }
 
+    }
+
+    public new void addActivate(int _value)
+    {
+        if (ally)
+        {
+            BattleController.Instance.allyField[target].spd += _value;
+            if (BattleController.Instance.allyField[target].spd < 0)
+            {
+                BattleController.Instance.allyField[target].spd = 0;
+                BattleController.Instance.enemyField[target].deleteEffect(this);
+            }
+        }
+        else
+        {
+            BattleController.Instance.enemyField[target].spd += _value;
+            if (BattleController.Instance.enemyField[target].spd < 0)
+            {
+                BattleController.Instance.enemyField[target].spd = 0;
+                BattleController.Instance.enemyField[target].deleteEffect(this);
+            }
+        }
+
+        value += _value;
     }
 }

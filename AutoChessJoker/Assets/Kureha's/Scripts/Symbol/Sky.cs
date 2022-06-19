@@ -25,13 +25,13 @@ public class Sky : Symbol
                 switch (level)
                 {
                     case 1:
-                        BattleController.Instance.allyField[i].ExecuteEffect(new SpdChange(true, BattleController.Instance.allyField[i].field, 20));
+                        BattleController.Instance.allyField[i].addEffect(new SpdChange(true, BattleController.Instance.allyField[i].field, 20));
                         break;
                     case 2:
-                        BattleController.Instance.allyField[i].ExecuteEffect(new SpdChange(true, BattleController.Instance.allyField[i].field, 50));
+                        BattleController.Instance.allyField[i].addEffect(new SpdChange(true, BattleController.Instance.allyField[i].field, 50));
                         break;
                     case 3:
-                        BattleController.Instance.allyField[i].ExecuteEffect(new SpdChange(true, BattleController.Instance.allyField[i].field, 100));
+                        BattleController.Instance.allyField[i].addEffect(new SpdChange(true, BattleController.Instance.allyField[i].field, 100));
                         break;
                 }
             }

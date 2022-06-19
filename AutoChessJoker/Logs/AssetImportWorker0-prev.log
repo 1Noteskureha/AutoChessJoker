@@ -15,11 +15,11 @@ D:/saiky/Documents/AutoChessJoker/AutoChessJoker
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56285
+53158
 Successfully changed project path to: D:/saiky/Documents/AutoChessJoker/AutoChessJoker
 D:/saiky/Documents/AutoChessJoker/AutoChessJoker
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 103.04 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 108.42 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.0f1 (c7b5465681fb)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
@@ -35,1031 +35,227 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56528
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56252
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002072 seconds.
+Registered in 0.002051 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 91.37 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 101.24 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.232 seconds
+- Completed reload, in  1.209 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002851 seconds.
+Registered in 0.002801 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 105.13 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 104.82 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.991 seconds
+- Completed reload, in  0.931 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 1.09 ms, found 1 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 1.07 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1890 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 99.4 MB.
-System memory in use after: 99.4 MB.
+Unloading 1898 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.7 MB.
+System memory in use after: 99.6 MB.
 
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2339.
-Total: 1.763400 ms (FindLiveObjects: 0.204200 ms CreateObjectMapping: 0.079100 ms MarkObjects: 1.372200 ms  DeleteObjects: 0.107100 ms)
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2348.
+Total: 1.739300 ms (FindLiveObjects: 0.149000 ms CreateObjectMapping: 0.051900 ms MarkObjects: 1.434600 ms  DeleteObjects: 0.103000 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Kureha's/Scripts/Stage.cs
+  artifactKey: Guid(1c5f22de7f167ee4daef60606dd0a833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/Stage.cs using Guid(1c5f22de7f167ee4daef60606dd0a833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '852fa71604f3df5b620505472d0641a0') in 0.048493 seconds
+  Import took 0.090998 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002582 seconds.
+Registered in 0.002746 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.11 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 1.07 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.758 seconds
+- Completed reload, in  1.051 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.11 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 1.07 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1872 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 98.4 MB.
-System memory in use after: 98.4 MB.
+Unloading 1880 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.6 MB.
+System memory in use after: 98.6 MB.
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2343.
-Total: 7.316900 ms (FindLiveObjects: 0.524300 ms CreateObjectMapping: 0.281800 ms MarkObjects: 6.166900 ms  DeleteObjects: 0.340500 ms)
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2352.
+Total: 1.799200 ms (FindLiveObjects: 0.225400 ms CreateObjectMapping: 0.087400 ms MarkObjects: 1.376500 ms  DeleteObjects: 0.108600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002825 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.22 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.756 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.07 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1880 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.7 MB.
+System memory in use after: 98.6 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2356.
+Total: 1.642700 ms (FindLiveObjects: 0.141800 ms CreateObjectMapping: 0.053100 ms MarkObjects: 1.362000 ms  DeleteObjects: 0.085000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012498 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.22 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.860 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.09 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1880 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.7 MB.
+System memory in use after: 98.7 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2360.
+Total: 1.952400 ms (FindLiveObjects: 0.175900 ms CreateObjectMapping: 0.077300 ms MarkObjects: 1.580700 ms  DeleteObjects: 0.117200 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Kureha's/Scripts/Monster/Wolf.cs
-  artifactKey: Guid(176ceebb47dccab4bb974e2d51b20d75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/Wolf.cs using Guid(176ceebb47dccab4bb974e2d51b20d75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '489e08883f9bb7fd4f5fcfe1d418dc26') in 0.041761 seconds
-  Import took 0.229998 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 284.119258 seconds.
-  path: Assets/Kureha's/Scripts/Monster/Cobolt.cs
-  artifactKey: Guid(b5059fa508cd45b41a2dd3e77011d24a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/Cobolt.cs using Guid(b5059fa508cd45b41a2dd3e77011d24a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72adce7406286a14cc0d84a6e3b3f392') in 0.005484 seconds
-  Import took 0.009269 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.998766 seconds.
-  path: Assets/Kureha's/Scripts/Monster/Cobolt.cs
-  artifactKey: Guid(b5059fa508cd45b41a2dd3e77011d24a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/Cobolt.cs using Guid(b5059fa508cd45b41a2dd3e77011d24a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72adce7406286a14cc0d84a6e3b3f392') in 0.012777 seconds
-  Import took 0.070888 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.424760 seconds.
-  path: Assets/Kureha's/Scripts/Monster/Bat.cs
-  artifactKey: Guid(36f5edba905a89b488205faaedbf60a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/Bat.cs using Guid(36f5edba905a89b488205faaedbf60a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '293cff40ebd789f3a05d9cd226b2f85d') in 0.028346 seconds
-  Import took 0.032303 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.223084 seconds.
+  Time since last request: 14295.678769 seconds.
   path: Assets/Kureha's/Scripts/Monster/Fairy.cs
   artifactKey: Guid(8f83ffba6651fd945a7470b718e2f0a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/Fairy.cs using Guid(8f83ffba6651fd945a7470b718e2f0a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79773c53b217ebb7172ec91c2029d5be') in 0.008511 seconds
-  Import took 0.012182 seconds .
+Start importing Assets/Kureha's/Scripts/Monster/Fairy.cs using Guid(8f83ffba6651fd945a7470b718e2f0a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '956aeb3a2ef0e3eabb227f1f1d40499e') in 0.011731 seconds
+  Import took 0.017914 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.001203 seconds.
-  path: Assets/Kureha's/Scripts/Monster/flyDragon.cs
-  artifactKey: Guid(afe4a2913c44b914a8ba7a43662188e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/flyDragon.cs using Guid(afe4a2913c44b914a8ba7a43662188e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adb5cf19ead6925da54f791acb74753e') in 0.007207 seconds
-  Import took 0.011865 seconds .
+  Time since last request: 0.008189 seconds.
+  path: Assets/Kureha's/Scripts/Monster/Fairy.cs
+  artifactKey: Guid(8f83ffba6651fd945a7470b718e2f0a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/Monster/Fairy.cs using Guid(8f83ffba6651fd945a7470b718e2f0a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '956aeb3a2ef0e3eabb227f1f1d40499e') in 0.003616 seconds
+  Import took 0.007451 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000964 seconds.
-  path: Assets/Kureha's/Scripts/Monster/flyDragon.cs
-  artifactKey: Guid(afe4a2913c44b914a8ba7a43662188e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/flyDragon.cs using Guid(afe4a2913c44b914a8ba7a43662188e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adb5cf19ead6925da54f791acb74753e') in 0.004280 seconds
-  Import took 0.008763 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.994107 seconds.
-  path: Assets/Kureha's/Scripts/Monster/flyDragon.cs
-  artifactKey: Guid(afe4a2913c44b914a8ba7a43662188e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/flyDragon.cs using Guid(afe4a2913c44b914a8ba7a43662188e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '504ddfa96fa0dd131102f2a437ec4996') in 0.002268 seconds
-  Import took 0.005667 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001822 seconds.
-  path: Assets/Kureha's/Scripts/Monster/flyDragon.cs
-  artifactKey: Guid(afe4a2913c44b914a8ba7a43662188e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/flyDragon.cs using Guid(afe4a2913c44b914a8ba7a43662188e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '504ddfa96fa0dd131102f2a437ec4996') in 0.002328 seconds
-  Import took 0.005762 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.610779 seconds.
-  path: Assets/Kureha's/Scripts/Monster/Konton.cs
-  artifactKey: Guid(885eb7af9d2caa045aed74527d694e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/Konton.cs using Guid(885eb7af9d2caa045aed74527d694e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45c1d0e1c349a9300fa6d87f09e14057') in 0.026774 seconds
-  Import took 0.039933 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002956 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.48 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.851 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.06 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1872 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 98.4 MB.
-System memory in use after: 98.4 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2347.
-Total: 1.793300 ms (FindLiveObjects: 0.159300 ms CreateObjectMapping: 0.055300 ms MarkObjects: 1.473200 ms  DeleteObjects: 0.104600 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 48.176033 seconds.
-  path: Assets/Kureha's/Scripts/Monster/Wolf.cs
-  artifactKey: Guid(176ceebb47dccab4bb974e2d51b20d75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/Wolf.cs using Guid(176ceebb47dccab4bb974e2d51b20d75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd9bbcb603632496231e2a896bb5b24f') in 0.006472 seconds
-  Import took 0.010020 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 343.850925 seconds.
-  path: Assets/Resources/Monster/mon_184 (1).png
-  artifactKey: Guid(350e658907d15284baeaeaedb458f5e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Monster/mon_184 (1).png using Guid(350e658907d15284baeaeaedb458f5e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69fed0971c3f6e615420dd4ddea2b718') in 0.078037 seconds
-  Import took 0.082585 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.923885 seconds.
-  path: Assets/Resources/Monster/wolf.png
-  artifactKey: Guid(350e658907d15284baeaeaedb458f5e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Monster/wolf.png using Guid(350e658907d15284baeaeaedb458f5e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b70e31418f42acc18be0cb13e122c530') in 0.011063 seconds
-  Import took 0.014299 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1083.836420 seconds.
-  path: Assets/Resources/Monster/mon_52 (1).png
-  artifactKey: Guid(21da5530ca6011f41a7858728ca29b80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Monster/mon_52 (1).png using Guid(21da5530ca6011f41a7858728ca29b80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c2aa483a070a41285ffdb731817a8d1') in 0.029105 seconds
-  Import took 0.033033 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.225452 seconds.
-  path: Assets/Resources/Monster/goblinMage.png
-  artifactKey: Guid(21da5530ca6011f41a7858728ca29b80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Monster/goblinMage.png using Guid(21da5530ca6011f41a7858728ca29b80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80971c3f690f3809bc59f8c48b652107') in 0.010981 seconds
-  Import took 0.014121 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.175822 seconds.
-  path: Assets/Resources/Monster/mon_54 (1).png
-  artifactKey: Guid(be806a27dddfefd4aa9918fdf158956e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Monster/mon_54 (1).png using Guid(be806a27dddfefd4aa9918fdf158956e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd68a4d1eebc68e89d0a5a63567a04c0d') in 0.024270 seconds
-  Import took 0.027731 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.343208 seconds.
-  path: Assets/Resources/Monster/goblinAxe.png
-  artifactKey: Guid(be806a27dddfefd4aa9918fdf158956e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Monster/goblinAxe.png using Guid(be806a27dddfefd4aa9918fdf158956e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b556c226867ea166035f821462d56a91') in 0.025880 seconds
-  Import took 0.046048 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.149128 seconds.
-  path: Assets/Resources/Monster/mon_132r_1 (1).png
-  artifactKey: Guid(06320bc87512ed94793fdbac3e044e4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Monster/mon_132r_1 (1).png using Guid(06320bc87512ed94793fdbac3e044e4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd58a197de1ffe77e18ff32cb59784c6') in 0.014343 seconds
-  Import took 0.017891 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000320 seconds.
-  path: Assets/Resources/Monster/mon_132r_1 (1).png
-  artifactKey: Guid(06320bc87512ed94793fdbac3e044e4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Monster/mon_132r_1 (1).png using Guid(06320bc87512ed94793fdbac3e044e4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd58a197de1ffe77e18ff32cb59784c6') in 0.007614 seconds
-  Import took 0.011750 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.272007 seconds.
-  path: Assets/Resources/Monster/goblinThief.png
-  artifactKey: Guid(06320bc87512ed94793fdbac3e044e4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Monster/goblinThief.png using Guid(06320bc87512ed94793fdbac3e044e4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '055edfb580dcd46d0a1d38ac5a986cf3') in 0.050242 seconds
-  Import took 0.061259 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.788205 seconds.
-  path: Assets/Resources/Monster/mon_133 (1).png
-  artifactKey: Guid(a557c916710f11d478951fd58e8d6262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Monster/mon_133 (1).png using Guid(a557c916710f11d478951fd58e8d6262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42744d8191ba368cb58ae2625eea79e2') in 0.011437 seconds
-  Import took 0.014505 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.623853 seconds.
-  path: Assets/Resources/Monster/goblinFlame.png
-  artifactKey: Guid(a557c916710f11d478951fd58e8d6262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Monster/goblinFlame.png using Guid(a557c916710f11d478951fd58e8d6262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4e8a6389e4347c31c5b2090cd152b71') in 0.016768 seconds
-  Import took 0.021583 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 94.814582 seconds.
-  path: Assets/Kureha's/Scripts/Monster/goblinAxe.cs
-  artifactKey: Guid(7c8ec5a7eb355784f877602be46fcea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/goblinAxe.cs using Guid(7c8ec5a7eb355784f877602be46fcea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f4d07cbb83e6110d41311cce56b6e53') in 0.002763 seconds
-  Import took 0.006530 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002911 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.09 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.819 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.56 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1873 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 101.6 MB.
-System memory in use after: 101.6 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2366.
-Total: 1.830400 ms (FindLiveObjects: 0.207900 ms CreateObjectMapping: 0.061400 ms MarkObjects: 1.405100 ms  DeleteObjects: 0.155000 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.458870 seconds.
-  path: Assets/Kureha's/Scripts/Monster/Goblin.cs
-  artifactKey: Guid(0b9bdae509098b144b42df9763ea34e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/Goblin.cs using Guid(0b9bdae509098b144b42df9763ea34e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcddf3c58a3e33a071c6219e2a7cc5d0') in 0.007988 seconds
-  Import took 0.012099 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 22.323975 seconds.
-  path: Assets/Kureha's/Scripts/Monster/goblinAxe.cs
-  artifactKey: Guid(7c8ec5a7eb355784f877602be46fcea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/goblinAxe.cs using Guid(7c8ec5a7eb355784f877602be46fcea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1d2a056b9990222a98cedf2ae5cec29') in 0.002414 seconds
-  Import took 0.005739 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000935 seconds.
-  path: Assets/Kureha's/Scripts/Monster/goblinAxe.cs
-  artifactKey: Guid(7c8ec5a7eb355784f877602be46fcea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/goblinAxe.cs using Guid(7c8ec5a7eb355784f877602be46fcea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1d2a056b9990222a98cedf2ae5cec29') in 0.002533 seconds
-  Import took 0.006812 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.825148 seconds.
-  path: Assets/Kureha's/Scripts/Monster/GoblinAxe.cs
-  artifactKey: Guid(7c8ec5a7eb355784f877602be46fcea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/GoblinAxe.cs using Guid(7c8ec5a7eb355784f877602be46fcea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae252f252130a6f8e27498847ca28b14') in 0.019608 seconds
-  Import took 0.022924 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002739 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.09 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.089 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.70 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1873 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 101.6 MB.
-System memory in use after: 101.6 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2370.
-Total: 2.117500 ms (FindLiveObjects: 0.328900 ms CreateObjectMapping: 0.087100 ms MarkObjects: 1.594800 ms  DeleteObjects: 0.105000 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 162.708400 seconds.
-  path: Assets/Kureha's/Scripts/Monster/flyDragon.cs
-  artifactKey: Guid(afe4a2913c44b914a8ba7a43662188e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/flyDragon.cs using Guid(afe4a2913c44b914a8ba7a43662188e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1993126718a240c1de2ee110908742f') in 0.004888 seconds
-  Import took 0.008336 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002765 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.16 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.087 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.20 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1873 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 101.8 MB.
-System memory in use after: 101.8 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2374.
-Total: 1.817900 ms (FindLiveObjects: 0.144400 ms CreateObjectMapping: 0.054900 ms MarkObjects: 1.533200 ms  DeleteObjects: 0.084300 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.619987 seconds.
-  path: Assets/Kureha's/Scripts/Monster/goblinAxe.cs
-  artifactKey: Guid(7c8ec5a7eb355784f877602be46fcea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/goblinAxe.cs using Guid(7c8ec5a7eb355784f877602be46fcea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e85b5bae35e5d2f47ef6ba4751a49c0') in 0.004510 seconds
-  Import took 0.008116 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.025893 seconds.
-  path: Assets/Kureha's/Scripts/Monster/goblinAxe.cs
-  artifactKey: Guid(7c8ec5a7eb355784f877602be46fcea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/goblinAxe.cs using Guid(7c8ec5a7eb355784f877602be46fcea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e85b5bae35e5d2f47ef6ba4751a49c0') in 0.028209 seconds
-  Import took 0.031252 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.958459 seconds.
-  path: Assets/Kureha's/Scripts/Monster/GoblinAxe.cs
-  artifactKey: Guid(7c8ec5a7eb355784f877602be46fcea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/GoblinAxe.cs using Guid(7c8ec5a7eb355784f877602be46fcea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eff014ba4a8605343c3ca6d7e310aeb6') in 0.002237 seconds
-  Import took 0.005421 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 65.287232 seconds.
-  path: Assets/Kureha's/Scripts/Monster/goblinAxe.cs
-  artifactKey: Guid(7c8ec5a7eb355784f877602be46fcea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/goblinAxe.cs using Guid(7c8ec5a7eb355784f877602be46fcea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd216c255f68f508698e5a5149600eef3') in 0.004485 seconds
-  Import took 0.009112 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001070 seconds.
-  path: Assets/Kureha's/Scripts/Monster/goblinAxe.cs
-  artifactKey: Guid(7c8ec5a7eb355784f877602be46fcea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/goblinAxe.cs using Guid(7c8ec5a7eb355784f877602be46fcea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd216c255f68f508698e5a5149600eef3') in 0.002991 seconds
-  Import took 0.006685 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 38.626016 seconds.
-  path: Assets/Kureha's/Scripts/Skill/Kyogiri.cs
-  artifactKey: Guid(dc305b2ea2cbf794898e5dc4d92f2802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Skill/Kyogiri.cs using Guid(dc305b2ea2cbf794898e5dc4d92f2802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bceacb0fbb7f32598969b68845f127bc') in 0.005787 seconds
-  Import took 0.009844 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.369542 seconds.
-  path: Assets/Kureha's/Scripts/Skill/Jibaku.cs
-  artifactKey: Guid(e220d9ba2dcec3d4984357e75c38b44b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Skill/Jibaku.cs using Guid(e220d9ba2dcec3d4984357e75c38b44b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '249adc068c6a1a559d2e43b8371f205f') in 0.004749 seconds
-  Import took 0.008141 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001966 seconds.
-  path: Assets/Kureha's/Scripts/Skill/Jibaku.cs
-  artifactKey: Guid(e220d9ba2dcec3d4984357e75c38b44b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Skill/Jibaku.cs using Guid(e220d9ba2dcec3d4984357e75c38b44b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '249adc068c6a1a559d2e43b8371f205f') in 0.002294 seconds
-  Import took 0.005487 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.394664 seconds.
-  path: Assets/Kureha's/Scripts/Skill/Nenneki.cs
-  artifactKey: Guid(4b7b159de8b45de4bb24cf6f1a79452d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Skill/Nenneki.cs using Guid(4b7b159de8b45de4bb24cf6f1a79452d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baac8eaa70772e7fb108f3c1462b0fc6') in 0.005862 seconds
-  Import took 0.009931 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002578 seconds.
-  path: Assets/Kureha's/Scripts/Skill/Nenneki.cs
-  artifactKey: Guid(4b7b159de8b45de4bb24cf6f1a79452d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Skill/Nenneki.cs using Guid(4b7b159de8b45de4bb24cf6f1a79452d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baac8eaa70772e7fb108f3c1462b0fc6') in 0.002193 seconds
-  Import took 0.005827 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.310888 seconds.
-  path: Assets/Kureha's/Scripts/Skill/Skill.cs
-  artifactKey: Guid(e8fb781b3224e304dad67c2f5569be49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Skill/Skill.cs using Guid(e8fb781b3224e304dad67c2f5569be49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ba79dbeb5aa887be3e3f8633d00a14e') in 0.019757 seconds
-  Import took 0.022874 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003721 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.856 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.19 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1874 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 101.8 MB.
-System memory in use after: 101.8 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2379.
-Total: 2.136300 ms (FindLiveObjects: 0.349700 ms CreateObjectMapping: 0.101400 ms MarkObjects: 1.587900 ms  DeleteObjects: 0.095600 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 634.302041 seconds.
-  path: Assets/Resources/Sound/刀で斬る2.mp3
-  artifactKey: Guid(386fb6be814f4bb4b987bde18e792f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Sound/刀で斬る2.mp3 using Guid(386fb6be814f4bb4b987bde18e792f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6471b17ee688c72c58974442cf6dd239') in 0.169071 seconds
-  Import took 0.176351 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.285946 seconds.
-  path: Assets/Resources/Sound/Kyogiri.mp3
-  artifactKey: Guid(386fb6be814f4bb4b987bde18e792f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Sound/Kyogiri.mp3 using Guid(386fb6be814f4bb4b987bde18e792f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1708ef3084755bd20f8de72b3365683b') in 0.020911 seconds
-  Import took 0.039158 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 101.118140 seconds.
-  path: Assets/JMO Assets/Cartoon FX/CFX2 Prefabs/Misc/CFX2_BatsCloud.prefab
-  artifactKey: Guid(d4f5579fb5da2f646a0c2bee91bdf6b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX/CFX2 Prefabs/Misc/CFX2_BatsCloud.prefab using Guid(d4f5579fb5da2f646a0c2bee91bdf6b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ad805550d99d63727fd57ec0312d68d') in 0.018804 seconds
-  Import took 0.022870 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.200811 seconds.
-  path: Assets/JMO Assets/Cartoon FX/CFX3 Prefabs/Magic Dark
-  artifactKey: Guid(50c9cf1248e2c284b98fd90c552c1a2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX/CFX3 Prefabs/Magic Dark using Guid(50c9cf1248e2c284b98fd90c552c1a2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4579566a7ced3708f046b76e6edfa7f7') in 0.019731 seconds
-  Import took 0.023171 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.309512 seconds.
-  path: Assets/JMO Assets/Cartoon FX/Materials/Light/CFX3_AuraRays MULT.mat
-  artifactKey: Guid(63729df9e952c1f4b8fe34b9cd435a79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX/Materials/Light/CFX3_AuraRays MULT.mat using Guid(63729df9e952c1f4b8fe34b9cd435a79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7577fdf98c54ec342d91927245bfc96b') in 0.059216 seconds
-  Import took 0.062561 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.259981 seconds.
-  path: Assets/JMO Assets/Cartoon FX/Materials/Light/CFX3_GlowStar ADD.mat
-  artifactKey: Guid(6b22999712355474795091cef25021b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX/Materials/Light/CFX3_GlowStar ADD.mat using Guid(6b22999712355474795091cef25021b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29dee1d6f7775ddb3b5848a17520d857') in 0.029921 seconds
-  Import took 0.033547 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 28.890402 seconds.
-  path: Assets/JMO Assets/Cartoon FX/Materials/Fire/CFX4_FireSoft AddSoft.mat
-  artifactKey: Guid(d37187939248a4d4ab8284eca155b745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX/Materials/Fire/CFX4_FireSoft AddSoft.mat using Guid(d37187939248a4d4ab8284eca155b745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a966b771c60b4d6b215374ff39476f5') in 0.016064 seconds
-  Import took 0.019461 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.008355 seconds.
-  path: Assets/JMO Assets/Cartoon FX/Materials/Fire/CFX4_FireSoft AddSoft.mat
-  artifactKey: Guid(d37187939248a4d4ab8284eca155b745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX/Materials/Fire/CFX4_FireSoft AddSoft.mat using Guid(d37187939248a4d4ab8284eca155b745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a966b771c60b4d6b215374ff39476f5') in 0.009965 seconds
-  Import took 0.014054 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.709978 seconds.
-  path: Assets/JMO Assets/Cartoon FX/Materials/Misc/CFX4_PaintHit AB.mat
-  artifactKey: Guid(27dd61234320b5449a30b298b41751ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX/Materials/Misc/CFX4_PaintHit AB.mat using Guid(27dd61234320b5449a30b298b41751ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '179b3c4ba8dabf5346c0eba5257e01c7') in 0.034984 seconds
-  Import took 0.038986 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.011335 seconds.
-  path: Assets/JMO Assets/Cartoon FX/Materials/Misc/CFX4_PaintHit AB.mat
-  artifactKey: Guid(27dd61234320b5449a30b298b41751ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX/Materials/Misc/CFX4_PaintHit AB.mat using Guid(27dd61234320b5449a30b298b41751ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '179b3c4ba8dabf5346c0eba5257e01c7') in 0.009237 seconds
-  Import took 0.012550 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 34.377203 seconds.
-  path: Assets/Resources/Animation/CFX4 Hit Pow.prefab
-  artifactKey: Guid(bc050401fdadddd4e9abaa514dcf6954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Animation/CFX4 Hit Pow.prefab using Guid(bc050401fdadddd4e9abaa514dcf6954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b0cb81cad7ffbab1323c844287f5ff8') in 0.024732 seconds
-  Import took 0.031754 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.466778 seconds.
-  path: Assets/Resources/Animation/Kyogiri.prefab
-  artifactKey: Guid(bc050401fdadddd4e9abaa514dcf6954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Animation/Kyogiri.prefab using Guid(bc050401fdadddd4e9abaa514dcf6954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51c9922205ed8f67da74a446787387a2') in 0.027131 seconds
-  Import took 0.035421 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.021272 seconds.
-  path: Assets/JMO Assets/Cartoon FX/Materials/Animated/CFX_Anim_Triangle2_AlphaBlendedPremult.mat
-  artifactKey: Guid(4d5a52cb18e09b843887aee389016b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX/Materials/Animated/CFX_Anim_Triangle2_AlphaBlendedPremult.mat using Guid(4d5a52cb18e09b843887aee389016b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a9f562b64889da03214a0c541b7504b') in 0.026348 seconds
-  Import took 0.030076 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.007387 seconds.
-  path: Assets/JMO Assets/Cartoon FX/Materials/Animated/CFX_Anim_Triangle2_AlphaBlendedPremult.mat
-  artifactKey: Guid(4d5a52cb18e09b843887aee389016b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX/Materials/Animated/CFX_Anim_Triangle2_AlphaBlendedPremult.mat using Guid(4d5a52cb18e09b843887aee389016b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a9f562b64889da03214a0c541b7504b') in 0.009503 seconds
-  Import took 0.013175 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.004351 seconds.
-  path: Assets/Resources/Animation/Kyogiri.prefab
-  artifactKey: Guid(bc050401fdadddd4e9abaa514dcf6954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Animation/Kyogiri.prefab using Guid(bc050401fdadddd4e9abaa514dcf6954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eb27380f1b4b446ca09b96a41a4a0db') in 0.005629 seconds
-  Import took 0.009547 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000752 seconds.
-  path: Assets/Resources/Animation/Kyogiri.prefab
-  artifactKey: Guid(bc050401fdadddd4e9abaa514dcf6954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Animation/Kyogiri.prefab using Guid(bc050401fdadddd4e9abaa514dcf6954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eb27380f1b4b446ca09b96a41a4a0db') in 0.004543 seconds
-  Import took 0.008426 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 181.621216 seconds.
-  path: Assets/Kureha's/Scripts/Monster/MagicalSlime.cs
-  artifactKey: Guid(c854655c9e1a30142b8f7bc0cf575745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/MagicalSlime.cs using Guid(c854655c9e1a30142b8f7bc0cf575745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3fd4a9f4c70d9e3c2ef8734b5c4d5d8') in 0.006542 seconds
-  Import took 0.010237 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000258 seconds.
-  path: Assets/Kureha's/Scripts/Monster/MagicalSlime.cs
-  artifactKey: Guid(c854655c9e1a30142b8f7bc0cf575745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/MagicalSlime.cs using Guid(c854655c9e1a30142b8f7bc0cf575745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3fd4a9f4c70d9e3c2ef8734b5c4d5d8') in 0.002373 seconds
-  Import took 0.007022 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.354264 seconds.
-  path: Assets/Kureha's/Scripts/Monster/GoblinAxe.cs
-  artifactKey: Guid(7c8ec5a7eb355784f877602be46fcea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/GoblinAxe.cs using Guid(7c8ec5a7eb355784f877602be46fcea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3959e8ec13c6e746e31fdbd3907afa8') in 0.002325 seconds
-  Import took 0.005585 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002756 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.08 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.030 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.30 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1874 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.2 MB.
-System memory in use after: 102.2 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2423.
-Total: 1.776000 ms (FindLiveObjects: 0.254800 ms CreateObjectMapping: 0.070000 ms MarkObjects: 1.358400 ms  DeleteObjects: 0.091400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003205 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.07 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.801 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.07 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1874 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.2 MB.
-System memory in use after: 102.2 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2427.
-Total: 5.241100 ms (FindLiveObjects: 0.516600 ms CreateObjectMapping: 0.249600 ms MarkObjects: 4.238300 ms  DeleteObjects: 0.233700 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 110.867586 seconds.
-  path: Assets/Kureha's/Scripts/Monster/Dragon.cs
-  artifactKey: Guid(ced619d451ad6c94892f647f1b0f032c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/Dragon.cs using Guid(ced619d451ad6c94892f647f1b0f032c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '429e82118024824381628db3f21266c7') in 0.023103 seconds
-  Import took 0.030292 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 31.888995 seconds.
-  path: Assets/Kureha's/Scripts/Monster/GoblinThief.cs
-  artifactKey: Guid(20ab1853a25e88c42a52eb8f169467c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/GoblinThief.cs using Guid(20ab1853a25e88c42a52eb8f169467c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db376cd39a65acb8ae4252b7d6ce32aa') in 0.005582 seconds
-  Import took 0.009116 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002653 seconds.
-  path: Assets/Kureha's/Scripts/Monster/GoblinThief.cs
-  artifactKey: Guid(20ab1853a25e88c42a52eb8f169467c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/GoblinThief.cs using Guid(20ab1853a25e88c42a52eb8f169467c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db376cd39a65acb8ae4252b7d6ce32aa') in 0.002070 seconds
-  Import took 0.005675 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.698200 seconds.
+  Time since last request: 1.383428 seconds.
   path: Assets/Kureha's/Scripts/Monster/GoblinMage.cs
   artifactKey: Guid(c49ad50e8bfb6314a8066d09f4164bac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/GoblinMage.cs using Guid(c49ad50e8bfb6314a8066d09f4164bac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da14610861ffe21ff850ff82b9ac9e7d') in 0.005430 seconds
-  Import took 0.008920 seconds .
+Start importing Assets/Kureha's/Scripts/Monster/GoblinMage.cs using Guid(c49ad50e8bfb6314a8066d09f4164bac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a608a5a3c639f042e6993dbe6f51e7c6') in 0.009142 seconds
+  Import took 0.013390 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000517 seconds.
-  path: Assets/Kureha's/Scripts/Monster/GoblinMage.cs
-  artifactKey: Guid(c49ad50e8bfb6314a8066d09f4164bac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/GoblinMage.cs using Guid(c49ad50e8bfb6314a8066d09f4164bac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da14610861ffe21ff850ff82b9ac9e7d') in 0.002355 seconds
-  Import took 0.006165 seconds .
+  Time since last request: 6.643041 seconds.
+  path: Assets/Kureha's/Scripts/Monster/WereWolf.cs
+  artifactKey: Guid(c16e1d21f20123c46a997766d6c9705e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/Monster/WereWolf.cs using Guid(c16e1d21f20123c46a997766d6c9705e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fb877503d79a4c1da01950f294d3ca3') in 0.026288 seconds
+  Import took 0.031039 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003013 seconds.
+Registered in 0.205314 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.17 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 1.60 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.088 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.17 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1876 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.2 MB.
-System memory in use after: 102.2 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2433.
-Total: 1.921000 ms (FindLiveObjects: 0.185200 ms CreateObjectMapping: 0.059300 ms MarkObjects: 1.565000 ms  DeleteObjects: 0.110800 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 249.788038 seconds.
-  path: Assets/Kureha's/Scripts/Monster/GoblinMage.cs
-  artifactKey: Guid(c49ad50e8bfb6314a8066d09f4164bac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/GoblinMage.cs using Guid(c49ad50e8bfb6314a8066d09f4164bac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d191df62242fd372c9412bbe51edd6b') in 0.004569 seconds
-  Import took 0.008114 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.424761 seconds.
-  path: Assets/Kureha's/Scripts/Skill/Fire.cs
-  artifactKey: Guid(50f54d69ee3c1a44a830c32b0a93e1c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Skill/Fire.cs using Guid(50f54d69ee3c1a44a830c32b0a93e1c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7ed3285e355c143a2369dfdb193323e') in 0.005168 seconds
-  Import took 0.008341 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000980 seconds.
-  path: Assets/Kureha's/Scripts/Skill/Fire.cs
-  artifactKey: Guid(50f54d69ee3c1a44a830c32b0a93e1c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Skill/Fire.cs using Guid(50f54d69ee3c1a44a830c32b0a93e1c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7ed3285e355c143a2369dfdb193323e') in 0.002025 seconds
-  Import took 0.005383 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 194.001296 seconds.
-  path: Assets/Kureha's/Scripts/Skill/Kamitsuki.cs
-  artifactKey: Guid(a7aa0e85e15d2ff4a88b414ca4e97faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Skill/Kamitsuki.cs using Guid(a7aa0e85e15d2ff4a88b414ca4e97faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8fbbdc569bda3903e7e71ac9cf38c3a') in 0.006548 seconds
-  Import took 0.011223 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 51.033052 seconds.
-  path: Assets/Kureha's/Scripts/Skill/Huiuchi.cs
-  artifactKey: Guid(a0192572506c03c4f926ef3d0d519f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Skill/Huiuchi.cs using Guid(a0192572506c03c4f926ef3d0d519f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a0f13ba1cab5ee351b094414fbc423b') in 0.006138 seconds
-  Import took 0.010756 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001976 seconds.
-  path: Assets/Kureha's/Scripts/Skill/Huiuchi.cs
-  artifactKey: Guid(a0192572506c03c4f926ef3d0d519f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Skill/Huiuchi.cs using Guid(a0192572506c03c4f926ef3d0d519f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a0f13ba1cab5ee351b094414fbc423b') in 0.002523 seconds
-  Import took 0.006550 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.005884 seconds.
-  path: Assets/Kureha's/Scripts/Skill/ThunderBolt.cs
-  artifactKey: Guid(a18f7047661c04c4b91309e9a2963a33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Skill/ThunderBolt.cs using Guid(a18f7047661c04c4b91309e9a2963a33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c356320e8351d0f8efa0c16a4ad868fe') in 0.025121 seconds
-  Import took 0.028585 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 318.175374 seconds.
-  path: Assets/Kureha's/Scripts/Skill/ThunderBolt.cs
-  artifactKey: Guid(a18f7047661c04c4b91309e9a2963a33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Skill/ThunderBolt.cs using Guid(a18f7047661c04c4b91309e9a2963a33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11340e6c39211b1ee7a9f717201b2e40') in 0.002410 seconds
-  Import took 0.006504 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001239 seconds.
-  path: Assets/Kureha's/Scripts/Skill/ThunderBolt.cs
-  artifactKey: Guid(a18f7047661c04c4b91309e9a2963a33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Skill/ThunderBolt.cs using Guid(a18f7047661c04c4b91309e9a2963a33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11340e6c39211b1ee7a9f717201b2e40') in 0.002001 seconds
-  Import took 0.005353 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.106629 seconds.
-  path: Assets/Kureha's/Scripts/Monster/Monster.cs
-  artifactKey: Guid(4dd5a21cb8b93f24ba643d9bd0159c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/Monster.cs using Guid(4dd5a21cb8b93f24ba643d9bd0159c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e86452e197826cd263d067a95f32c83a') in 0.005357 seconds
-  Import took 0.009767 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002502 seconds.
-  path: Assets/Kureha's/Scripts/Monster/Monster.cs
-  artifactKey: Guid(4dd5a21cb8b93f24ba643d9bd0159c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/Monster.cs using Guid(4dd5a21cb8b93f24ba643d9bd0159c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e86452e197826cd263d067a95f32c83a') in 0.002430 seconds
-  Import took 0.005749 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 795.165452 seconds.
-  path: Assets/Kureha's/Scripts/Monster/Monster.cs
-  artifactKey: Guid(4dd5a21cb8b93f24ba643d9bd0159c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/Monster.cs using Guid(4dd5a21cb8b93f24ba643d9bd0159c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a556b421a50de38176b0f01e2d82f26') in 0.002471 seconds
-  Import took 0.006563 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001344 seconds.
-  path: Assets/Kureha's/Scripts/Monster/Monster.cs
-  artifactKey: Guid(4dd5a21cb8b93f24ba643d9bd0159c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Monster/Monster.cs using Guid(4dd5a21cb8b93f24ba643d9bd0159c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a556b421a50de38176b0f01e2d82f26') in 0.002001 seconds
-  Import took 0.005338 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 25.865286 seconds.
-  path: Assets/Kureha's/Scripts/Effect/OnParalyse.cs
-  artifactKey: Guid(b5e76a2592268ee44a829c9c2f9307f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Effect/OnParalyse.cs using Guid(b5e76a2592268ee44a829c9c2f9307f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a8d50d22c2cfa320781f991d39e908e') in 0.006707 seconds
-  Import took 0.011142 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.078177 seconds.
-  path: Assets/Kureha's/Scripts/Effect/OnFire.cs
-  artifactKey: Guid(706fcd154640bf2449d4023c565e5288) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Effect/OnFire.cs using Guid(706fcd154640bf2449d4023c565e5288) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b53e909cb5eaf4e19b5a1ad2a1a397b') in 0.019052 seconds
-  Import took 0.162608 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 38.767716 seconds.
-  path: Assets/Kureha's/Scripts/Effect/OnSlip.cs
-  artifactKey: Guid(0f929be80aaacc447a5c2fe46e1c2275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Effect/OnSlip.cs using Guid(0f929be80aaacc447a5c2fe46e1c2275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a9f154fb62b52fe68411c7480744f18') in 0.006563 seconds
-  Import took 0.010091 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 850.159912 seconds.
-  path: Assets/Kureha's/Scripts/Effect/OnSlip.cs
-  artifactKey: Guid(0f929be80aaacc447a5c2fe46e1c2275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Effect/OnSlip.cs using Guid(0f929be80aaacc447a5c2fe46e1c2275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a895268513f1670a4873865abbdb65f5') in 0.002622 seconds
-  Import took 0.006746 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.649905 seconds.
-  path: Assets/Kureha's/Scripts/Effect/OnParalyse.cs
-  artifactKey: Guid(b5e76a2592268ee44a829c9c2f9307f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Scripts/Effect/OnParalyse.cs using Guid(b5e76a2592268ee44a829c9c2f9307f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3e82d84afce4d6f379086e143219657') in 0.032408 seconds
-  Import took 0.127139 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003059 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.14 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.787 seconds
+- Completed reload, in  1.221 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 1.13 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1880 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.4 MB.
-System memory in use after: 102.4 MB.
+Unloading 1881 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.7 MB.
+System memory in use after: 98.7 MB.
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2441.
-Total: 1.639100 ms (FindLiveObjects: 0.182700 ms CreateObjectMapping: 0.069500 ms MarkObjects: 1.288900 ms  DeleteObjects: 0.097000 ms)
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2365.
+Total: 1.976300 ms (FindLiveObjects: 0.219000 ms CreateObjectMapping: 0.079800 ms MarkObjects: 1.538900 ms  DeleteObjects: 0.137200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002763 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.07 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.149 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.11 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1881 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.7 MB.
+System memory in use after: 98.7 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2369.
+Total: 2.204800 ms (FindLiveObjects: 0.177800 ms CreateObjectMapping: 0.065200 ms MarkObjects: 1.865300 ms  DeleteObjects: 0.095500 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 274.712601 seconds.
-  path: Assets/JMO Assets/Cartoon FX/CFX Prefabs/Misc/CFX_MagicPoof.prefab
-  artifactKey: Guid(a40b64bf23366dc42a892af2c6ff6140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX/CFX Prefabs/Misc/CFX_MagicPoof.prefab using Guid(a40b64bf23366dc42a892af2c6ff6140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7c1bf8ce71d0857720df4670c835ec2') in 0.051076 seconds
-  Import took 0.055741 seconds .
+  Time since last request: 4382.083711 seconds.
+  path: Assets/Kureha's/Scripts/Monster/GoblinThief.cs
+  artifactKey: Guid(20ab1853a25e88c42a52eb8f169467c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kureha's/Scripts/Monster/GoblinThief.cs using Guid(20ab1853a25e88c42a52eb8f169467c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4e952cc956baccd3a8cdbde8a6de699') in 0.007940 seconds
+  Import took 0.011545 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 13.137212 seconds.
-  path: Assets/JMO Assets/Cartoon FX/Materials/Misc/CFX_Star Add.mat
-  artifactKey: Guid(28bd8c3c14d3f214da37557b91e0fa5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX/Materials/Misc/CFX_Star Add.mat using Guid(28bd8c3c14d3f214da37557b91e0fa5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f58c1b87d3853167b6d5de792250492') in 0.062745 seconds
-  Import took 0.066187 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002687 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.108 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.23 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1881 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.7 MB.
+System memory in use after: 98.7 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 24.664805 seconds.
-  path: Assets/Resources/Animation/CFX_Hit_A Red+RandomText.prefab
-  artifactKey: Guid(e2a39473480fc5640839bb09c7f08a7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Animation/CFX_Hit_A Red+RandomText.prefab using Guid(e2a39473480fc5640839bb09c7f08a7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e2893bebdc848f658039ce26632128b') in 0.018734 seconds
-  Import took 0.025373 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.571853 seconds.
-  path: Assets/Resources/Animation/Darkness.prefab
-  artifactKey: Guid(4d52fa9df34cae641850a9e8705fd8e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Animation/Darkness.prefab using Guid(4d52fa9df34cae641850a9e8705fd8e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce1718f342e983373b1c7e425c1096c8') in 0.006978 seconds
-  Import took 0.010632 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 28.434594 seconds.
-  path: Assets/JMO Assets/Cartoon FX/Materials/Electric/CFX_Sparkles_Add.mat
-  artifactKey: Guid(f70f45ac7c9fb644c9a039b7d3aab297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX/Materials/Electric/CFX_Sparkles_Add.mat using Guid(f70f45ac7c9fb644c9a039b7d3aab297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13a6593455da6a806884f3a4d0969bed') in 0.031963 seconds
-  Import took 0.036070 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 78.821192 seconds.
-  path: Assets/Kureha's/Animation/Darkness.anim
-  artifactKey: Guid(9dc029fd6d5a0e44c9c5421577bd24f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Animation/Darkness.anim using Guid(9dc029fd6d5a0e44c9c5421577bd24f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '451bde0e99eeccfaf3c3b0afb04d8547') in 0.007429 seconds
-  Import took 0.010865 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003106 seconds.
-  path: Assets/Kureha's/Animation/Darkness.anim
-  artifactKey: Guid(9dc029fd6d5a0e44c9c5421577bd24f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Animation/Darkness.anim using Guid(9dc029fd6d5a0e44c9c5421577bd24f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '451bde0e99eeccfaf3c3b0afb04d8547') in 0.002732 seconds
-  Import took 0.005829 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 110.428064 seconds.
-  path: Assets/Kureha's/Animation/CFX3_Hit_Electric_A_Ground (1).prefab
-  artifactKey: Guid(bb268e271b488134a985624f8437d4c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kureha's/Animation/CFX3_Hit_Electric_A_Ground (1).prefab using Guid(bb268e271b488134a985624f8437d4c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2feea59abf172a81a4d9755bc3db157a') in 0.013252 seconds
-  Import took 0.116513 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.314309 seconds.
-  path: Assets/Resources/Animation/Darkness.prefab
-  artifactKey: Guid(4d52fa9df34cae641850a9e8705fd8e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Animation/Darkness.prefab using Guid(4d52fa9df34cae641850a9e8705fd8e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcfb8ec91a5b67cfda8658b91c599828') in 0.005369 seconds
-  Import took 0.009477 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.008884 seconds.
-  path: Assets/Resources/Animation/Darkness.prefab
-  artifactKey: Guid(4d52fa9df34cae641850a9e8705fd8e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Animation/Darkness.prefab using Guid(4d52fa9df34cae641850a9e8705fd8e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcfb8ec91a5b67cfda8658b91c599828') in 0.005531 seconds
-  Import took 0.010064 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.109669 seconds.
-  path: Assets/Resources/Animation/Huiuchi.prefab
-  artifactKey: Guid(e2a39473480fc5640839bb09c7f08a7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Animation/Huiuchi.prefab using Guid(e2a39473480fc5640839bb09c7f08a7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3d61e6df7bad35fb9af857d9872eb2d') in 0.024686 seconds
-  Import took 0.155666 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 37.395997 seconds.
-  path: Assets/Resources/Animation/CFX3_Hit_Electric_A_Ground.prefab
-  artifactKey: Guid(6588982271c9e0249932282dc4ce1e4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Animation/CFX3_Hit_Electric_A_Ground.prefab using Guid(6588982271c9e0249932282dc4ce1e4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0168de78b0230adffa5654ceeeccded3') in 0.026740 seconds
-  Import took 0.040942 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.805241 seconds.
-  path: Assets/Resources/Animation/ThunderBolt.prefab
-  artifactKey: Guid(6588982271c9e0249932282dc4ce1e4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Animation/ThunderBolt.prefab using Guid(6588982271c9e0249932282dc4ce1e4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b457e412bc594dbc21841e12ce681462') in 0.007554 seconds
-  Import took 0.061601 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.575147 seconds.
-  path: Assets/Resources/Animation/Huiuchi.prefab
-  artifactKey: Guid(e2a39473480fc5640839bb09c7f08a7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Animation/Huiuchi.prefab using Guid(e2a39473480fc5640839bb09c7f08a7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93b8e2a32b24c54b36e8be7d028560f3') in 0.029895 seconds
-  Import took 0.103303 seconds .
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2373.
+Total: 1.823100 ms (FindLiveObjects: 0.221800 ms CreateObjectMapping: 0.066100 ms MarkObjects: 1.438700 ms  DeleteObjects: 0.095400 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

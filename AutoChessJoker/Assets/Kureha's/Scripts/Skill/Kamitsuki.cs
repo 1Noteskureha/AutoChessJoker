@@ -7,7 +7,7 @@ public class Kamitsuki : Skill
     public Kamitsuki(int _skillLevel)
     {
         name = "かみつき";
-        description = "正面の敵にかみつき、(60/80/100) + 0.2AP + 0.1自身の最大HPのダメージを与える。";
+        description = "正面の敵にかみつき、(60/80/100) + 0.2魔力 + 0.1自身の最大HPのダメージを与える。";
 
         skillLevel = _skillLevel;
 

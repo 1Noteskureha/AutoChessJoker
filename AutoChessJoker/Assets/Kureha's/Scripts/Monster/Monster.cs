@@ -152,21 +152,36 @@ public abstract class Monster
     }
 
     #region Effect
-    public void ExecuteEffect(Effect _effect)
+    public void addEffect(Effect _effect)
     {
         if (!living) return;
         for(int i = 0; i < effect.Count; i++)
         {
             if (effect[i].name == _effect.name)
             {
-                effect[i].value += _effect.value;
-                effect[i].Activate();
+                //effect[i].value += _effect.value;
+                effect[i].addActivate(_effect.value);
                 return;
             }
         }
 
         effect.Add(_effect);
         _effect.Activate();
+    }
+
+    public void deleteEffect(Effect _effect)
+    {
+        if (!living) return;
+        for (int i = 0; i < effect.Count; i++)
+        {
+            if (effect[i].name == _effect.name)
+            {
+                effect.RemoveAt(i);
+                return;
+            }
+        }
+
+        return;
     }
 
     public void addTurnFirst(Effect _effect)
@@ -176,8 +191,8 @@ public abstract class Monster
         {
             if (turnFirst[i].name == _effect.name)
             {
-                turnFirst[i].value += _effect.value;
-                turnFirst[i].Activate();
+                //turnFirst[i].value += _effect.value;
+                turnFirst[i].addActivate(_effect.value);
                 return;
             }
         }
@@ -208,8 +223,8 @@ public abstract class Monster
         {
             if (turnEnd[i].name == _effect.name)
             {
-                turnEnd[i].value += _effect.value;
-                turnEnd[i].Activate();
+                //turnEnd[i].value += _effect.value;
+                turnEnd[i].addActivate(_effect.value);
                 return;
             }
         }
@@ -226,6 +241,38 @@ public abstract class Monster
             if (turnEnd[i].name == _effect.name)
             {
                 turnEnd.RemoveAt(i);
+                return;
+            }
+        }
+
+        return;
+    }
+
+    public void addThenDead(Effect _effect)
+    {
+        if (!living) return;
+        for (int i = 0; i < thenDead.Count; i++)
+        {
+            if (thenDead[i].name == _effect.name)
+            {
+                //turnFirst[i].value += _effect.value;
+                thenDead[i].addActivate(_effect.value);
+                return;
+            }
+        }
+
+        thenDead.Add(_effect);
+        _effect.Activate();
+    }
+
+    public void deleteThenDead(Effect _effect)
+    {
+        if (!living) return;
+        for (int i = 0; i < thenDead.Count; i++)
+        {
+            if (thenDead[i].name == _effect.name)
+            {
+                thenDead.RemoveAt(i);
                 return;
             }
         }
@@ -335,6 +382,8 @@ public abstract class Monster
         {
             BattleController.Instance.MonsterDead(ally,field);
         }
+
+        BattleController.Instance.StateUpdate();
     }
 
 }

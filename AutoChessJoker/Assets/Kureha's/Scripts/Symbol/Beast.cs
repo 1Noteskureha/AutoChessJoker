@@ -25,13 +25,13 @@ public class Beast : Symbol
                 switch (level)
                 {
                     case 1:
-                        BattleController.Instance.allyField[i].ExecuteEffect(new HPChange(true, BattleController.Instance.allyField[i].field, 100));
+                        BattleController.Instance.allyField[i].addEffect(new HPChange(true, BattleController.Instance.allyField[i].field, 100));
                         break;
                     case 2:
-                        BattleController.Instance.allyField[i].ExecuteEffect(new HPChange(true, BattleController.Instance.allyField[i].field, 200));
+                        BattleController.Instance.allyField[i].addEffect(new HPChange(true, BattleController.Instance.allyField[i].field, 200));
                         break;
                     case 3:
-                        BattleController.Instance.allyField[i].ExecuteEffect(new HPChange(true, BattleController.Instance.allyField[i].field, 500));
+                        BattleController.Instance.allyField[i].addEffect(new HPChange(true, BattleController.Instance.allyField[i].field, 500));
                         break;
                 }
             }

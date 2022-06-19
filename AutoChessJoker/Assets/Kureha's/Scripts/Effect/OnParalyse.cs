@@ -23,16 +23,18 @@ public class OnParalyse : Effect
                 BattleController.Instance.allyField[target].stan = true;
                 value -= 100;
             }
+
+            if (value <= 0) BattleController.Instance.allyField[target].deleteTurnFirst(this);
         }
         else
         {
             if (value >= 100)
             {
-                BattleController.Instance.allyField[target].stan = false;
+                BattleController.Instance.enemyField[target].stan = true;
                 value -= 100;
             }
-        }
 
-        if(value <=0) BattleController.Instance.allyField[target].deleteTurnFirst(this);
+            if (value <= 0) BattleController.Instance.enemyField[target].deleteTurnFirst(this);
+        }
     }
 }

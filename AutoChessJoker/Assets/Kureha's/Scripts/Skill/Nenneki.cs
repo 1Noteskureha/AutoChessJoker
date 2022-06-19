@@ -30,13 +30,13 @@ public class Nenneki : Skill
         if (Ally)
         {
             BattleController.Instance.enemyField[BattleController.Instance.FrontSearch(false, field)].DealAPDamage(Value);
-            BattleController.Instance.enemyField[BattleController.Instance.FrontSearch(false, field)].ExecuteEffect(new Betobeto(false, BattleController.Instance.FrontSearch(false, field), Value2));
+            BattleController.Instance.enemyField[BattleController.Instance.FrontSearch(false, field)].addEffect(new Betobeto(false, BattleController.Instance.FrontSearch(false, field), Value2));
             BattleController.Instance.WaitAnimation(SkillAnim, SkillSound, false, BattleController.Instance.FrontSearch(true, field));
         }
         else
         {
             BattleController.Instance.allyField[BattleController.Instance.FrontSearch(true, field)].DealAPDamage(Value);
-            BattleController.Instance.allyField[BattleController.Instance.FrontSearch(true, field)].ExecuteEffect(new Betobeto(true, BattleController.Instance.FrontSearch(true, field), Value2));
+            BattleController.Instance.allyField[BattleController.Instance.FrontSearch(true, field)].addEffect(new Betobeto(true, BattleController.Instance.FrontSearch(true, field), Value2));
             BattleController.Instance.WaitAnimation(SkillAnim, SkillSound, true, BattleController.Instance.FrontSearch(true, field));
         }
     }

@@ -31,6 +31,7 @@ public class Home_Deck : SingletonMonoBehaviour<Home_Deck>
     private List<TMP_Text> activeSymbolText;
 
     int page = 1;
+    bool inited = false;
 
     // Start is called before the first frame update
     void Start()
@@ -51,7 +52,7 @@ public class Home_Deck : SingletonMonoBehaviour<Home_Deck>
         }
 
         InfomationUpdate(0);
-
+        inited = true;
     }
 
     // Update is called once per frame
@@ -163,6 +164,7 @@ public class Home_Deck : SingletonMonoBehaviour<Home_Deck>
 
     public void OnEnable()
     {
+        if (inited == false) return;
         for (int i = 0; i < inventory.Count; i++)
         {            
             inventory[i].GetComponent<DragAndDrop>().Init(i);
