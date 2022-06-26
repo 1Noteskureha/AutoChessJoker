@@ -29,15 +29,19 @@ public class Nenneki : Skill
         if (skillLevel == 3) Value2 = 20;
         if (Ally)
         {
-            BattleController.Instance.enemyField[BattleController.Instance.FrontSearch(false, field)].DealAPDamage(Value);
-            BattleController.Instance.enemyField[BattleController.Instance.FrontSearch(false, field)].addEffect(new Betobeto(false, BattleController.Instance.FrontSearch(false, field), Value2));
-            BattleController.Instance.WaitAnimation(SkillAnim, SkillSound, false, BattleController.Instance.FrontSearch(true, field));
+            int enemy = BattleController.Instance.FrontSearch(false, field);
+
+            BattleController.Instance.enemyField[enemy].DealAPDamage(Value);
+            BattleController.Instance.enemyField[enemy].addEffect(new Betobeto(false, enemy, Value2));
+            BattleController.Instance.WaitAnimation(SkillAnim, SkillSound, false, enemy);
         }
         else
         {
-            BattleController.Instance.allyField[BattleController.Instance.FrontSearch(true, field)].DealAPDamage(Value);
-            BattleController.Instance.allyField[BattleController.Instance.FrontSearch(true, field)].addEffect(new Betobeto(true, BattleController.Instance.FrontSearch(true, field), Value2));
-            BattleController.Instance.WaitAnimation(SkillAnim, SkillSound, true, BattleController.Instance.FrontSearch(true, field));
+            int ally = BattleController.Instance.FrontSearch(true, field);
+
+            BattleController.Instance.allyField[ally].DealAPDamage(Value);
+            BattleController.Instance.allyField[ally].addEffect(new Betobeto(true, ally, Value2));
+            BattleController.Instance.WaitAnimation(SkillAnim, SkillSound, true, ally);
         }
     }
 }

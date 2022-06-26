@@ -22,9 +22,9 @@ public class ThunderBolt : Skill
         if (Ally) mag = BattleController.Instance.allyField[field].mag;
         else mag = BattleController.Instance.enemyField[field].mag;
 
-        int Value = 20 + (int)(1.0 * mag);
-        if (skillLevel == 2) Value = 60 + (int)(1.0 * mag);
-        if (skillLevel == 3) Value = 120 + (int)(1.0 * mag);
+        int Value = 20 + (int)(1.2 * mag);
+        if (skillLevel == 2) Value = 60 + (int)(1.2 * mag);
+        if (skillLevel == 3) Value = 120 + (int)(1.2 * mag);
         int Value2 = 5;
         if (skillLevel == 2) Value2 = 10;
         if (skillLevel == 3) Value2 = 20;

@@ -9,7 +9,9 @@ public class Stage
     public List<List<int>> essense;
     public Sprite sprite;
     //public Sprite sprite;
-    
+    public int no;
+
+    private const int Max_Stage = 2;
 
     public List<List<Monster>> enemyFields;
 
@@ -88,15 +90,90 @@ public class Stage
     {
         switch (StageNo)
         {
-            case 1:            //草,地,獣,炎,水,雷,空,死,聖
+            case 1://ハジマリ草原 草,地,獣,炎,水,雷,空,死,聖
                 essense = new List<List<int>>()
                 {
                 new List<int>() {5,0,0,0,0,0,0,0,0},
-                new List<int>() {10,0,0,0,0,0,0,0,0},
-                new List<int>() {10,0,0,0,0,0,0,0,0},
-                new List<int>() {50,5,5,0,0,0,0,0,0},
+                new List<int>() {5,0,0,0,0,0,0,0,0},
+                new List<int>() {20,10,10,0,0,0,0,0,0},
+                };
+                break;
+            case 2://タビダチ街道
+                essense = new List<List<int>>()
+                {
+                    new List<int>() {0,5,5,0,0,0,0,0,0},
+                    new List<int>() {0,10,10,0,0,0,0,0,0},
+                    new List<int>() {10,25,25,0,0,0,10,0,0},
+                };
+                break;
+            case 3://ジョバン森
+                essense = new List<List<int>>()
+                {
+                    new List<int>() {10,0,0,0,0,0,0,0,0},
+                    new List<int>() {20,10,0,0,0,0,0,0,0},
+                    new List<int>() {50,20,0,0,0,0,10,0,0},
+                };
+                break;
+            case 4://コノサキ川
+                essense = new List<List<int>>()
+                {
+                    new List<int>() {0,0,5,0,10,0,5,0,0},
+                    new List<int>() {0,0,5,0,10,0,5,0,0},
+                    new List<int>() {0,0,5,0,10,0,5,0,0},
+                    new List<int>() {0,0,30,0,70,0,20,0,0},
+                };
+                break;
+            case 5://マジカル修道院
+                essense = new List<List<int>>()
+                {
+                    new List<int>() {0,5,0,10,0,15,0,0,10},
+                    new List<int>() {0,5,0,10,0,15,0,0,10},
+                    new List<int>() {0,5,0,10,0,15,0,0,10},
+                    new List<int>() {0,10,0,30,0,80,0,0,30},
+                };
+                break;
+            case 6://オソレ山
+                essense = new List<List<int>>()
+                {
+                    new List<int>() {0,10,10,10,0,0,20,0,0},
+                    new List<int>() {0,10,10,10,0,0,20,0,0},
+                    new List<int>() {0,10,10,10,0,0,20,0,0},
+                    new List<int>() {0,60,60,30,0,0,80,0,0},
+                };
+                break;
+            case 7://オソレ火山
+                essense = new List<List<int>>()
+                {
+                    new List<int>() {0,10,0,20,0,0,5,0,0},
+                    new List<int>() {0,10,0,20,0,0,5,0,0},
+                    new List<int>() {0,10,0,20,0,0,5,0,0},
+                    new List<int>() {0,60,0,100,0,0,80,0,0},
+                };
+                break;
+            case 8://アラサレ墓場
+                essense = new List<List<int>>()
+                {
+                    new List<int>() {0,0,0,10,0,0,10,30,0},
+                    new List<int>() {0,0,0,10,0,0,10,30,0},
+                    new List<int>() {0,0,0,10,0,0,10,30,0},
+                    new List<int>() {0,0,0,60,0,0,80,150,0},
                 };
                 break;
         }
+    }
+
+    public bool Unlock()
+    {
+        if(no < PlayerPrefs.GetInt("Stage_Clear"))
+        {   
+            if(no < Max_Stage)
+            PlayerPrefs.SetInt("Stage_Unlock",no + 1);
+
+            PlayerPrefs.SetInt("Stage_Clear", no);
+
+            return true;
+        }
+
+        return false;
     }
 }

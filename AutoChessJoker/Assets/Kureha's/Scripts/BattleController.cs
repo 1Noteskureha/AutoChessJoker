@@ -470,6 +470,11 @@ public class BattleController : SingletonMonoBehaviour<BattleController>
         if (progress == stage.enemyFields.Count)
         {
             //アンロック
+            if (stage.Unlock())
+            {
+                stage.GenerateName(stage.no + 1);
+                AddLog("ステージ"+ stage.name + "を解放しました");
+            }
             
             //戻る
             overrayEnd.SetActive(true);
